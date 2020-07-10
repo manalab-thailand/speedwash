@@ -10,16 +10,29 @@
     <link rel="stylesheet" href="sty.css">
   </head>
   <body>
-    <div class="d-md-none d-sm-block d-lg-none text-center" style="background-color: #FF3D3B;">
-      <a class="navbar-brand" style="color: white;" href="#"> <h3><b>SPEED</b>WASH</h3></a>
-    </div>
-    <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color " style="background-color: #FF3D3B;">
+    <div class="d-md-none d-sm-block d-lg-none d-xl-none text-center nav-movlie-color" >
+      <a class="navbar-brand font-nav-footer-color"  href="#"> <h3><b>SPEED</b>WASH</h3></a>    
+      </i>  
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Blog</li></a>
+          <a href="#"><li>Outlets</li></a>
+          <a href="#" ><li>Contect</li></a>
+        </ul>
+      </div>
+    </div>   
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color nav-mobile nav-color">
       <a class="navbar-brand" href="#"> <h3><b>SPEED</b>WASH</h3></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
         aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-     
       <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
         <ul class="navbar-nav nav ml-auto text-center ">
           <li class="nav-item active">
@@ -66,7 +79,7 @@
           </div>
         </div>
     <!-- Footer -->
-    <footer class="page-footer font-small pt-4" style="background-color: #FF3D3B;">
+    <footer class="page-footer font-small pt-4 footer-color font-nav-footer-color">
       <!-- Footer Links -->
       <div class="container-fluid text-md-left">
 
@@ -77,31 +90,73 @@
           <div class="col-md-3 mt-md-0 mt-3 ">
 
             <!-- Content -->
-            <h3 class="text-uppercase"><b>SPEED</b>WASH</h3>
-            <p>35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District Samut Prakan 10540</p>
+            <div class="text-mobile-center">
+                <img class="logo" src="img/SpeedWash.png" alt="" >
+            </div>
+            <p class="mt-3">35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District Samut Prakan 10540</p>
             <p>View Maps ></p>
           </div>
           <!-- Grid column -->
           <hr class="clearfix w-100 d-md-none pb-3">
           <!-- Grid column -->
           <div class="col-md-1"></div>
-          <div class="col-md-3 mb-md-0 mb-3 ">
+          <div class="col-md-5 mb-md-0 mb-3 ">
               
               <ul class="list-unstyled">
                 <li>
-                    <img src="https://img.icons8.com/ios-glyphs/36/000000/ringer-volume.png"/>&emsp;02-316-2430 <br>
-                     &emsp;&emsp;&emsp; 02-316-2430 <br>
-                     &emsp;&emsp;&emsp; 02-316-2430
+                  <div class="row">
+                    <div class="icon">
+                      <i style="font-size:36px;"  class="fas fa-phone-volume"></i>
+                    </div>
+                      <div class="contact phone-number">
+                        <div class="col-12">02-316-2430</div>
+                        <div class="col-12">02-316-2430</div>
+                        <div class="col-12">02-316-2430</div>
+                      </div>
+                  </div>  
+                   
+                    
                     
                 </li>
                 <li class="mt-4">
-                  <img src="https://img.icons8.com/fluent/40/000000/gmail.png"/> phajidathailand@gmail.com
+                  <div class="row">
+                    <div class="">
+                      <img src="https://img.icons8.com/fluent/40/000000/gmail.png"/>
+                    </div>
+                    <div class=""> 
+                      <div class=" contact">
+                        <div class="col-12">phajidathailand@gmail.com</div>
+                        
+                      </div>
+                  </div>
+                </div>
+                  
                 </li>
                 <li>
-                  <img src="https://img.icons8.com/color/40/000000/line-me.png"/> @PhajidaGroup
+                  <div class="row">
+                    <div class="">
+                      <img src="https://img.icons8.com/color/40/000000/line-me.png"/>
+                    </div>
+                    <div class=""> 
+                      <div class="contact">
+                        <div class="col-12"> @PhajidaGroup</div>
+                        
+                      </div>
+                  </div>
+                  </div>
                 </li>
                 <li>
-                  <img src="https://img.icons8.com/color/40/000000/facebook.png"/> SpeedWashLaundryTH
+                  <div class="row">
+                    <div class="">
+                      <img src="https://img.icons8.com/color/40/000000/facebook.png"/>
+                    </div>
+                    <div class=""> 
+                      <div class="contact">
+                        <div class="col-12">SpeedWashLaundryTH</div>
+                        
+                      </div>
+                  </div>
+                  </div>
                 </li>
               </ul>
           </div>
@@ -122,6 +177,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
   </body>
 </html>
