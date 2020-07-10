@@ -11,7 +11,9 @@ router.get("/", function (req, res, next) {
   //   const response = await axios.get(sheets);
   //   console.log(response);
 
-  res.render("speedwash/outlets", {});
+  res.render("speedwash/outlets", {
+    key: "AIzaSyCdQCEwdWm7PB6InxPfQ-Xlf6P8Vjer2xk",
+  });
 });
 
 module.exports = router;
