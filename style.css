@@ -3,7 +3,7 @@ body {
 }
 
 .bgred {
-  height: 980px;
+  height: 940px;
 }
 
 .topic {
@@ -91,4 +91,19 @@ body {
 
 .textarea {
   resize: none;
+}
+
+#submit{
+border: 3px solid #F2F2F2;
+box-sizing: border-box;
+border-radius: 5px;
+}
+
+.button{
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 20px;
+
+  
+  color: #FFFFFF;
 }
