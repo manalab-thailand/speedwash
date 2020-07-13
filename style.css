@@ -3,6 +3,7 @@ body {
 }
 
 .bgred {
+  background-color: #CC3941;
   height: 940px;
 }
 
@@ -107,3 +108,14 @@ border-radius: 5px;
   
   color: #FFFFFF;
 }
+
+.phone{
+
+  margin-left: 30px;
+}
+
+.reach{
+  color: white;
+
+}
+
