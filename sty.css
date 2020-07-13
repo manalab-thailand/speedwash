@@ -24,7 +24,9 @@
   font-weight: bold;
 }
 
-
+body{
+  font-family: Montserrat;
+}
 
 .link-menu {
   padding-right: 1.5rem;
