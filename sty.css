@@ -20,6 +20,17 @@
   font-size: 20px;
 }
 
+.font-bold{
+  font-weight: bold;
+}
+
+
+
+.link-menu {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
 a:hover {
   color: #ffffff;
   text-decoration: underline;
@@ -39,7 +50,18 @@ a:hover {
 
 
 
+@media only screen and (max-width: 1024px) {
+    .link-menu {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+    .ml-mobile-20{
+      margin-left: 20px;
+    }
+
     .nav-mobile{
         display: none;
     }
