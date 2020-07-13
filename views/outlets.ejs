@@ -10,18 +10,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/sty.css">
 
     <style>
-        /* .map-container {
-            overflow: hidden;
-            position: relative;
-        }
-
-        .map-container iframe {
-            height: 350px;
-            width: 1300px;
-        }*/
-
         #box-shadow {
             border: 1px solid #C4C4C4;
             padding: 0px 30px 5px 30px;
@@ -30,13 +21,10 @@
             margin: 30px 0px;
         }
 
-        /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-        #map {
+        /* .map {
             height: 100%;
-        }
+        } */
 
-        /* Optional: Makes the sample page fill the window. */
         html,
         body {
             height: 100%;
@@ -47,15 +35,82 @@
 </head>
 
 <body>
+    <div class="d-md-none d-sm-block d-lg-none d-xl-none text-center nav-movlie-color">
+        <a class="navbar-brand font-nav-footer-color" href="#">
+            <h3><b>SPEED</b>WASH</h3>
+        </a>
+        </i>
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Blog</li>
+                </a>
+                <a href="#">
+                    <li>Outlets</li>
+                </a>
+                <a href="#">
+                    <li>Contect</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color nav-mobile nav-color">
+        <a class="navbar-brand" href="#">
+            <h3><b>SPEED</b>WASH</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav nav ml-auto text-center ">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Outlets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contect</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav nav ml-auto  text-center ">
+                <li class="nav-item active">
+                    <i class="fas fa-phone-alt"></i>
+                    <span class="navbar-brand" style="color: white;">&nbsp&nbsp096-947-2096</span>
+                </li>
+            </ul>
+        </div>
+        <!-- <i class="fas fa-phone-alt"></i>
+              <span class="navbar-brand" style="color: white;">&nbsp&nbsp096-947-2096</span> -->
+    </nav>
+
+    <!--Navbar -->
     <main>
+
         <div class="container">
             <div class="h1 text-center mt-3"><%=title%></div>
 
-            <!-- <div id="map-container-google-1" class="z-depth-1-half map-container col-12 col-md-12"> -->
-            <!-- <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d175316.55736241516!2d100.49880063111605!3d13.839926556854735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSpeedWash%20Thailand!5e0!3m2!1sth!2sth!4v1594154576079!5m2!1sth!2sth"
-                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
-            <div id="map"></div>
+            <div class="map" style="height: 500px;"></div>
 
             <!-- </div> -->
             <div id="box-shadow" class="row">
@@ -81,41 +136,134 @@
         </div>
     </main>
 
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4 footer-color font-nav-footer-color">
+        <!-- Footer Links -->
+        <div class="container-fluid text-md-left">
 
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-sm-2 col-xl-3  "></div>
+                <div class="col-md-3 mt-md-0 mt-3 ">
+
+                    <!-- Content -->
+                    <div class="text-mobile-center">
+                        <img class="logo" src="/images/SpeedWash.png" alt="">
+                    </div>
+                    <p class="mt-3">35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District Samut Prakan 10540</p>
+                    <p>View Maps ></p>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <!-- Grid column -->
+                <div class="col-md-1"></div>
+                <div class="col-md-5 mb-md-0 mb-3 ">
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="row">
+                                <div class="icon">
+                                    <i style="font-size:36px;" class="fas fa-phone-volume"></i>
+                                </div>
+                                <div class="contact phone-number">
+                                    <div class="col-12">02-316-2430</div>
+                                    <div class="col-12">02-316-2430</div>
+                                    <div class="col-12">02-316-2430</div>
+                                </div>
+                            </div>
+
+
+
+                        </li>
+                        <li class="mt-4">
+                            <div class="row">
+                                <div class="">
+                                    <img src="https://img.icons8.com/fluent/40/000000/gmail.png" />
+                                </div>
+                                <div class="">
+                                    <div class=" contact">
+                                        <div class="col-12">phajidathailand@gmail.com</div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="">
+                                    <img src="https://img.icons8.com/color/40/000000/line-me.png" />
+                                </div>
+                                <div class="">
+                                    <div class="contact">
+                                        <div class="col-12"> @PhajidaGroup</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="">
+                                    <img src="https://img.icons8.com/color/40/000000/facebook.png" />
+                                </div>
+                                <div class="">
+                                    <div class="contact">
+                                        <div class="col-12">SpeedWashLaundryTH</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+    </footer>
+    <!-- Footer -->
 
     <script>
         var map;
         function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 2,
-                center: new google.maps.LatLng(2.8, -187.3),
-                mapTypeId: 'terrain'
+            map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: new google.maps.LatLng(13.66194, 100.6126),
+                mapTypeId: "terrain",
             });
 
-            // Create a <script> tag and set the USGS URL as the source.
-            var script = document.createElement('script');
-            // This example uses a local copy of the GeoJSON stored at
-            // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
-            script.src = 'https://developers.google.com/maps/documentation/javascript/examples/json/earthquake_GeoJSONP.js';
-            document.getElementsByTagName('head')[0].appendChild(script);
+            var script = document.createElement("script");
+
+            script.src = "/javascripts/APImap.js";
+            document.getElementsByTagName("head")[0].appendChild(script);
         }
 
-        // Loop through the results array and place a marker for each
-        // set of coordinates.
         window.eqfeed_callback = function (results) {
             for (var i = 0; i < results.features.length; i++) {
                 var coords = results.features[i].geometry.coordinates;
-                var latLng = new google.maps.LatLng(coords[1], coords[0]);
+                var latLng = new google.maps.LatLng(coords[0], coords[1]);
                 var marker = new google.maps.Marker({
                     position: latLng,
-                    map: map
+                    map: map,
                 });
             }
-        }
+        };
+
     </script>
+
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdQCEwdWm7PB6InxPfQ-Xlf6P8Vjer2xk&callback=initMap">
         </script>
+
+    <!-- <script src="/javascripts/map.js"></script> -->
+
+    <!-- font -->
+    <script src="https://kit.fontawesome.com/7fee7179b9.js" crossorigin="anonymous"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
