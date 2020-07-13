@@ -13,6 +13,11 @@
 
 .font-nav-footer-color{
     color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.font-menu{
+  font-size: 20px;
 }
 
 a:hover {
