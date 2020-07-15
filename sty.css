@@ -1,5 +1,5 @@
 .logo{
-    width: 50%;
+    width: 35%;
     height: auto;
 }
 
@@ -11,13 +11,18 @@
     background-color: #FF3D3B;
 }
 
+.size-icon{
+  font-size: 20px;
+}
+
 .font-nav-footer-color{
     color: rgb(255, 255, 255);
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .font-menu{
   font-size: 20px;
+  color: rgb(255, 255, 255);
 }
 
 .font-bold{
@@ -50,6 +55,10 @@ a:hover {
   padding: 0 0 0 10px;
 }
 
+.margin-mobile{
+  margin: 20px 0 0 0;
+}
+
 
 
 @media only screen and (max-width: 1024px) {
@@ -57,11 +66,35 @@ a:hover {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
     }
+
+  .font-menu{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+  }
+
+  .font-nav-footer-color{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+  }
+  .margin-mobile{
+    margin: 5px 0 0 -45px;
+  }
+  
+
 }
 
 @media only screen and (max-width: 600px) {
-    .ml-mobile-20{
-      margin-left: 20px;
+    .margin-mobile{
+      margin: 20px 0 0 15px;
+    }
+
+    .font-nav-footer-color{
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+  }
+
+    .padding-footer{
+      padding: 0px;
     }
 
     .nav-mobile{
