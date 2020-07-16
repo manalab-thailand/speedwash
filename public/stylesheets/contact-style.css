@@ -1,0 +1,114 @@
+/* div{
+    border: dashed;
+} */
+
+.input {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: red;
+    color: white;
+}
+
+.input:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: red;
+    color: white;
+}
+
+.bgred {
+    background-color: #cc3941;
+    height: 940px;
+}
+
+.topic {
+    color: #333333;
+    padding: 0 0 10px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 65px;
+}
+
+.office {
+    color: #333333;
+    font-size: 30px;
+}
+
+.address {
+    color: #333333;
+    font-size: 28px;
+    line-height: 40px;
+    font-family: Montserrat;
+}
+
+.contact-icon {
+    color: #333333;
+    padding: 0 0 0 20px;
+    font-size: 55px;
+}
+
+.share {
+    font-family: Montserrat;
+    font-size: 28px;
+    margin-left: 10px;
+    margin-top: 3px;
+    color: white;
+    line-height: 50px;
+}
+
+.email {
+    color: white;
+}
+
+.map-container {
+    overflow: hidden;
+    position: relative;
+    height: 0;
+}
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 350px;
+    width: 1300px;
+}
+
+.padding {
+    padding: 10px 75px 0 75px;
+}
+
+.pic {
+    max-width: 250px;
+    width: 40%;
+}
+
+.thai {
+    height: auto;   
+    width: 80%;
+    max-width: 60px;
+}
+
+.tel {
+    padding: 5px 0 0 30px;
+}
+
+.textarea {
+    resize: none;
+}
+
+.reach {
+    color: white;
+}
+
+.button1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #cc3941;
+    color: white;
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 100%;
+    height: 70px;
+}
+
+.button1:hover {
+    background-color: #ca707586;
+}
