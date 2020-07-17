@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
     <title>
@@ -21,12 +22,6 @@
             color: gray;
             margin: 30px 0px;
         }
-        /* html,
-        body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        } */
     </style>
 </head>
 
@@ -101,15 +96,11 @@
 
     <!--Navbar -->
     <main>
-
         <div class="container">
             <div class="h1 text-center mt-3">
                 <b><%=title%><b>
             </div>
-
             <div id="map" style="height: 500px;"></div>
-
-            <!-- </div> -->
             <div id="box-shadow" class="row">
                 <table class="table table-hover table-responsive-lg justify-content-center">
                     <thead>
@@ -120,20 +111,20 @@
                         </tr>
                     </thead>
                     <% posts.values.forEach(function(post){ if(post[0] != undefined && post[1] != undefined && post[2] != undefined){ console.log(typeof post[2]); %>
-                        <tbody>
-                            <tr>
-                                <th scope="row">
-                                    <%=post[0] %>
-                                </th>
-                                <th>
-                                    <%=post[1] %>
-                                </th>
-                                <th>
-                                    <%=post[2] %>
-                                </th>
-                            </tr>
-                        </tbody>
-                        <% } });%>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <%=post[0] %>
+                            </th>
+                            <th>
+                                <%=post[1] %>
+                            </th>
+                            <th>
+                                <%=post[2] %>
+                            </th>
+                        </tr>
+                    </tbody>
+                    <% } });%>
                 </table>
             </div>
         </div>
@@ -213,18 +204,15 @@
                                 <div class="">
                                     <div class="contact">
                                         <div class="col-12">SpeedWashLaundryTH</div>
-
                                     </div>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
-
                 <!-- Grid column -->
             </div>
             <!-- Grid row -->
-
         </div>
         <!-- Footer Links -->
     </footer>
@@ -235,25 +223,22 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdQCEwdWm7PB6InxPfQ-Xlf6P8Vjer2xk&callback=initMap">
-    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdQCEwdWm7PB6InxPfQ-Xlf6P8Vjer2xk&callback=initMap">
+        </script>
 
     <script>
-        var locations = [
-            ['วัดลาดปลาเค้า', 13.846876, 100.604481],
-            ['หมู่บ้านอารียา', 13.847766, 100.605768],
-            ['สปีดเวย์', 13.845235, 100.602711],
-            ['สเต็ก ลุงหนวด', 13.862970, 100.613834]
-        ];
-
         function initMap() {
             var mapOptions = {
                 center: {
@@ -262,38 +247,28 @@
                 },
                 zoom: 10,
             }
-
             var maps = new google.maps.Map(document.getElementById("map"), mapOptions);
-
             var marker, i, info;
-
-            // for (i = 0; i < locations.length; i++) {
-
             <%
-            posts.values.forEach(function(post, i) {
-                if (post[6]) { %>
+                posts.values.forEach(function (post, i) {
+                    if (post[6]) { %>
 
-            marker = new google.maps.Marker({
-                position: new google.maps.LatLng(<%= post[6]%>, <%= post[7]%>),
-                map: maps,
-                title: "<%=post[0]%>"
-            });
-
-            info = new google.maps.InfoWindow();
-
-
-            google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                return function() {
-                    info.setContent(`<div class="h5 text-center">Name: <%=post[0]%></div>
-           <div class="h6 text-center">Address: <%=post[4]%></div>
-           <div class="h6 text-center">Contact: <%=post[2]%></div>`);
-                    info.open(maps, marker);
+                        marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(<%=post[6] %>, <%=post[7] %>),
+                            map: maps,
+                            title: "<%=post[0]%>"
+                        });
+                        info = new google.maps.InfoWindow();
+                        google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                            return function () {
+                                info.setContent(`<div class="h5"><b><%=post[0]%><b></div>
+                                                <div class="h6"><%=post[4]%></div>
+                                                <div class="h6"><a href="<%=post[5]%>" target="_blank" rel="noopener noreferrer">view on Google Maps</a></div>
+                                                <div class="h6"><b>ติดต่อ <%=post[2]%></b></div>`); info.open(maps, marker); } })(marker, i));
+            <% }
+                }); %>
                 }
-            })(marker, i));
-
-            <% } }); %>
-        }
-    </script>
+                </script>
 
 
 </body>

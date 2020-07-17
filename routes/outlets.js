@@ -1,9 +1,7 @@
 var express = require("express");
 var router = express.Router();
 const axios = require("axios");
-// const { log } = require("debug");
 
-/* GET users listing. */
 router.get("/", async function(req, res, next) {
     // axios
     const GoogleSheetData =
@@ -13,7 +11,6 @@ router.get("/", async function(req, res, next) {
     res.render("outlets", {
         title: "Branches",
         posts: response.data,
-        // key: "AIzaSyCdQCEwdWm7PB6InxPfQ-Xlf6P8Vjer2xk",
     });
 });
 
