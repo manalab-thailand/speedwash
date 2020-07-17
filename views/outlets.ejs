@@ -1,14 +1,15 @@
 <html>
 
 <head>
-    <title><%=title%></title>
+    <title>
+        <%=title%>
+    </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/stylesheets/sty.css">
 
@@ -20,7 +21,6 @@
             color: gray;
             margin: 30px 0px;
         }
-
         /* html,
         body {
             height: 100%;
@@ -64,8 +64,7 @@
         <a class="navbar-brand" href="#">
             <h3><b>SPEED</b>WASH</h3>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
-            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
@@ -104,7 +103,9 @@
     <main>
 
         <div class="container">
-            <div class="h1 text-center mt-3"><%=title%></div>
+            <div class="h1 text-center mt-3">
+                <b><%=title%><b>
+            </div>
 
             <div id="map" style="height: 500px;"></div>
 
@@ -119,14 +120,20 @@
                         </tr>
                     </thead>
                     <% posts.values.forEach(function(post){ if(post[0] != undefined && post[1] != undefined && post[2] != undefined){ console.log(typeof post[2]); %>
-                    <tbody>
-                        <tr>
-                            <th scope="row"><%=post[0] %></th>
-                            <th><%=post[1] %></th>
-                            <th><%=post[2] %></th>
-                        </tr>
-                    </tbody>
-                    <% } });%>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <%=post[0] %>
+                                </th>
+                                <th>
+                                    <%=post[1] %>
+                                </th>
+                                <th>
+                                    <%=post[2] %>
+                                </th>
+                            </tr>
+                        </tbody>
+                        <% } });%>
                 </table>
             </div>
         </div>
@@ -168,7 +175,6 @@
                                     <div class="col-12">02-316-2430</div>
                                 </div>
                             </div>
-
 
 
                         </li>
@@ -229,76 +235,67 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdQCEwdWm7PB6InxPfQ-Xlf6P8Vjer2xk&callback=initMap">
-        </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdQCEwdWm7PB6InxPfQ-Xlf6P8Vjer2xk&callback=initMap">
+    </script>
 
     <script>
-        (function (exports) {
-            "use strict";
+        var locations = [
+            ['วัดลาดปลาเค้า', 13.846876, 100.604481],
+            ['หมู่บ้านอารียา', 13.847766, 100.605768],
+            ['สปีดเวย์', 13.845235, 100.602711],
+            ['สเต็ก ลุงหนวด', 13.862970, 100.613834]
+        ];
 
-            function initMap() {
-                var map = new google.maps.Map(document.getElementById("map"), {
-                    zoom: 13,
-                    center: new google.maps.LatLng(13.66194, 100.6126),
-                    mapTypeId: "terrain",
-                });
+        function initMap() {
+            var mapOptions = {
+                center: {
+                    lat: 13.66194,
+                    lng: 100.6126
+                },
+                zoom: 10,
+            }
 
-            <% posts.values.forEach(function (post) {
-                    if (post[6]) {%>
-                    var contentString =
-                            '<div id="content">' +
-                            '<div id="siteNotice">' +
-                            "</div>" +
-                            '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-                            '<div id="bodyContent">' +
-                            "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
-                            "sandstone rock formation in the southern part of the " +
-                            "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
-                            "south west of the nearest large town, Alice Springs; 450&#160;km " +
-                            "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
-                            "features of the Uluru - Kata Tjuta National Park. Uluru is " +
-                            "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
-                            "Aboriginal people of the area. It has many springs, waterholes, " +
-                            "rock caves and ancient paintings. Uluru is listed as a World " +
-                            "Heritage Site.</p>" +
-                            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-                            "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
-                            "(last visited June 22, 2009).</p>" +
-                            "</div>" +
-                            "</div>";
-                        var infowindow = new google.maps.InfoWindow({
-                            content: contentString
-                        });
+            var maps = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-                        var latLng = new google.maps.LatLng(<%=post[6] %>, <%=post[7] %>);
-                        var marker = new google.maps.Marker({
-                            position: latLng,
-                            map: map,
-                        });
-                        marker.addListener("click", function () {
-                            infowindow.open(map, marker);
-                        });
- <% }
-                });%>
+            var marker, i, info;
+
+            // for (i = 0; i < locations.length; i++) {
+
+            <%
+            posts.values.forEach(function(post, i) {
+                if (post[6]) { %>
+
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(<%= post[6]%>, <%= post[7]%>),
+                map: maps,
+                title: "<%=post[0]%>"
+            });
+
+            info = new google.maps.InfoWindow();
+
+
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    info.setContent(`<div class="h5 text-center">Name: <%=post[0]%></div>
+           <div class="h6 text-center">Address: <%=post[4]%></div>
+           <div class="h6 text-center">Contact: <%=post[2]%></div>`);
+                    info.open(maps, marker);
+                }
+            })(marker, i));
+
+            <% } }); %>
         }
-
-            exports.initMap = initMap;
-        })((this.window = this.window || {}));
     </script>
 
 
 </body>
 
-</html>
+</html
