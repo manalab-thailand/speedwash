@@ -18,7 +18,7 @@
         #box-shadow {
             border: 1px solid #C4C4C4;
             padding: 0px 30px 5px 30px;
-            box-shadow: 0 0 5px 5px;
+            box-shadow: 0 0 5px 1px;
             color: gray;
             margin: 30px 0px;
         }
@@ -264,7 +264,7 @@
                                 info.setContent(`<div class="h5"><b><%=post[0]%><b></div>
                                                 <div class="h6"><%=post[4]%></div>
                                                 <div class="h6"><a href="<%=post[5]%>" target="_blank" rel="noopener noreferrer">view on Google Maps</a></div>
-                                                <div class="h6"><b>ติดต่อ <%=post[2]%></b></div>`); info.open(maps, marker); } })(marker, i));
+                                                <div class="h6"><b>ติดต่อ <a href="tel:<%=post[2]%>" target="_blank" rel="noopener noreferrer"><%=post[2]%></a></b></div>`); info.open(maps, marker); } })(marker, i));
             <% }
                 }); %>
                 }
