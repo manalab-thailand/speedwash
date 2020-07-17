@@ -1,5 +1,3 @@
-
-
 /* div {
   border: dashed;
 } */
@@ -9,10 +7,6 @@
 }
 .view-all:hover {
   color: black;
-}
-
-.width-blog{
-  width: 80%;
 }
 #box-shadow {
   border: 1px solid #C4C4C4;
@@ -41,15 +35,15 @@
 }
 .title {
   font-weight: 900;
-  font-size: 80px;
+  font-size: 85px;
   line-height: 100px;
 }
 .text {
-  padding: 25px 0px 25px 100px;
+  padding: 25px 0px 25px 120px;
   font-style: normal;
   font-weight: normal;
-  font-size: 42px;
-  line-height: 48px;
+  font-size: 46px;
+  line-height: 55px;
   display: flex;
 }
 .img-washing {
@@ -68,14 +62,14 @@
   padding: 10px 0 50px 0;
 }
 .img-blogs {
-  width: 530px;
-  height: 355px;
+  width: 750px;
+  height: 455px;
   padding: 0 0 0 100px;
 }
 .text-blogs {
-  font-size: 18px;
+  font-size: 23.5px;
   width: 85%;
-  padding: 55px 0 76px 80px;
+  padding: 55px 0 80px 80px;
 }
 .padding-Invest {
   padding: 60px 0 30px 0;
@@ -102,6 +96,32 @@
 }
 .padding-checkmark {
   padding: 0 50px 0 0;
+}
+
+@media only screen and (max-width: 1600px) {
+  .img-blogs {
+    width: 550px;
+    height: 380px;
+    padding: 0 0 0 0;
+  }
+  .text-blogs {
+    font-size: 19px;
+    width: 100%;
+    padding: 70px 140px 38px 75px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .img-blogs {
+    width: 500px;
+    height: 380px;
+    padding: 0 0 0 0;
+  }
+  .text-blogs {
+    font-size: 18px;
+    width: 100%;
+    padding: 70px 120px 38px 75px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
