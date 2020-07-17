@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var contactRouter = require('./routes/contact');
 var outletRouter = require('./routes/outlet');
 var sendemailRouter = require('./routes/sendemail');
+var aboutRouter = require('./routes/about');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/index', indexRouter);
 app.use('/contact', contactRouter);
 app.use('/outlet', outletRouter);
 app.use('/sendemail', sendemailRouter);
+app.use('/about', aboutRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

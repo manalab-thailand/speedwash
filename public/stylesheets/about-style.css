@@ -1,0 +1,49 @@
+h1 h2 h3 h4 p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-speedwash {
+    font-weight: 900;
+    color: #4D82B4;
+}
+
+.font-topic {
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.flex-container {
+    display: flex;
+
+}
+
+.flex-container>div {
+    margin: 0px 0px 20px 50px;
+    text-align: center;
+    /* line-height: 75px;
+    font-size: 30px; */
+}
+
+.img-border {
+
+    border: 1px solid #C4C4C4;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5);
+
+
+}
+
+
+
+.images-size{
+    height: auto;
+    width: 80%;
+}
