@@ -38,7 +38,7 @@ $(document).ready(function () {
         if (text.height() > maxheight) {
             text.css({ overflow: "hidden", height: maxheight + "px" });
             var link = $(
-            '<c href="#" style="font-size:22px; font-weight:bold">' + showText + "</c>"
+            '<c href="#" style="font-size:22px; font-weight:bold;">' + showText + "</c>"
             );
             var linkDiv = $('<div class="text-right" style="padding: 0 45px 10px 0;"></div>');
             linkDiv.append(link);

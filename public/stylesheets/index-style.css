@@ -8,13 +8,6 @@
 .view-all:hover {
   color: black;
 }
-#box-shadow {
-  border: 1px solid #C4C4C4;
-  padding: 0px 30px 5px 30px;
-  box-shadow: 0 0 5px 5px;
-  color: gray;
-  margin: 30px 0px;
-}
 
 .carousel-indicators li {
   height: 30px;
@@ -31,18 +24,18 @@
   padding: 10px 0 10px 0;
 }
 .padding-word {
-  padding: 100px 0 35px 230px;
+  padding: 100px 0 35px 270px;
 }
 .title {
   font-weight: 900;
-  font-size: 85px;
+  font-size: 75px;
   line-height: 100px;
 }
 .text {
   padding: 25px 0px 25px 120px;
   font-style: normal;
   font-weight: normal;
-  font-size: 46px;
+  font-size: 43px;
   line-height: 55px;
   display: flex;
 }

@@ -15,16 +15,21 @@
     ::placeholder {
     color: white;
     }
+
     .input {
     background-color: rgba(0, 0, 0, 0.2);
-    border: red;
     color: white;
+    border: #cc3941;
     }
 
     .input:focus {
     background-color: rgba(0, 0, 0, 0.2);
-    border: red;
     color: white;
+    border: #cc3941;
+    }
+
+    .qeustion {
+    height: auto;
     }
 
     .bgred {
@@ -159,12 +164,7 @@
     }
 
     .input {
-        font-size: 28px;
-    }
-
-    .bgred {
-        background-color: #cc3941;
-        height: 1050px;
+        font-size: 24px;
     }
 
     .map-padding {
@@ -222,12 +222,7 @@
     }
 
     .input {
-        font-size: 20px;
-    }
-
-    .bgred {
-        background-color: #cc3941;
-        height: 880px;
+        font-size: 16px;
     }
 
     .margin-logo {

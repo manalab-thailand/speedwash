@@ -6,6 +6,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser')
 var indexRouter = require('./routes/index');
 var contactRouter = require('./routes/contact');
+var aboutRouter = require('./routes/about');
 var outletRouter = require('./routes/outlet');
 var sendemailRouter = require('./routes/sendemail');
 
@@ -22,6 +23,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/index', indexRouter);
+app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
 app.use('/outlet', outletRouter);
 app.use('/sendemail', sendemailRouter);
