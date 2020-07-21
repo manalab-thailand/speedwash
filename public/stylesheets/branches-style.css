@@ -5,10 +5,134 @@
     color: gray;
     margin: 30px 0px;
 }
-
+.map-padding{
+padding: 0 120px 30px 120px;
+}
 .title-branches {
     padding: 30px 0 30px 0;
     font-size: 65px;
     line-height: 59px;
     font-weight: 900;
+}
+.table{
+    font-size: 18px;
+}
+.branches-map {
+    height: 600px;
+    width: 100%;
+}
+.padding-table{
+    padding: 0 200px 0 200px;
+}
+    
+@media only screen and (max-width: 1024px) {
+    .map-padding{
+        padding: 0 60px 30px 60px;
+    }
+    .branches-map {
+        height: 350px;
+        width: auto;
+    }
+    .title-branches {
+        padding: 30px 0 30px 0;
+        font-size: 72px;
+        line-height: 59px;
+        font-weight: 900;
+    }
+    .table{
+        font-size: 16px;
+    }
+    .padding-table{
+        padding: 0 100px 0 100px;
+    }
+}
+
+
+        
+@media only screen and (max-width: 768px) {
+    .map-padding{
+        padding: 0 40px 10px 40px;
+    }
+    .branches-map {
+        height: 300px;
+        width: auto;
+    }
+    .title-branches {
+        padding: 30px 0 30px 0;
+        font-size: 58px;
+        line-height: 59px;
+        font-weight: 900;
+    }
+    .table{
+        font-size: 12px;
+    }
+    .padding-table{
+        padding: 0 60px 0 60px;
+    }
+    #box-shadow {
+        border: 1px solid #c4c4c4;
+        padding: 0px 20px 0px 20px;
+        box-shadow: 0 0 5px 1px;
+        color: gray;
+        margin: 30px 0px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .map-padding{
+        padding: 0 0px 10px 0px;
+    }
+    .branches-map {
+        height: 250px;
+        width: auto;
+    }
+    .title-branches {
+        padding: 30px 0 30px 0;
+        font-size: 50px;
+        line-height: 59px;
+        font-weight: 900;
+    }
+    .table{
+        font-size: 8px;
+    }
+    .padding-table{
+        padding: 0 20px 0 20px;
+    }
+    #box-shadow {
+        border: 1px solid #c4c4c4;
+        padding: 0px 5px 0px 5px;
+        box-shadow: 0 0 5px 1px;
+        color: gray;
+        margin: 30px 0px;
+    }
+}
+
+                
+@media only screen and (max-width: 375px) {
+    .map-padding{
+        padding: 0 0px 0px 0px;
+    }
+    .branches-map {
+        height: 300px;
+        width: auto;
+    }
+    .title-branches {
+        padding: 10px 0 10px 0;
+        font-size: 37px;
+        line-height: 59px;
+        font-weight: 900;
+    }
+    .table{
+        font-size: 7px;
+    }
+    .padding-table{
+        padding: 0 5px 0 5px;
+    }
+    #box-shadow {
+        border: 1px solid #c4c4c4;
+        padding: 0px 5px 0px 5px;
+        box-shadow: 0 0 5px 1px;
+        color: gray;
+        margin: 30px 0px;
+    }
 }

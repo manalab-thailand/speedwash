@@ -9,7 +9,7 @@ var contactRouter = require('./routes/contact');
 var aboutRouter = require('./routes/about');
 var outletRouter = require('./routes/outlet');
 var sendemailRouter = require('./routes/sendemail');
-var aboutRouter = require('./routes/about');
+var blogRouter = require('./routes/blog');
 
 var app = express();
 
@@ -25,10 +25,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/index', indexRouter);
 app.use('/about', aboutRouter);
+app.use('/blog', blogRouter);
 app.use('/contact', contactRouter);
 app.use('/outlet', outletRouter);
 app.use('/sendemail', sendemailRouter);
-app.use('/about', aboutRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

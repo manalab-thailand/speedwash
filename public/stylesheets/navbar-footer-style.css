@@ -1,3 +1,7 @@
+body {
+  font-family: "Montserrat",
+}
+
 .logo {
   width: 35%;
   height: auto;
@@ -6,6 +10,10 @@
 .color-link{
   color: white;
   padding: 0rem 0rem
+}
+
+.ml-nav{
+  margin-right: 0rem
 }
 
 .view-map {
@@ -26,7 +34,7 @@
 
 .font-nav-footer-color {
   color: rgb(255, 255, 255);
-  font-size: 24px;
+  font-size: 23px;
 }
 
 .font-menu {
@@ -36,10 +44,6 @@
 
 .font-bold {
   font-weight: bold;
-}
-
-body {
-  font-family: Montserrat;
 }
 
 .link-menu {
@@ -54,6 +58,7 @@ a:hover {
 
 .contact {
   padding: 5px 0 0px 5px;
+  font-size: 23px;
 }
 
 .phone-number {
@@ -85,6 +90,10 @@ a:hover {
   }
   .margin-mobile {
     margin: 5px 0 0 -45px;
+  }
+  .contact {
+    padding: 5px 0 0px 5px;
+    font-size: 16px;
   }
 }
 
@@ -399,5 +408,12 @@ a:hover {
   */
   #menuToggle input:checked ~ ul {
     transform: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .contact {
+    padding: 10px 0 0px 5px;
+    font-size: 14px;
   }
 }

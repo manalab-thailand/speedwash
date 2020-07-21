@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheets/branches-style.css">
+    <link rel="stylesheet" href="stylesheets/blog-style.css">
     <link rel="stylesheet" href="stylesheets/navbar-footer-style.css">
 </head>
 
@@ -34,10 +34,10 @@
                 <a href="about">
                     <li class="color-link">About</li>
                 </a>
-                <a href="blog">
+                <a href="#">
                     <li class="color-link">Blog</li>
                 </a>
-                <a href="#">
+                <a href="outlet">
                     <li class="color-link">Branches</li>
                 </a>
                 <a href="contact">
@@ -67,17 +67,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
             <ul class="navbar-nav nav ml-auto mr-auto text-center font-menu">
                 <li class="nav-item link-menu">
-                    <a class="nav-link " href="index">Home
+                    <a class="nav-link" href="index">Home
                     </a>
                 </li>
                 <li class="nav-item link-menu">
                     <a class="nav-link" href="about">About </a>
                 </li>
-                <li class="nav-item link-menu">
-                    <a class="nav-link" href="blog">Blog</a>
-                </li>
                 <li class="nav-item link-menu active">
-                    <a class="nav-link font-bold" href="#">Branches</a>
+                    <a class="nav-link font-bold" href="#">Blog</a>
+                </li>
+                <li class="nav-item link-menu">
+                    <a class="nav-link" href="outlet">Branches</a>
                 </li>
                 <li class="nav-item link-menu">
                     <a class="nav-link" href="contact">Contact</a>
@@ -99,45 +99,75 @@
     </nav>
     <!-- End Navbar -->
 
-    <main>
-        <div class="container-fluid">
-            <div class="title-branches text-center"><%=title%></div>
-            <div class="map-padding">
-                <div id="map" class="branches-map"></div>
+    <div class="container-fluid">
+        <div class="padding-page">
+            <div class="title-blog-padding">
+                <div class="title-blog text-center">BLOG</div>
             </div>
-            <div class="padding-table">
-                <div id="box-shadow" class="row">
-                    <table class="table table-hover justify-content-center">
-                        <thead>
-                            <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Province</th>
-                                <th scope="col">Contact</th>
-                            </tr>
-                        </thead>
-                        <% posts.values.forEach(function(post){ if(post[0] != undefined && post[1] != undefined && post[2] != undefined){ console.log(typeof post[2]); %>
-                        <tbody>
-
-                            <tr>
-                                <th scope="row">
-                                    <%=post[0] %>
-                                </th>
-                                <th>
-                                    <%=post[1] %>
-                                </th>
-                                <th>
-                                    <%=post[2] %>
-                                </th>
-                            </tr>
-                        </tbody>
-                        <% } });%>
-                    </table>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4 padding-between-box">
+                    <div class="box-card">
+                        <div class="row">
+                            <div class="col-2 padding-img-machine">
+                                <img src="images/logo3.png" class="rounded-circle img-border images-machine-small">
+                            </div>
+                            <div class="col-10 title-speedwash">
+                                <a href="https://www.facebook.com/SpeedWashLaundryTH/"><b
+                                        class="color-speedwash">SPEEDWASH</b></a>
+                                <div class=""><%=post.data[0].created_time%></div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <img src="<%=post.data[0].attachments.data[0].media.image.src%>" alt="" class="post-img">
+                        </div>
+                        <div class="post-text">
+                            &emsp;&emsp;<%=post.data[0].message%>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 padding-between-box">
+                    <div class="box-card">
+                        <div class="row">
+                            <div class="col-2 padding-img-machine">
+                                <img src="images/logo3.png" class="rounded-circle img-border images-machine-small">
+                            </div>
+                            <div class="col-10 title-speedwash">
+                                <a href="https://www.facebook.com/SpeedWashLaundryTH/"><b
+                                        class="color-speedwash">SPEEDWASH</b></a>
+                                <div class=""><%=post.data[1].created_time%></div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <img src="<%=post.data[1].attachments.data[0].media.image.src%>" alt="" class="post-img">
+                        </div>
+                        <div class="post-text">
+                            &emsp;&emsp;<%=post.data[1].message%>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 padding-between-box">
+                    <div class="box-card">
+                        <div class="row">
+                            <div class="col-2 padding-img-machine">
+                                <img src="images/logo3.png" class="rounded-circle img-border images-machine-small">
+                            </div>
+                            <div class="col-10 title-speedwash">
+                                <a href="https://www.facebook.com/SpeedWashLaundryTH/"><b
+                                        class="color-speedwash">SPEEDWASH</b></a>
+                                <div class=""><%=post.data[2].created_time%></div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <img src="<%=post.data[2].attachments.data[0].media.image.src%>" alt="" class="post-img">
+                        </div>
+                        <div class="post-text">
+                            &emsp;&emsp;<%=post.data[2].message%>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </main>
-
+    </div>
     <!-- Footer -->
     <footer class="page-footer font-small pt-4 footer-color font-nav-footer-color font-bold">
         <!-- Footer Links -->
@@ -152,6 +182,9 @@
                         <img class="logo" src="images/SpeedWash.png" alt="">
                     </div>
                     <p class="mt-3">35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District Samut Prakan 10540</p>
+                    <a href="outlet" class="view-map">
+                        <p>View Maps ></p>
+                    </a>
                 </div>
                 <!-- Grid column -->
                 <hr class="clearfix w-100 d-md-none pb-3">
@@ -220,41 +253,23 @@
     </footer>
     <!-- Footer -->
 
-    <script>
-        function initMap() {
-            var scalezoom = 12;
-            const max768 = window.matchMedia("(max-width: 768px)");
-            if (max768.matches) {
-                scalezoom = 10;
-            }
-            var mapOptions = {
-                center: {
-                    lat: 13.645418,
-                    lng: 100.679751
-                },
-                zoom: scalezoom,
-            }
-            var maps = new google.maps.Map(document.getElementById("map"), mapOptions);
-            var marker, i, info;
-        <%
-                posts.values.forEach(function (post, i) {
-                    if (post[6]) { %>
-                        marker = new google.maps.Marker({
-                            position: new google.maps.LatLng(<%=post[6] %>, <%=post[7] %>),
-                            map: maps,
-                            title: "<%=post[0]%>"
-                        });
-                        info = new google.maps.InfoWindow();
-                        google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                            return function () {
-                                info.setContent(`<div class="h5"><b><%=post[0]%><b></div>
-                                            <div class="h6"><%=post[4]%></div>
-                                            <div class="h6"><a href="<%=post[5]%>" target="_blank" rel="noopener noreferrer">view on Google Maps</a></div>
-                                            <div class="h6"><b>ติดต่อ <a href="tel:<%=post[2]%>" target="_blank" rel="noopener noreferrer"><%=post[2]%></a></b></div>`); info.open(maps, marker);
-                            }
-                        })(marker, i));
-        <% }
-                }); %>
-            }
-    </script>
-    <%- include ../partials/footer %>
+
+    <script src="https://kit.fontawesome.com/7fee7179b9.js" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="javascripts/index.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdQCEwdWm7PB6InxPfQ-Xlf6P8Vjer2xk&callback=initMap">
+        </script>
+</body>
+
+</html>

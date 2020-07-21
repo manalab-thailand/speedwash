@@ -1,40 +1,50 @@
-    .font-speedwash {
-        font-size: 45px;
-        font-weight: 900;
-        color: #4d82b4;
-    }   
-    
-    .font-text {
-        padding: 0 20px 0 20px;
-        font-size: 22px;
-        line-height: 30px;
-    }
-    .font-topic {
-        padding: 30px 0 0 0;
-        font-size: 65px;
-        line-height: 59px;
-        font-weight: 900;
-    }
-    .flex-container {
-        display: flex;
-    }
-    .flex-container > div {
-        margin: 0px 0px 20px 50px;
-        text-align: center;
-    }
-    .img-border {
-        border: 1px solid #c4c4c4;
+.font-speedwash {
+    font-size: 45px;
+    font-weight: 900;
+    color: #4d82b4;
+}   
+.font-text {
+    padding: 0 20px 0 20px;
+    font-size: 22px;
+    line-height: 30px;
+}
+.font-topic {
+    padding: 30px 0 0 0;
+    font-size: 65px;
+    line-height: 59px;
+    font-weight: 900;
+}
+.img-border {
+    border: 1px solid #c4c4c4;
+}
+.img-padding {
+    padding: 50px 10px 25px 10px;
+}
+.images-size {
+    width: 451px;
+    height: 308px;
+}
+.images-machine{
+    height: 280px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .images-size {
+        height: auto;
+        width: 90%;
     }
     .img-padding {
-        padding: 50px 10px 25px 10px;
-    }
-    .images-size {
-        width: 451px;
-        height: 308px;
+        padding: 40px 0 20px 0;
     }
     .images-machine{
-        height: 280px;
+        height: 200px;
     }
+    .font-speedwash {
+        font-weight: 900;
+        font-size: 42px;
+        color: #4d82b4;
+    }
+}
 
 @media only screen and (max-width: 414px) {
     #box-shadow {
@@ -46,7 +56,7 @@
     }
     .font-topic {
         padding: 10px 0 0 0;
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 900;
     }
     .font-text {

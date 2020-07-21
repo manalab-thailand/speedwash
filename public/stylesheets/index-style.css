@@ -28,7 +28,7 @@
 }
 .title {
   font-weight: 900;
-  font-size: 75px;
+  font-size: 72px;
   line-height: 100px;
 }
 .text {
@@ -208,7 +208,7 @@
   }
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1024px) {
   .padding-word {
     padding: 80px 0 30px 80px;
   }
@@ -281,7 +281,7 @@
   }
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 768px) {
   .padding-word {
     padding: 50px 0 20px 80px;
   }
@@ -291,7 +291,7 @@
   }
   .title {
     font-weight: 900;
-    font-size: 60px;
+    font-size: 58px;
     line-height: 50px;
   }
   .text {
@@ -354,227 +354,7 @@
   }
 }
 
-@media only screen and (max-width: 704px) {
-  .padding-word {
-    padding: 50px 0 0 80px;
-  }
-  .img-washing {
-    padding: 25px 0 0 0;
-    width: 100%;
-  }
-  .title {
-    font-weight: 900;
-    font-size: 50px;
-    line-height: 50px;
-  }
-  .text {
-    padding: 18px 0 0 40px;
-    font-size: 22.5px;
-    line-height: 28px;
-  }
-  .padding-blog {
-    padding: 60px 0 30px 120px;
-  }
-  .padding-img-blogs {
-    padding: 0 0 0 0;
-  }
-  .view-btn {
-    padding: 0 30px 30px 0;
-    font-weight: 900;
-    font-size: 18px;
-  }
-  .img-blogs {
-    width: 550px;
-    height: 430px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 22.5px;
-    width: 100%;
-    padding: 0 40px 15px 40px;
-  }
-  .padding-Invest {
-    padding: 55px 0 20px 0;
-  }
-  .text-invest {
-    font-size: 22.5px;
-    padding: 20px 0 0 0;
-  }
-  .title-invest {
-    padding: 15px 0 0 0;
-    font-size: 40px;
-  }
-  .padding-btn {
-    padding: 20px 0 10px 0;
-  }
-  .Learnmore-btn {
-    color: white;
-    background: #6dcff6;
-    font-weight: 900;
-    font-size: 22px;
-    height: 55px;
-    width: 250px;
-    border-radius: 50px;
-  }
-  .padding-checkmark {
-    padding: 0 10px 0 0;
-  }
-  .checkmark {
-    width: 40px;
-  }
-  .Hide {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 590px) {
-  .padding-word {
-    padding: 10px 0 0 60px;
-  }
-  .img-washing {
-    padding: 25px 0 0 0;
-    width: 95%;
-  }
-  .title {
-    font-weight: 900;
-    font-size: 38px;
-    line-height: 55px;
-  }
-  .text {
-    padding: 15px 0 0 25px;
-    font-size: 18px;
-    line-height: 20px;
-  }
-  .padding-blog {
-    padding: 50px 0 15px 120px;
-  }
-  .padding-img-blogs {
-    padding: 0 0 0 0;
-  }
-  .view-btn {
-    padding: 0 35px 25px 0;
-    font-weight: 900;
-    font-size: 15px;
-  }
-  .img-blogs {
-    width: 450px;
-    height: 310px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 20px;
-    width: 100%;
-    padding: 0 35px 10px 35px;
-  }
-  .padding-Invest {
-    padding: 40px 0 0 0;
-  }
-  .text-invest {
-    font-size: 18px;
-    padding: 20px 0 0 0;
-  }
-  .title-invest {
-    padding: 15px 0 0 0;
-    font-size: 30px;
-  }
-  .padding-btn {
-    padding: 20px 0 10px 0;
-  }
-  .Learnmore-btn {
-    color: white;
-    background: #6dcff6;
-    font-weight: 900;
-    font-size: 22px;
-    height: 55px;
-    width: 250px;
-    border-radius: 50px;
-  }
-  .padding-checkmark {
-    padding: 0 10px 0 0;
-  }
-  .checkmark {
-    width: 30px;
-  }
-  .Hide {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .padding-word {
-    padding: 10px 0 0 50px;
-  }
-  .img-washing {
-    padding: 25px 0 0 0;
-    width: 95%;
-  }
-  .title {
-    font-weight: 900;
-    font-size: 34px;
-    line-height: 50px;
-  }
-  .text {
-    padding: 5px 0 0 15px;
-    font-size: 13px;
-    line-height: 20px;
-  }
-  .padding-blog {
-    padding: 40px 0 20px 90px;
-  }
-
-  .padding-img-blogs {
-    padding: 0 0 0 0;
-  }
-  .view-btn {
-    padding: 0 35px 30px 0;
-    font-weight: 900;
-    font-size: 12px;
-  }
-  .img-blogs {
-    width: 390px;
-    height: 270px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 15px;
-    width: 100%;
-    padding: 0 25px 10px 25px;
-  }
-  .padding-Invest {
-    padding: 30px 0 0 0;
-  }
-  .text-invest {
-    font-size: 15px;
-    padding: 20px 0 0 0;
-  }
-  .title-invest {
-    padding: 15px 0 0 0;
-    font-size: 30px;
-  }
-  .padding-btn {
-    padding: 20px 0 10px 0;
-  }
-  .Learnmore-btn {
-    color: white;
-    background: #6dcff6;
-    font-weight: 900;
-    font-size: 22px;
-    height: 55px;
-    width: 250px;
-    border-radius: 50px;
-  }
-  .padding-checkmark {
-    padding: 0 15px 0 0;
-  }
-  .checkmark {
-    width: 25px;
-  }
-  .Hide {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 442px) {
+@media only screen and (max-width: 414px) {
   .padding-word {
     padding: 10px 0 0 30px;
   }
@@ -647,7 +427,7 @@
   }
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 375px) {
   .padding-word {
     padding: 10px 0 0 20px;
   }
@@ -672,9 +452,9 @@
     padding: 0 0 0 0;
   }
   .view-btn {
-    padding: 0 25px 25px 0;
+    padding: 0 20px 23px 0;
     font-weight: 900;
-    font-size: 9px;
+    font-size: 10px;
   }
   .img-blogs {
     width: 280px;
@@ -720,7 +500,7 @@
   }
 }
 
-@media only screen and (max-width: 322px) {
+@media only screen and (max-width: 320px) {
   .padding-word {
     padding: 10px 0 0 20px;
   }
@@ -745,7 +525,7 @@
     padding: 0 0 0 0;
   }
   .view-btn {
-    padding: 0 20px 10px 0;
+    padding: 0 20px 14px 0;
     font-weight: 900;
     font-size: 8px;
   }
