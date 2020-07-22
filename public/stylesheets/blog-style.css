@@ -3,7 +3,7 @@
 }
 .title-blog{
     font-weight: 900;
-    font-size: 72px;
+    font-size: 65px;
     line-height: 100px;
 }
 .title-blog-padding{
@@ -45,8 +45,11 @@ div{
     border: dashed;
 } */
 @media only screen and (max-width: 1024px) {
+    .title-blog{
+        font-size: 72px;
+    }
     .title-blog-padding{
-        padding: 40px 0 30px 0; 
+        padding: 20px 0 30px 0; 
     }
     .padding-page{
         padding: 0 0 60px 0;
@@ -74,6 +77,9 @@ div{
 }
 
 @media only screen and (max-width: 768px) {
+    .title-blog{
+        font-size: 58px;
+    }
     .padding-page{
         padding: 0 50px 60px 50px;
     }
@@ -95,6 +101,9 @@ div{
 }
 
 @media only screen and (max-width: 414px) {
+    .title-blog{
+        font-size: 45px;
+    }
     .title-blog-padding{
         padding: 10px 0 10px 0; 
     }

@@ -32,6 +32,10 @@ body {
   font-size: 20px;
 }
 
+.margin-title{
+  margin-right: 0rem;
+}
+
 .font-nav-footer-color {
   color: rgb(255, 255, 255);
   font-size: 23px;

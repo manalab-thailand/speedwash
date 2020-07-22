@@ -6,108 +6,156 @@ $(document).ready(function () {
     const max1024 = window.matchMedia("(max-width: 1024px)");
 
     if (max375.matches) {
-        var maxheight = 71;
-        var showText = "...See More";
-        var hideText = "...See Less";
-        $(".textContainer_Truncate").each(function () {
-        var text = $(this);
-        if (text.height() > maxheight) {
-            text.css({ overflow: "hidden", height: maxheight + "px" });
-            var link = $(
-            '<c href="#" style="font-size:12px; font-weight:bold">' + showText + "</c>"
-            );
-            var linkDiv = $('<div class="text-right pr-3 pb-1"></div>');
-            linkDiv.append(link);
-            $(this).after(linkDiv);
-            link.click(function (event) {
-            event.preventDefault();
-            if (text.height() > maxheight) {
-                $(this).html(showText);
-                text.css("height", maxheight + "px");
-            } else {
-                $(this).html(hideText);
-                text.css("height", "auto");
+        var sChar = 130;
+        var moretext = "...See More";
+        var lesstext = "...See Less";
+
+        $(".more").each(function () {
+            var content = $(this).html();
+
+            if (content.length > sChar) {
+            var c = content.substr(0, sChar);
+            var h = content.substr(sChar - 1, content.length - sChar);
+
+            var html =
+                c +
+                '<span class="moreellipses">' +
+                '&nbsp;</span><span class="morecontent"><span>' +
+                h +
+                '</span>&nbsp;&nbsp;<a href="" class="Seemore facebookmorelink">' +
+                moretext +
+                "</a></span>";
+
+            $(this).html(html);
             }
-            });
-        }
+        });
+
+        $(".facebookmorelink").click(function () {
+            if ($(this).hasClass("less")) {
+                $(this).removeClass("less");
+                $(this).html(moretext);
+            } else {
+                $(this).addClass("less");
+                $(this).html(lesstext);
+            }
+
+            $(this).prev().toggle();
+
+            return false;
         });
     }else if (max414.matches) {
-        var maxheight = 71;
-        var showText = "...See More";
-        var hideText = "...See Less";
-        $(".textContainer_Truncate").each(function () {
-        var text = $(this);
-        if (text.height() > maxheight) {
-            text.css({ overflow: "hidden", height: maxheight + "px" });
-            var link = $(
-            '<c href="#" style="font-size:12px; font-weight:bold">' + showText + "</c>"
-            );
-            var linkDiv = $('<div class="text-right pr-4 pb-1"></div>');
-            linkDiv.append(link);
-            $(this).after(linkDiv);
-            link.click(function (event) {
-            event.preventDefault();
-            if (text.height() > maxheight) {
-                $(this).html(showText);
-                text.css("height", maxheight + "px");
-            } else {
-                $(this).html(hideText);
-                text.css("height", "auto");
+        var sChar = 165;
+        var moretext = "...See More";
+        var lesstext = "...See Less";
+
+        $(".more").each(function () {
+            var content = $(this).html();
+
+            if (content.length > sChar) {
+            var c = content.substr(0, sChar);
+            var h = content.substr(sChar - 1, content.length - sChar);
+
+            var html =
+                c +
+                '<span class="moreellipses">' +
+                '&nbsp;</span><span class="morecontent"><span>' +
+                h +
+                '</span>&nbsp;&nbsp;<a href="" class="Seemore facebookmorelink">' +
+                moretext +
+                "</a></span>";
+
+            $(this).html(html);
             }
-            });
-        }
+        });
+
+        $(".facebookmorelink").click(function () {
+            if ($(this).hasClass("less")) {
+                $(this).removeClass("less");
+                $(this).html(moretext);
+            } else {
+                $(this).addClass("less");
+                $(this).html(lesstext);
+            }
+
+            $(this).prev().toggle();
+
+            return false;
         });
     }else if(max768.matches){
-        var maxheight = 120;
-        var showText = "...See More";
-        var hideText = "...See Less";
-        $(".textContainer_Truncate").each(function () {
-        var text = $(this);
-        if (text.height() > maxheight) {
-            text.css({ overflow: "hidden", height: maxheight + "px" });
-            var link = $(
-            '<c href="#" style="font-size:22px; font-weight:bold;">' + showText + "</c>"
-            );
-            var linkDiv = $('<div class="text-right" style="padding: 0 45px 10px 0;"></div>');
-            linkDiv.append(link);
-            $(this).after(linkDiv);
-            link.click(function (event) {
-            event.preventDefault();
-            if (text.height() > maxheight) {
-                $(this).html(showText);
-                text.css("height", maxheight + "px");
-            } else {
-                $(this).html(hideText);
-                text.css("height", "auto");
+        var sChar = 195;
+        var moretext = "...See More";
+        var lesstext = "...See Less";
+
+        $(".more").each(function () {
+            var content = $(this).html();
+
+            if (content.length > sChar) {
+            var c = content.substr(0, sChar);
+            var h = content.substr(sChar - 1, content.length - sChar);
+
+            var html =
+                c +
+                '<span class="moreellipses">' +
+                '&nbsp;</span><span class="morecontent"><span>' +
+                h +
+                '</span>&nbsp;&nbsp;<a href="" class="Seemore facebookmorelink">' +
+                moretext +
+                "</a></span>";
+
+            $(this).html(html);
             }
-            });
-        }
+        });
+
+        $(".facebookmorelink").click(function () {
+            if ($(this).hasClass("less")) {
+                $(this).removeClass("less");
+                $(this).html(moretext);
+            } else {
+                $(this).addClass("less");
+                $(this).html(lesstext);
+            }
+
+            $(this).prev().toggle();
+
+            return false;
         });
     }else if(max1024.matches){
-        var maxheight = 160;
-        var showText = "...See More";
-        var hideText = "...See Less";
-        $(".textContainer_Truncate").each(function () {
-        var text = $(this);
-        if (text.height() > maxheight) {
-            text.css({ overflow: "hidden", height: maxheight + "px" });
-            var link = $(
-            '<c href="#" style="font-size:25px; font-weight:bold">' + showText + "</c>"
-            );
-            var linkDiv = $('<div class="text-right" style="padding: 10px 65px 10px 0;"></div>');
-            linkDiv.append(link);
-            $(this).after(linkDiv);
-            link.click(function (event) {
-            event.preventDefault();
-            if (text.height() > maxheight) {
-                $(this).html(showText);
-                text.css("height", maxheight + "px");
-            } else {
-                $(this).html(hideText);
-                text.css("height", "auto");
+        var sChar = 250;
+        var moretext = "...See More";
+        var lesstext = "...See Less";
+
+        $(".more").each(function () {
+            var content = $(this).html();
+
+            if (content.length > sChar) {
+            var c = content.substr(0, sChar);
+            var h = content.substr(sChar - 1, content.length - sChar);
+
+            var html =
+                c +
+                '<span class="moreellipses">' +
+                '&nbsp;</span><span class="morecontent"><span>' +
+                h +
+                '</span>&nbsp;&nbsp;<a href="" class="Seemore facebookmorelink">' +
+                moretext +
+                "</a></span>";
+
+            $(this).html(html);
             }
-            });
-        }
+        });
+
+        $(".facebookmorelink").click(function () {
+            if ($(this).hasClass("less")) {
+                $(this).removeClass("less");
+                $(this).html(moretext);
+            } else {
+                $(this).addClass("less");
+                $(this).html(lesstext);
+            }
+
+            $(this).prev().toggle();
+
+            return false;
         });
     }
 });

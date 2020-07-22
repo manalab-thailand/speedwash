@@ -18,7 +18,7 @@
 
   <!-- Navbar -->
   <div class="d-md-none d-sm-block d-lg-none d-xl-none text-center nav-movlie-color">
-    <a class="navbar-brand font-nav-footer-color p-1 pt-1" href="#">
+    <a class="navbar-brand font-nav-footer-color p-1 pt-1 margin-title" href="#">
       <h3><b>SPEED</b>WASH</h3>
     </a>
     </i>
@@ -168,7 +168,7 @@
           <div class="mt-auto view-btn"><a href="blog" class="view-all">View All ></a></div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-right">
-          <div class="text-blogs textContainer_Truncate"><%=post.data[0].message%></div>
+          <div class="text-blogs facebookseemore more"><%=post.data[0].message%></span></div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-left text-center padding-img-blogs">
           <img class="img-blogs " src="<%=post.data[0].attachments.data[0].media.image.src%>" alt="">
@@ -179,7 +179,7 @@
         <img class="img-blogs " src="<%=post.data[1].attachments.data[0].media.image.src%>" alt="">
       </div>
       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-right Hide">
-        <div class="text-blogs textContainer_Truncate"><%=post.data[1].message%></div>
+        <div class="text-blogs"><%=post.data[1].message%></div>
       </div>
     </div>
   </div>
@@ -311,6 +311,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="javascripts/index.js"></script>
+
 </body>
 
 </html>

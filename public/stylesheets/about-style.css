@@ -29,6 +29,9 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .font-topic {
+        font-size: 72px;
+    }
     .images-size {
         height: auto;
         width: 90%;
@@ -46,7 +49,17 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .font-topic {
+        font-size: 58px;
+    }
+}
+
+
 @media only screen and (max-width: 414px) {
+    .font-topic {
+        font-size: 45px;
+    }
     #box-shadow {
         border: 1px solid #c4c4c4;
         padding: 0 0 0 10px;
