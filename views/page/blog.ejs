@@ -105,66 +105,31 @@
                 <div class="title-blog text-center">BLOG</div>
             </div>
             <div class="row">
+                <% for(var i=0;i<6;i++) { %>
                 <div class="col-sm-12 col-md-12 col-lg-4 padding-between-box">
                     <div class="box-card">
                         <div class="row">
                             <div class="col-2 padding-img-machine">
                                 <img src="images/logo3.png" class="rounded-circle img-border images-machine-small">
                             </div>
-                            <div class="col-10 title-speedwash">
-                                <a href="https://www.facebook.com/SpeedWashLaundryTH/"><b
+                            <div class="col-6 title-speedwash">
+                                <a href="https://www.facebook.com/SpeedWashLaundryTH/" target="_blank"><b
                                         class="color-speedwash">SPEEDWASH</b></a>
                                 <div class=""><%=Date1%></div>
                             </div>
-                        </div>
-                        <div class="">
-                            <img src="<%=post.data[0].attachments.data[0].media.image.src%>" alt="" class="post-img">
-                        </div>
-                        <div class="post-text">
-                            &emsp;&emsp;<%=post.data[0].message%>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 padding-between-box">
-                    <div class="box-card">
-                        <div class="row">
-                            <div class="col-2 padding-img-machine">
-                                <img src="images/logo3.png" class="rounded-circle img-border images-machine-small">
-                            </div>
-                            <div class="col-10 title-speedwash">
-                                <a href="https://www.facebook.com/SpeedWashLaundryTH/"><b
-                                        class="color-speedwash">SPEEDWASH</b></a>
-                                <div class=""><%=Date2%></div>
+                            <div class="col-4 text-center button hover pt-4">
+                                <a href="https://www.facebook.com/<%=post.data[i].id%>" target="_blank"><button class="viewpost-btn">View Post</button></a>
                             </div>
                         </div>
                         <div class="">
-                            <img src="<%=post.data[1].attachments.data[0].media.image.src%>" alt="" class="post-img">
+                            <img src="<%=post.data[i].attachments.data[0].media.image.src%>" alt="" class="post-img">
                         </div>
-                        <div class="post-text">
-                            &emsp;&emsp;<%=post.data[1].message%>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 padding-between-box">
-                    <div class="box-card">
-                        <div class="row">
-                            <div class="col-2 padding-img-machine">
-                                <img src="images/logo3.png" class="rounded-circle img-border images-machine-small">
-                            </div>
-                            <div class="col-10 title-speedwash">
-                                <a href="https://www.facebook.com/SpeedWashLaundryTH/"><b
-                                        class="color-speedwash">SPEEDWASH</b></a>
-                                <div class=""><%=Date3%></div>
-                            </div>
-                        </div>
-                        <div class="">
-                            <img src="<%=post.data[2].attachments.data[0].media.image.src%>" alt="" class="post-img">
-                        </div>
-                        <div class="post-text">
-                            &emsp;&emsp;<%=post.data[2].message%>
+                        <div class="post-text facebookseemore more">
+                            &emsp;&emsp;<%=post.data[i].message%>
                         </div>
                     </div>
                 </div>
+            <% } %>
             </div>
         </div>
     </div>
@@ -182,7 +147,7 @@
                         <img class="logo" src="images/SpeedWash.png" alt="">
                     </div>
                     <p class="mt-3">35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District Samut Prakan 10540</p>
-                    <a href="outlet" class="view-map">
+                    <a href="branches" class="view-map">
                         <p>View Maps ></p>
                     </a>
                 </div>
@@ -270,6 +235,7 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdQCEwdWm7PB6InxPfQ-Xlf6P8Vjer2xk&callback=initMap">
         </script>
+    <script src="javascripts/branches.js"></script>
 </body>
 
 </html>

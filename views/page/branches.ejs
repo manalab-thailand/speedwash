@@ -249,8 +249,8 @@
                             return function () {
                                 info.setContent(`<div class="h5"><b><%=post[0]%><b></div>
                                             <div class="h6"><%=post[4]%></div>
-                                            <div class="h6"><a href="<%=post[5]%>" target="_blank" rel="noopener noreferrer">view on Google Maps</a></div>
-                                            <div class="h6"><b>ติดต่อ <a href="tel:<%=post[2]%>" target="_blank" rel="noopener noreferrer"><%=post[2]%></a></b></div>`); info.open(maps, marker);
+                                            <div class="h6"><a class="link" href="<%=post[5]%>" target="_blank" rel="noopener noreferrer">view on Google Maps</a></div>
+                                            <div class="h6"><b>ติดต่อ <a class="link" href="tel:<%=post[2]%>" target="_blank" rel="noopener noreferrer"><%=post[2]%></a></b></div>`); info.open(maps, marker);
                             }
                         })(marker, i));
         <% }

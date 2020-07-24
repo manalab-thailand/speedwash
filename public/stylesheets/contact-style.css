@@ -1,110 +1,112 @@
-    .contact-map {
-    height: 345px;
-    width: 100%;
-    }
-    ::-webkit-input-placeholder {
+body {
+    font-family: Montserrat,
+}
+
+ ::-webkit-input-placeholder {
     /* Edge */
     color: white;
-    }
+}
 
-    :-ms-input-placeholder {
+ :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: white;
-    }
+}
 
-    ::placeholder {
+ ::placeholder {
     color: white;
-    }
+}
 
-    .input {
+.contact-map {
+    height: 345px;
+    width: 100%;
+}
+
+.input {
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
     border: #cc3941;
-    }
+}
 
-    .input:focus {
+.input:focus {
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
     border: #cc3941;
-    }
+}
+  
+.input-padding {
+    padding: 10px 75px 0 75px;
+}
 
-    .qeustion {
+
+.input-qeustion {
     height: auto;
-    }
+}
 
-    .bgred {
+.bgred {
     background-color: #cc3941;
     height: auto;
-    }
+}
 
-    .topic {
+.topic {
     color: #333333;
     padding: 0 0 10px 0;
     text-align: center;
     font-weight: bold;
     font-size: 65px;
-    }
+}
 
-    .office {
+.office {
     color: #333333;
     font-size: 30px;
-    }
+}
 
-    .address {
+.address {
+    font-weight: initial;        
     color: #333333;
     font-size: 28px;
     line-height: 40px;
-    font-family: Montserrat;
-    }
+}
 
-    .contact-icon {
-    color: #333333;
-    padding: 0 0 0 20px;
-    font-size: 55px;
-    }
 
-    .share {
-    font-family: Montserrat;
+.share {        
+    font-weight: initial;        
     font-size: 28px;
     margin-left: 10px;
     margin-top: 3px;
     color: white;
     line-height: 50px;
-    }
+}
 
-    .email {
-    color: white;
-    }
+.contact-icon {
+    color: #333333;
+    padding: 0 0 0 20px;
+    font-size: 55px;
+}
 
-    .padding {
-    padding: 10px 75px 0 75px;
-    }
-
-    .pic {
+.machine {
     max-width: 300px;
     width: 80%;
-    }
+}
 
-    .thai {
+.thai {
     height: auto;
     width: 80%;
     max-width: 60px;
-    }
+}
 
-    .tel {
+.tel {
     padding: 5px 0 0 30px;
-    }
+}
 
-    .textarea {
+.textarea {
     resize: none;
-    }
+}
 
-    .reach {
+.reach {
     color: white;
-    }
+}
 
-    .button1 {
-    font-family: Montserrat;
+.button1 {
     font-weight: bold;
     font-size: 20px;
     background-color: #cc3941;
@@ -113,35 +115,32 @@
     border-radius: 5px;
     width: 100%;
     height: 70px;
-    }
+}
 
-    .button1:hover {
+.button1:hover {
     background-color: #ca707586;
-    }
+}
 
-    .margin-logo {
+.margin-logo {
     margin: -60px 0 0 -15px;
-    }
+}
 
-    @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .contact-icon {
-        font-size: 70px;
+        font-size: 74px;
     }
-
-    .pic {
-        max-width: 400px;
+    .machine {
+        max-width: 300px;
         width: 50%;
     }
     .address {
         color: #333333;
         font-size: 32px;
-        line-height: 40px;
-        font-family: Montserrat;
+        line-height: 44px;
     }
     .tel-padding {
-        padding: 10px 0 0 0;
+        padding: 5px 0 0 0;
     }
-
     .topic {
         color: #333333;
         padding: 0 0 10px 0;
@@ -150,43 +149,36 @@
         font-size: 72px;
     }
     .share {
-        font-family: Montserrat;
         font-size: 32px;
         margin-left: 10px;
         margin-top: 3px;
         color: white;
         line-height: 50px;
     }
-
     .office {
         color: #333333;
         font-size: 46px;
     }
-
     .input {
         font-size: 24px;
     }
-
     .map-padding {
         padding-bottom: 10px;
     }
-
     .contact-map {
         height: 300px;
         width: 100%;
     }
-
     .margin-logo {
-        margin: -30px 0 0 -15px;
+        margin: -50px 0 0 -15px;
     }
-    }
+}
 
-    @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .contact-icon {
         font-size: 60px;
     }
-
-    .pic {
+    .machine {
         max-width: 400px;
         width: 55%;
     }
@@ -194,12 +186,10 @@
         color: #333333;
         font-size: 28px;
         line-height: 40px;
-        font-family: Montserrat;
     }
     .tel-padding {
         padding: 5px 0 0 0;
     }
-
     .topic {
         color: #333333;
         padding: 0 0 10px 0;
@@ -208,34 +198,29 @@
         font-size: 58px;
     }
     .share {
-        font-family: Montserrat;
         font-size: 28px;
         margin-left: 10px;
         margin-top: 3px;
         color: white;
         line-height: 50px;
     }
-
     .office {
         color: #333333;
         font-size: 36px;
     }
-
     .input {
         font-size: 16px;
     }
-
     .margin-logo {
-        margin: 0 0 0 -15px;
+        margin: -50px 0 0 -15px;
     }
-    }
+}
 
-    @media only screen and (max-width: 414px) {
+@media only screen and (max-width: 414px) {
     .contact-icon {
         font-size: 40px;
     }
-
-    .pic {
+    .machine {
         max-width: 500px;
         width: 90%;
     }
@@ -243,14 +228,11 @@
         color: #333333;
         font-size: 20px;
         line-height: 40px;
-        font-family: Montserrat;
     }
-
     .tel-padding {
         padding: 0 0 0 0;
         margin: -8px 0 0 -3px;
     }
-
     .topic {
         color: #333333;
         padding: 0 0 10px 0;
@@ -259,25 +241,74 @@
         font-size: 45px;
     }
     .share {
-        font-family: Montserrat;
         font-size: 18px;
         margin-left: 10px;
         margin-top: 3px;
         color: white;
         line-height: 50px;
     }
-
     .office {
         color: #333333;
         font-size: 22px;
     }
-
-    .padding {
+    .input-padding {
         padding: 10px 20px 0 20px;
     }
-
     .button1 {
-        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 16px;
+        background-color: #cc3941;
+        color: white;
+        border: 3px solid white;
+        border-radius: 5px;
+        width: 100%;
+        height: 70px;
+    }
+    .margin-logo {
+        margin: -10px 0 0 -15px;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .contact-icon {
+        font-size: 40px;
+    }
+    .machine {
+        max-width: 100px;
+        width: 90%;
+    }
+    .address {
+        color: #333333;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .tel-padding {
+        padding: 0 0 0 0;
+        margin: -6px 0 0 -3px;
+    }
+    .topic {
+        color: #333333;
+        padding: 0 0 10px 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 45px;
+    }
+    .share {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-top: 3px;
+        color: white;
+        line-height: 30px;
+    }
+    .office {
+        color: #333333;
+        font-size: 22px;
+    }
+    .input-padding {
+        padding: 10px 20px 0 20px;
+    }
+    .button1 {
         font-weight: bold;
         font-size: 16px;
         background-color: #cc3941;
@@ -290,4 +321,59 @@
     .margin-logo {
         margin: 0 0 0 -15px;
     }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .contact-icon {
+        font-size: 40px;
+        padding: 10px 0 0 20px;
     }
+    .machine {
+        max-width: 500px;
+        width: 90%;
+    }
+    .address {
+        color: #333333;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .tel-padding {
+        padding: 0 0 0 0;
+        margin: 9px 0 0 -3px;
+    }
+    .topic {
+        color: #333333;
+        padding: 0 0 10px 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 45px;
+    }
+    .share {
+        font-size: 14px;
+        margin-left: 10px;
+        margin-top: 3px;
+        color: white;
+        line-height: 18px;
+    }
+    .office {
+        color: #333333;
+        font-size: 22px;
+    }
+    .input-padding {
+        padding: 10px 20px 0 20px;
+    }
+    .button1 {
+        font-weight: bold;
+        font-size: 16px;
+        background-color: #cc3941;
+        color: white;
+        border: 3px solid white;
+        border-radius: 5px;
+        width: 100%;
+        height: 70px;
+    }
+    .margin-logo {
+        margin: -10px 0 0 -15px;
+    }
+}

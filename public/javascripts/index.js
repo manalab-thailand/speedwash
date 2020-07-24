@@ -15,7 +15,7 @@ $(document).ready(function () {
 
             if (content.length > sChar) {
             var c = content.substr(0, sChar);
-            var h = content.substr(sChar - 1, content.length - sChar);
+            var h = content.substr(sChar + 1, content.length - sChar);
 
             var html =
                 c +
@@ -25,7 +25,7 @@ $(document).ready(function () {
                 '</span>&nbsp;&nbsp;<a href="" class="Seemore facebookmorelink">' +
                 moretext +
                 "</a></span>";
-
+            
             $(this).html(html);
             }
         });
@@ -53,7 +53,7 @@ $(document).ready(function () {
 
             if (content.length > sChar) {
             var c = content.substr(0, sChar);
-            var h = content.substr(sChar - 1, content.length - sChar);
+            var h = content.substr(sChar + 1, content.length - sChar);
 
             var html =
                 c +
@@ -91,7 +91,7 @@ $(document).ready(function () {
 
             if (content.length > sChar) {
             var c = content.substr(0, sChar);
-            var h = content.substr(sChar - 1, content.length - sChar);
+            var h = content.substr(sChar + 1, content.length - sChar);
 
             var html =
                 c +
@@ -101,7 +101,7 @@ $(document).ready(function () {
                 '</span>&nbsp;&nbsp;<a href="" class="Seemore facebookmorelink">' +
                 moretext +
                 "</a></span>";
-
+            
             $(this).html(html);
             }
         });
@@ -129,7 +129,7 @@ $(document).ready(function () {
 
             if (content.length > sChar) {
             var c = content.substr(0, sChar);
-            var h = content.substr(sChar - 1, content.length - sChar);
+            var h = content.substr(sChar + 1, content.length - sChar);
 
             var html =
                 c +
@@ -139,7 +139,6 @@ $(document).ready(function () {
                 '</span>&nbsp;&nbsp;<a href="" class="Seemore facebookmorelink">' +
                 moretext +
                 "</a></span>";
-
             $(this).html(html);
             }
         });
