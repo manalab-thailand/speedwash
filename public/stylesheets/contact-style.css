@@ -1,0 +1,280 @@
+    body {
+        font-family: Montserrat,
+    }
+    
+    .contact-map {
+        height: 345px;
+        width: 100%;
+    }
+    
+     ::-webkit-input-placeholder {
+        /* Edge */
+        color: white;
+    }
+    
+     :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: white;
+    }
+    
+     ::placeholder {
+        color: white;
+    }
+    
+    .input {
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+        border: #cc3941;
+    }
+    
+    .input:focus {
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+        border: #cc3941;
+    }
+    
+    .qeustion {
+        height: auto;
+    }
+    
+    .bgred {
+        background-color: #cc3941;
+        height: auto;
+    }
+    
+    .topic {
+        color: #333333;
+        padding: 0 0 10px 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 65px;
+    }
+    
+    .office {
+        color: #333333;
+        font-size: 30px;
+    }
+    
+    .address {
+        color: #333333;
+        font-size: 28px;
+        line-height: 40px;
+        font-family: Montserrat;
+    }
+    
+    .contact-icon {
+        color: #333333;
+        padding: 0 0 0 20px;
+        font-size: 55px;
+    }
+    
+    .share {
+        font-family: Montserrat;
+        font-size: 28px;
+        margin-left: 10px;
+        margin-top: 3px;
+        color: white;
+        line-height: 50px;
+    }
+    
+    .email {
+        color: white;
+    }
+    
+    .padding {
+        padding: 10px 75px 0 75px;
+    }
+    
+    .pic {
+        max-width: 300px;
+        width: 80%;
+    }
+    
+    .thai {
+        height: auto;
+        width: 80%;
+        max-width: 60px;
+    }
+    
+    .tel {
+        padding: 5px 0 0 30px;
+    }
+    
+    .textarea {
+        resize: none;
+    }
+    
+    .reach {
+        color: white;
+    }
+    
+    .button1 {
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: #cc3941;
+        color: white;
+        border: 3px solid white;
+        border-radius: 5px;
+        width: 100%;
+        height: 70px;
+    }
+    
+    .button1:hover {
+        background-color: #ca707586;
+    }
+    
+    .margin-logo {
+        margin: -60px 0 0 -15px;
+    }
+    
+    @media only screen and (max-width: 1024px) {
+        .contact-icon {
+            font-size: 70px;
+        }
+        .pic {
+            max-width: 400px;
+            width: 50%;
+        }
+        .address {
+            color: #333333;
+            font-size: 32px;
+            line-height: 40px;
+            font-family: Montserrat;
+        }
+        .tel-padding {
+            padding: 10px 0 0 0;
+        }
+        .topic {
+            color: #333333;
+            padding: 0 0 10px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 72px;
+        }
+        .share {
+            font-family: Montserrat;
+            font-size: 32px;
+            margin-left: 10px;
+            margin-top: 3px;
+            color: white;
+            line-height: 50px;
+        }
+        .office {
+            color: #333333;
+            font-size: 46px;
+        }
+        .input {
+            font-size: 24px;
+        }
+        .map-padding {
+            padding-bottom: 10px;
+        }
+        .contact-map {
+            height: 300px;
+            width: 100%;
+        }
+        .margin-logo {
+            margin: -30px 0 0 -15px;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .contact-icon {
+            font-size: 60px;
+        }
+        .pic {
+            max-width: 400px;
+            width: 55%;
+        }
+        .address {
+            color: #333333;
+            font-size: 28px;
+            line-height: 40px;
+            font-family: Montserrat;
+        }
+        .tel-padding {
+            padding: 5px 0 0 0;
+        }
+        .topic {
+            color: #333333;
+            padding: 0 0 10px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 58px;
+        }
+        .share {
+            font-family: Montserrat;
+            font-size: 28px;
+            margin-left: 10px;
+            margin-top: 3px;
+            color: white;
+            line-height: 50px;
+        }
+        .office {
+            color: #333333;
+            font-size: 36px;
+        }
+        .input {
+            font-size: 16px;
+        }
+        .margin-logo {
+            margin: 0 0 0 -15px;
+        }
+    }
+    
+    @media only screen and (max-width: 414px) {
+        .contact-icon {
+            font-size: 40px;
+        }
+        .pic {
+            max-width: 500px;
+            width: 90%;
+        }
+        .address {
+            color: #333333;
+            font-size: 20px;
+            line-height: 40px;
+            font-family: Montserrat;
+        }
+        .tel-padding {
+            padding: 0 0 0 0;
+            margin: -8px 0 0 -3px;
+        }
+        .topic {
+            color: #333333;
+            padding: 0 0 10px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 45px;
+        }
+        .share {
+            font-family: Montserrat;
+            font-size: 18px;
+            margin-left: 10px;
+            margin-top: 3px;
+            color: white;
+            line-height: 50px;
+        }
+        .office {
+            color: #333333;
+            font-size: 22px;
+        }
+        .padding {
+            padding: 10px 20px 0 20px;
+        }
+        .button1 {
+            font-family: Montserrat;
+            font-weight: bold;
+            font-size: 16px;
+            background-color: #cc3941;
+            color: white;
+            border: 3px solid white;
+            border-radius: 5px;
+            width: 100%;
+            height: 70px;
+        }
+        .margin-logo {
+            margin: 0 0 0 -15px;
+        }
+    }

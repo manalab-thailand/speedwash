@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>SpeedWash</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/branches-style.css">
+    <link rel="stylesheet" href="stylesheets/navbar-footer-style.css">
+
+    <style>
+        a:hover {
+            color: #5af745;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="d-md-none d-sm-block d-lg-none d-xl-none text-center nav-movlie-color">
+        <a class="navbar-brand font-nav-footer-color p-1 pt-1 margin-title" href="#">
+            <h3><b>SPEED</b>WASH</h3>
+        </a>
+        </i>
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="index">
+                    <li class="color-link">Home</li>
+                </a>
+                <a href="about">
+                    <li class="color-link">About</li>
+                </a>
+                <a href="blog">
+                    <li class="color-link">Blog</li>
+                </a>
+                <a href="#">
+                    <li class="color-link">Branches</li>
+                </a>
+                <a href="contact">
+                    <li class="color-link">Contact</li>
+                </a>
+                <a class="navbar-brand" href="tel:+66834435222">
+                    <i class="fas fa-phone-alt size-icon color-link"></i>
+                    <b class="color-link">&nbsp&nbsp083-443-5222</b>
+                </a>
+                <a class="navbar-brand ml-nav translate" id="en" href="#">
+                    <b class="color-link">EN &nbsp;|&nbsp; </b>
+                </a>
+                <a class="navbar-brand ml-nav translate" id="th" href="#">
+                    <b class="color-link">TH</b>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark default-color nav-mobile nav-color">
+        <a class="navbar-brand p-0 pt-1" href="#">
+            <h2><b>SPEED</b>WASH</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav nav ml-auto mr-auto text-center font-menu">
+                <li class="nav-item link-menu">
+                    <a class="nav-link " href="index">Home
+                    </a>
+                </li>
+                <li class="nav-item link-menu">
+                    <a class="nav-link" href="about">About </a>
+                </li>
+                <li class="nav-item link-menu">
+                    <a class="nav-link" href="blog">Blog</a>
+                </li>
+                <li class="nav-item link-menu active">
+                    <a class="nav-link font-bold" href="#">Branches</a>
+                </li>
+                <li class="nav-item link-menu">
+                    <a class="nav-link" href="contact">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav nav text-center  ">
+                <li class="nav-item active font-menu nav-link ">
+                    <i class="fas fa-phone-alt size-icon color-link"></i>
+                    <span><a class="navbar-brand" href="tel:+66834435222">
+                            <b class="color-link">&nbsp&nbsp083-443-5222</b></a>
+                    </span>
+                </li>
+                <li class="nav-item active font-menu nav-link ">
+                    <a class="navbar-brand ml-nav" href="#"><b class="color-link">EN &nbsp;|&nbsp; </b></a>
+                    <a class="navbar-brand ml-nav" href="#"><b class="color-link">TH</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <main>
+        <div class="container-fluid">
+            <div class="title-branches text-center">
+                <%=title%>
+            </div>
+            <div class="map-padding">
+                <div id="map" class="branches-map"></div>
+            </div>
+            <div class="padding-table">
+                <div id="box-shadow" class="row table-responsive">
+                    <table class="table table-hover justify-content-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Province</th>
+                                <th scope="col">Contact</th>
+                            </tr>
+                        </thead>
+                        <% posts.values.forEach(function(post){ if(post[0] != undefined && post[1] != undefined && post[2] != undefined){ console.log(typeof post[2]); %>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <%=post[0] %>
+                                    </th>
+                                    <th>
+                                        <%=post[1] %>
+                                    </th>
+                                    <th>
+                                        <%=post[2] %>
+                                    </th>
+                                </tr>
+                            </tbody>
+                            <% } });%>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4 footer-color font-nav-footer-color font-bold">
+        <!-- Footer Links -->
+        <div class="container-fluid text-md-left">
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-sm-2 col-xl-2  "></div>
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <!-- Content -->
+                    <div class="text-mobile-center">
+                        <img class="logo" src="images/SpeedWash.png" alt="">
+                    </div>
+                    <p class="mt-3">35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District Samut Prakan 10540</p>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <!-- Grid column -->
+                <div class="col-md-1"></div>
+                <div class="col-md-5 mb-md-0 mb-3 margin-mobile">
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="row">
+                                <div class="icon">
+                                    <i style="font-size:36px;" class="fas fa-phone-volume"></i>
+                                </div>
+                                <div class="contact phone-number">
+                                    <div class="col-12"><a class="nav-link color-link" href="tel:+6623162430">02-316-2430</a></div>
+                                    <div class="col-12"><a class="nav-link color-link" href="tel:+66834435222">083-443-5222</a></div>
+                                    <div class="col-12"><a class="nav-link color-link" href="tel:+66945459456">094-545-9456</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mt-4">
+                            <div class="row">
+                                <div class="">
+                                    <img src="https://img.icons8.com/fluent/40/000000/gmail.png" />
+                                </div>
+                                <div class="">
+                                    <div class=" contact">
+                                        <div class="col-12">phajidathailand@gmail.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="">
+                                    <img src="https://img.icons8.com/color/40/000000/line-me.png" />
+                                </div>
+                                <div class="">
+                                    <div class="contact">
+                                        <div class="col-12"> @PhajidaGroup</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="">
+                                    <img src="https://img.icons8.com/color/40/000000/facebook.png" />
+                                </div>
+                                <div class="">
+                                    <div class="contact">
+                                        <div class="col-12">SpeedWashLaundryTH</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+    </footer>
+    <!-- Footer -->
+
+    <script>
+        function initMap() {
+            var scalezoom = 12;
+            const max768 = window.matchMedia("(max-width: 768px)");
+            if (max768.matches) {
+                scalezoom = 10;
+            }
+            var mapOptions = {
+                center: {
+                    lat: 13.645418,
+                    lng: 100.679751
+                },
+                zoom: scalezoom,
+            }
+            var maps = new google.maps.Map(document.getElementById("map"), mapOptions);
+            var marker, i, info;
+            <%
+                posts.values.forEach(function (post, i) {
+                    if (post[6]) { %>
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(<%=post[6] %>, <%=post[7] %>),
+                map: maps,
+                title: "<%=post[0]%>"
+            });
+            info = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    info.setContent(`<div class="h5"><b><%=post[0]%><b></div>
+                                            <div class="h6"><%=post[4]%></div>
+                                            <div class="h6"><a href="<%=post[5]%>" target="_blank" rel="noopener noreferrer">view on Google Maps</a></div>
+                                            <div class="h6"><b>ติดต่อ <a href="tel:<%=post[2]%>" target="_blank" rel="noopener noreferrer"><%=post[2]%></a></b></div>`);
+                    info.open(maps, marker);
+                }
+            })(marker, i));
+            <% }
+                }); %>
+        }
+    </script>
+    <%- include ../partials/footer %>
