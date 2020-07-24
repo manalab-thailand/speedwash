@@ -2,17 +2,17 @@ body {
     font-family: Montserrat,
 }
 
- ::-webkit-input-placeholder {
+::-webkit-input-placeholder {
     /* Edge */
     color: white;
 }
 
- :-ms-input-placeholder {
+:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: white;
 }
 
- ::placeholder {
+::placeholder {
     color: white;
 }
 
@@ -146,7 +146,7 @@ body {
         padding: 0 0 10px 0;
         text-align: center;
         font-weight: bold;
-        font-size: 72px;
+        font-size: 65px;
     }
     .share {
         font-size: 32px;
@@ -182,7 +182,9 @@ body {
         max-width: 400px;
         width: 55%;
     }
+    
     .address {
+        font-weight: initial;        
         color: #333333;
         font-size: 28px;
         line-height: 40px;
@@ -310,7 +312,7 @@ body {
     }
     .button1 {
         font-weight: bold;
-        font-size: 16px;
+        font-size: 20px;
         background-color: #cc3941;
         color: white;
         border: 3px solid white;
@@ -318,8 +320,13 @@ body {
         width: 100%;
         height: 70px;
     }
+    
+    .button1:hover {
+        background-color: #ca707586;
+    }
+    
     .margin-logo {
-        margin: 0 0 0 -15px;
+        margin: -60px 0 0 -15px;
     }
 }
 

@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/branches-style.css">
     <link rel="stylesheet" href="stylesheets/navbar-footer-style.css">
+
 </head>
 
 <body>
@@ -60,8 +60,7 @@
         <a class="navbar-brand p-0 pt-1" href="#">
             <h2><b>SPEED</b>WASH</h2>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
-            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
@@ -101,12 +100,14 @@
 
     <main>
         <div class="container-fluid">
-            <div class="title-branches text-center"><%=title%></div>
+            <div class="title-branches text-center">
+                <%=title%>
+            </div>
             <div class="map-padding">
                 <div id="map" class="branches-map"></div>
             </div>
             <div class="padding-table">
-                <div id="box-shadow" class="row">
+                <div id="box-shadow" class="row table-responsive">
                     <table class="table table-hover justify-content-center">
                         <thead>
                             <tr>
@@ -116,21 +117,20 @@
                             </tr>
                         </thead>
                         <% posts.values.forEach(function(post){ if(post[0] != undefined && post[1] != undefined && post[2] != undefined){ console.log(typeof post[2]); %>
-                        <tbody>
-
-                            <tr>
-                                <th scope="row">
-                                    <%=post[0] %>
-                                </th>
-                                <th>
-                                    <%=post[1] %>
-                                </th>
-                                <th>
-                                    <%=post[2] %>
-                                </th>
-                            </tr>
-                        </tbody>
-                        <% } });%>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <%=post[0] %>
+                                    </th>
+                                    <th>
+                                        <%=post[1] %>
+                                    </th>
+                                    <th>
+                                        <%=post[2] %>
+                                    </th>
+                                </tr>
+                            </tbody>
+                            <% } });%>
                     </table>
                 </div>
             </div>
@@ -165,12 +165,9 @@
                                     <i style="font-size:36px;" class="fas fa-phone-volume"></i>
                                 </div>
                                 <div class="contact phone-number">
-                                    <div class="col-12"><a class="nav-link color-link"
-                                            href="tel:+6623162430">02-316-2430</a></div>
-                                    <div class="col-12"><a class="nav-link color-link"
-                                            href="tel:+66834435222">083-443-5222</a></div>
-                                    <div class="col-12"><a class="nav-link color-link"
-                                            href="tel:+66945459456">094-545-9456</a></div>
+                                    <div class="col-12"><a class="nav-link color-link" href="tel:+6623162430">02-316-2430</a></div>
+                                    <div class="col-12"><a class="nav-link color-link" href="tel:+66834435222">083-443-5222</a></div>
+                                    <div class="col-12"><a class="nav-link color-link" href="tel:+66945459456">094-545-9456</a></div>
                                 </div>
                             </div>
                         </li>
@@ -236,18 +233,18 @@
             }
             var maps = new google.maps.Map(document.getElementById("map"), mapOptions);
             var marker, i, info;
-        <%
+            <%
                 posts.values.forEach(function (post, i) {
                     if (post[6]) { %>
-                        marker = new google.maps.Marker({
-                            position: new google.maps.LatLng(<%=post[6] %>, <%=post[7] %>),
-                            map: maps,
-                            title: "<%=post[0]%>"
-                        });
-                        info = new google.maps.InfoWindow();
-                        google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                            return function () {
-                                info.setContent(`<div class="h5"><b><%=post[0]%><b></div>
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(<%=post[6] %>, <%=post[7] %>),
+                map: maps,
+                title: "<%=post[0]%>"
+            });
+            info = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    info.setContent(`<div class="h5"><b><%=post[0]%><b></div>
                                             <div class="h6"><%=post[4]%></div>
                                             <div class="h6"><a class="link" href="<%=post[5]%>" target="_blank" rel="noopener noreferrer">view on Google Maps</a></div>
                                             <div class="h6"><b>ติดต่อ <a class="link" href="tel:<%=post[2]%>" target="_blank" rel="noopener noreferrer"><%=post[2]%></a></b></div>`); info.open(maps, marker);
@@ -255,6 +252,6 @@
                         })(marker, i));
         <% }
                 }); %>
-            }
+        }
     </script>
     <%- include ../partials/footer %>
