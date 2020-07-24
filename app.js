@@ -7,7 +7,7 @@ var bodyParser = require('body-parser')
 var indexRouter = require('./routes/index');
 var contactRouter = require('./routes/contact');
 var aboutRouter = require('./routes/about');
-var outletRouter = require('./routes/outlet');
+var branchesRouter = require('./routes/branches');
 var sendemailRouter = require('./routes/sendemail');
 var blogRouter = require('./routes/blog');
 
@@ -27,7 +27,7 @@ app.use('/index', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/blog', blogRouter);
 app.use('/contact', contactRouter);
-app.use('/outlet', outletRouter);
+app.use('/branches', branchesRouter);
 app.use('/sendemail', sendemailRouter);
 
 // catch 404 and forward to error handler
