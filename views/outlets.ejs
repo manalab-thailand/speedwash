@@ -114,21 +114,10 @@
                             <th scope="col">Contact</th>
                         </tr>
                     </thead>
-                    <% posts.values.forEach(function(post){ if(post[0] != undefined && post[1] != undefined && post[2] != undefined){ console.log(typeof post[2]); %>
-                    <tbody>
-                        <tr>
-                            <th scope="row">
-                                <%=post[0] %>
-                            </th>
-                            <th>
-                                <%=post[1] %>
-                            </th>
-                            <th>
-                                <%=post[2] %>
-                            </th>
-                        </tr>
+
+                    <tbody id="markers">
                     </tbody>
-                    <% } });%>
+
                 </table>
             </div>
         </div>
@@ -244,6 +233,8 @@
 
     <script>
         function initMap() {
+            var markers = new Array();
+
             var mapOptions = {
                 center: {
                     lat: 13.66194,
@@ -252,10 +243,27 @@
                 zoom: 10,
             }
             var maps = new google.maps.Map(document.getElementById("map"), mapOptions);
-            var marker, i, info;
+            var marker, info;
+            var i = 0;
             <%
                 posts.values.forEach(function (post, i) {
                     if (post[6]) { %>
+
+                        $('#markers').append(
+                            `<tr>
+                                <th scope="row"> 
+                                    <a class="marker-link" data-markerid="${i++}" href="#">
+                                    <%=post[0] %>
+                                    </a>
+                                </th>
+                                <th>
+                                    <%=post[1] %>
+                                </th>
+                                <th>
+                                    <%=post[2] %>
+                                </th>
+                            </tr>`
+                        );
 
                         marker = new google.maps.Marker({
                             position: new google.maps.LatLng(<%=post[6] %>, <%=post[7] %>),
@@ -269,12 +277,15 @@
                                                 <div class="h6"><%=post[4]%></div>
                                                 <div class="h6"><a href="<%=post[5]%>" target="_blank" rel="noopener noreferrer">view on Google Maps</a></div>
                                                 <div class="h6"><b>ติดต่อ <a href="tel:<%=post[2]%>" target="_blank" rel="noopener noreferrer"><%=post[2]%></a></b></div>`); info.open(maps, marker); } })(marker, i));
-            <% }
-                }); %>
-                }
-                </script>
+            <% }  %>
+                markers.push(marker);
+                <%  }); %>
+                    $('.marker-link').on('click', function () { google.maps.event.trigger(markers[$(this).data('markerid')], 'click'); }); }
+
+
+                    </script>
 
 
 </body>
 
-</html
+</html>
