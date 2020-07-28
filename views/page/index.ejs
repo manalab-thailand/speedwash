@@ -28,30 +28,30 @@
       <span></span>
       <span></span>
       <ul id="menu">
-        <a href="#">
-          <li class="color-link">Home</li>
-        </a>
-        <a href="about">
-          <li class="color-link">About</li>
-        </a>
-        <a href="blog">
-          <li class="color-link">Blog</li>
-        </a>
-        <a href="branches">
-          <li class="color-link">Branches</li>
-        </a>
-        <a href="contact">
-          <li class="color-link">Contact</li>
-        </a>
+        <li class="color-link">
+          <a class="lang" href="#" key="home">Home</a>
+        </li>
+        <li class="color-link">
+          <a class="lang" href="about" key="about">About</a>
+        </li>
+        <li class="color-link">
+          <a class="lang" href="blog" key="blog">Blog</a>
+        </li>
+        <li class="color-link">
+          <a class="lang" href="branches" key="branches">Branches</a>
+        </li>
+        <li class="color-link">
+          <a class="lang" href="contact" key="contact">Contact</a>
+        </li>
         <a class="navbar-brand" href="tel:+66834435222">
           <i class="fas fa-phone-alt size-icon color-link"></i>
-          <b class="color-link">&nbsp&nbsp083-443-5222</b>
+          <b class="color-link size-font-contact">&nbsp&nbsp083-443-5222</b>
         </a>
         <a class="navbar-brand ml-nav translate" id="en" href="#">
-          <b class="color-link">EN &nbsp;|&nbsp; </b>
+          <b class="color-link size-font-contact" id="EN-M">EN &nbsp;|&nbsp; </b>
         </a>
         <a class="navbar-brand ml-nav translate" id="th" href="#">
-          <b class="color-link">TH</b>
+          <b class="color-link size-font-contact btn-language" id="TH-M">TH</b>
         </a>
       </ul>
     </div>
@@ -67,20 +67,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
       <ul class="navbar-nav nav ml-auto mr-auto text-center font-menu">
         <li class="nav-item active link-menu">
-          <a class="nav-link font-bold" href="#">Home
+          <a class="nav-link font-bold lang" key="home" href="#">Home
           </a>
         </li>
         <li class="nav-item link-menu">
-          <a class="nav-link" href="about">About </a>
+          <a class="nav-link lang" key="about" href="about">About </a>
         </li>
         <li class="nav-item link-menu">
-          <a class="nav-link" href="blog">Blog</a>
+          <a class="nav-link lang" key="blog" href="blog">Blog</a>
         </li>
         <li class="nav-item link-menu">
-          <a class="nav-link" href="branches">Branches</a>
+          <a class="nav-link lang" key="branches" href="branches">Branches</a>
         </li>
         <li class="nav-item link-menu">
-          <a class="nav-link" href="contact">Contact</a>
+          <a class="nav-link lang" key="contact" href="contact">Contact</a>
         </li>
       </ul>
       <ul class="navbar-nav nav text-center  ">
@@ -90,16 +90,17 @@
               <b class="color-link">&nbsp&nbsp083-443-5222</b></a>
           </span>
         </li>
-        <li class="nav-item active font-menu nav-link ">
-          <a class="navbar-brand ml-nav" href="#"><b class="color-link">EN &nbsp;|&nbsp; </b></a>
-          <a class="navbar-brand ml-nav" href="#"><b class="color-link">TH</b></a>
+        <li class="nav-item font-menu nav-link " id="myDIV">
+          <a class="navbar-brand ml-nav translate" id="en" href="#"><span class="color-link font-bold"
+              id="EN-D">EN</span></a>
+          <span>&nbsp;|&nbsp;</span>
+          <a class="navbar-brand ml-nav translate" id="th" href="#"><span class="color-link font-bold btn-language"
+              id="TH-D">TH</span></a>
         </li>
       </ul>
     </div>
   </nav>
   <!-- End Navbar -->
-
-
 
   <!-- carousel -->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -171,15 +172,17 @@
           <div class="text-blogs facebookseemore more"><%=post.data[0].message%></span></div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-left text-center padding-img-blogs">
-          <img class="img-blogs " src="<%=post.data[0].attachments.data[0].media.image.src%>" alt="">
+          <img class="img-blogs" src="<%=post.data[0].attachments.data[0].media.image.src%>" alt="">
         </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-left text-center padding-img-blogs Hide">
-        <img class="img-blogs " src="<%=post.data[1].attachments.data[0].media.image.src%>" alt="">
-      </div>
-      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-right Hide">
-        <div class="text-blogs"><%=post.data[1].message%></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-left text-center padding-img-blogs Hide">
+          <img class="img-blogs" src="<%=post.data[1].attachments.data[0].media.image.src%>" alt="">
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-right Hide">
+          <div class="text-blogs facebookseemore more"><%=post.data[1].message%></div>
+        </div>
       </div>
     </div>
   </div>
@@ -246,9 +249,9 @@
                   <i style="font-size:36px;" class="fas fa-phone-volume"></i>
                 </div>
                 <div class="contact phone-number">
-                  <div class="col-12"><a class="nav-link color-link" href="tel:+6623162430">02-316-2430</a></div>
-                  <div class="col-12"><a class="nav-link color-link" href="tel:+66834435222">083-443-5222</a></div>
-                  <div class="col-12"><a class="nav-link color-link" href="tel:+66945459456">094-545-9456</a></div>
+                  <div class="col-12"><a class="nav-link color-link size-font-contact" href="tel:+6623162430">02-316-2430</a></div>
+                  <div class="col-12"><a class="nav-link color-link size-font-contact" href="tel:+66834435222">083-443-5222</a></div>
+                  <div class="col-12"><a class="nav-link color-link size-font-contact" href="tel:+66945459456">094-545-9456</a></div>
                 </div>
               </div>
             </li>
@@ -259,7 +262,7 @@
                 </div>
                 <div class="">
                   <div class=" contact">
-                    <div class="col-12">phajidathailand@gmail.com</div>
+                    <div class="col-12 size-font-contact">phajidathailand@gmail.com</div>
                   </div>
                 </div>
               </div>
@@ -271,7 +274,7 @@
                 </div>
                 <div class="">
                   <div class="contact">
-                    <div class="col-12"> @PhajidaGroup</div>
+                    <div class="col-12 size-font-contact"> @PhajidaGroup</div>
                   </div>
                 </div>
               </div>
@@ -283,7 +286,7 @@
                 </div>
                 <div class="">
                   <div class="contact">
-                    <div class="col-12">SpeedWashLaundryTH</div>
+                    <div class="col-12 size-font-contact">SpeedWashLaundryTH</div>
                   </div>
                 </div>
               </div>
@@ -311,6 +314,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="javascripts/index.js"></script>
+  <script src="javascripts/nav-footer.js"></script>
 
 </body>
 

@@ -26,7 +26,7 @@ a.facebookmorelink{
 }
 
 .img-carousel{
-    height: 700px; /* height of container */
+    height: 700px;
     overflow: hidden;
 }
 
@@ -49,7 +49,7 @@ a.facebookmorelink{
 }
 .title {
   font-weight: 900;
-  font-size: 78px;
+  font-size: 82px;
   line-height: 100px;
 }
 .text {
@@ -57,7 +57,7 @@ a.facebookmorelink{
   font-style: normal;
   font-weight: normal;
   font-size: 44px;
-  line-height: 55px;
+  line-height: 60px;
   display: flex;
 }
 .img-washing {
@@ -112,35 +112,10 @@ a.facebookmorelink{
   padding: 0 50px 0 0;
 }
 
-@media only screen and (max-width: 1600px) {
-  .img-blogs {
-    width: 550px;
-    height: 380px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 19px;
-    width: 100%;
-    padding: 70px 140px 38px 75px;
-  }
-}
 
-@media only screen and (max-width: 1400px) {
-  .img-blogs {
-    width: 500px;
-    height: 380px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 18px;
-    width: 100%;
-    padding: 70px 120px 38px 75px;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1366px) {
   .padding-word {
-    padding: 80px 0 30px 180px;
+    padding: 80px 0 30px 150px;
   }
   .img-washing {
     padding: 25px 0 0 0;
@@ -153,58 +128,14 @@ a.facebookmorelink{
   }
   .text {
     padding: 30px 0 0 70px;
-    font-size: 42px;
-    line-height: 46px;
-  }
-  .padding-blog {
-    padding: 100px 0 45px 220px;
-  }
-  .padding-img-blogs {
-    padding: 50px 0 5px 0;
-  }
-  .view-btn {
-    padding: 0 100px 30px 0;
-    font-weight: 900;
-    font-size: 23px;
-  }
-  .img-blogs {
-    width: 450px;
-    height: 350px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 18px;
-    width: 100%;
-    padding: 70px 50px 38.6px 50px;
-  }
-  .padding-Invest {
-    padding: 120px 0 50px 0;
-  }
-}
-
-@media only screen and (max-width: 1199px) {
-  .padding-word {
-    padding: 80px 0 30px 150px;
-  }
-  .img-washing {
-    padding: 25px 0 0 0;
-    width: 100%;
-  }
-  .title {
-    font-weight: 900;
-    font-size: 85px;
-    line-height: 50px;
-  }
-  .text {
-    padding: 30px 0 0 70px;
     font-size: 35px;
     line-height: 45px;
   }
   .padding-blog {
-    padding: 120px 0 65px 250px;
+    padding: 120px 0 85px 250px;
   }
   .padding-img-blogs {
-    padding: 0 0 0 0;
+    padding: 0 0 40px 0;
   }
   .view-btn {
     padding: 0 100px 55px 0;
@@ -212,29 +143,35 @@ a.facebookmorelink{
     font-size: 26px;
   }
   .img-blogs {
-    width: 900px;
-    height: 600px;
+    width: 500px;
+    height: 400px;
     padding: 0 0 0 0;
   }
   .text-blogs {
     font-size: 26px;
     width: 100%;
-    padding: 10px 110px 25px 110px;
+    padding: 10px 110px 25px 90px;
   }
   .padding-Invest {
     padding: 120px 0 50px 0;
-  }
-  .Hide {
-    display: none;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .img-carousel{
-    height: 550px;
+    height: 500px;
+    overflow: hidden;
+  }
+  .carousel-indicators li {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+  }
+  .carousel-indicators {
+    bottom: -15px;
   }
   .padding-word {
-    padding: 80px 0 30px 80px;
+    padding: 80px 0 30px 100px;
   }
   .img-washing {
     padding: 25px 0 0 0;
@@ -242,12 +179,12 @@ a.facebookmorelink{
   }
   .title {
     font-weight: 900;
-    font-size: 75px;
+    font-size: 60px;
     line-height: 50px;
   }
   .text {
     padding: 30px 0 0 55px;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 37px;
   }
   .padding-blog {
@@ -305,7 +242,19 @@ a.facebookmorelink{
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 812px) {
+  .img-carousel{
+    height: 350px;
+    overflow: hidden;
+  }
+  .carousel-indicators li {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  .carousel-indicators {
+    bottom: -15px;
+  }
   .padding-word {
     padding: 50px 0 20px 80px;
   }
@@ -315,12 +264,97 @@ a.facebookmorelink{
   }
   .title {
     font-weight: 900;
-    font-size: 58px;
+    font-size: 42px;
     line-height: 50px;
   }
   .text {
-    padding: 20px 0 0 50px;
-    font-size: 25px;
+    padding: 20px 0 0 30px;
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .padding-blog {
+    padding: 80px 0 50px 180px;
+  }
+  .padding-img-blogs {
+    padding: 0 0 0 0;
+  }
+  .view-btn {
+    padding: 0 60px 45px 0;
+    font-weight: 900;
+    font-size: 20px;
+  }
+  .img-blogs {
+    width: 700px;
+    height: 480px;
+    padding: 0 0 0 0;
+  }
+  .text-blogs {
+    font-size: 23px;
+    width: 100%;
+    padding: 0 70px 10px 20px;
+  }
+  .padding-Invest {
+    padding: 80px 0 20px 0;
+  }
+  .text-invest {
+    font-size: 28px;
+    padding: 30px 0 0 0;
+  }
+  .title-invest {
+    padding: 15px 0 0 0;
+    font-size: 30px;
+  }
+  .padding-btn {
+    padding: 20px 0 40px 0;
+  }
+  .Learnmore-btn {
+    color: white;
+    background: #6dcff6;
+    font-weight: 900;
+    font-size: 22px;
+    height: 55px;
+    width: 250px;
+    border-radius: 50px;
+  }
+  .padding-checkmark {
+    padding: 0 10px 0 0;
+  }
+  .checkmark {
+    width: 40px;
+  }
+  .Hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .img-carousel{
+    height: 300px;
+    overflow: hidden;
+  }
+  .carousel-indicators li {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  .carousel-indicators {
+    bottom: -15px;
+  }
+  .padding-word {
+    padding: 50px 0 20px 60px;
+  }
+  .img-washing {
+    padding: 25px 0 0 0;
+    width: 100%;
+  }
+  .title {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .text {
+    padding: 20px 0 0 30px;
+    font-size: 20px;
     line-height: 28px;
   }
   .padding-blog {
@@ -340,9 +374,94 @@ a.facebookmorelink{
     padding: 0 0 0 0;
   }
   .text-blogs {
-    font-size: 23px;
+    font-size: 19px;
     width: 100%;
     padding: 0 70px 10px 20px;
+  }
+  .padding-Invest {
+    padding: 80px 0 20px 0;
+  }
+  .text-invest {
+    font-size: 26px;
+    padding: 30px 0 0 0;
+  }
+  .title-invest {
+    padding: 15px 0 0 0;
+    font-size: 45px;
+  }
+  .padding-btn {
+    padding: 20px 0 40px 0;
+  }
+  .Learnmore-btn {
+    color: white;
+    background: #6dcff6;
+    font-weight: 900;
+    font-size: 22px;
+    height: 55px;
+    width: 250px;
+    border-radius: 50px;
+  }
+  .padding-checkmark {
+    padding: 0 10px 0 0;
+  }
+  .checkmark {
+    width: 40px;
+  }
+  .Hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .img-carousel{
+    height: 300px;
+    overflow: hidden;
+  }
+  .carousel-indicators li {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  .carousel-indicators {
+    bottom: -15px;
+  }
+  .padding-word {
+    padding: 50px 0 20px 80px;
+  }
+  .img-washing {
+    padding: 25px 0 0 0;
+    width: 100%;
+  }
+  .title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 50px;
+  }
+  .text {
+    padding: 0px 0 0 50px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .padding-blog {
+    padding: 80px 0 50px 145px;
+  }
+  .padding-img-blogs {
+    padding: 0 0 0 0;
+  }
+  .view-btn {
+    padding: 0 25px 45px 0;
+    font-weight: 900;
+    font-size: 20px;
+  }
+  .img-blogs {
+    width: 630px;
+    height: 400px;
+    padding: 0 0 0 0;
+  }
+  .text-blogs {
+    font-size: 17px;
+    width: 100%;
+    padding: 0 70px 10px 12px;
   }
   .padding-Invest {
     padding: 80px 0 20px 0;
@@ -378,9 +497,21 @@ a.facebookmorelink{
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 667px) {
+  .img-carousel{
+    height: 300px;
+    overflow: hidden;
+  }
+  .carousel-indicators li {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+  .carousel-indicators {
+    bottom: -15px;
+  }
   .padding-word {
-    padding: 50px 0 20px 80px;
+    padding: 50px 0 20px 60px;
   }
   .img-washing {
     padding: 25px 0 0 0;
@@ -388,34 +519,34 @@ a.facebookmorelink{
   }
   .title {
     font-weight: 900;
-    font-size: 58px;
+    font-size: 37px;
     line-height: 50px;
   }
   .text {
-    padding: 20px 0 0 50px;
-    font-size: 25px;
-    line-height: 28px;
+    padding: 0px 0px 0px 20px;
+    font-size: 16px;
+    line-height: 25px;
   }
   .padding-blog {
-    padding: 80px 0 50px 180px;
+    padding: 80px 0 50px 115px;
   }
   .padding-img-blogs {
     padding: 0 0 0 0;
   }
   .view-btn {
-    padding: 0 60px 45px 0;
+    padding: 0 25px 55px 0;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 15px;
   }
   .img-blogs {
-    width: 650px;
-    height: 480px;
+    width: 565px;
+    height: 350px;
     padding: 0 0 0 0;
   }
   .text-blogs {
-    font-size: 23px;
+    font-size: 18px;
     width: 100%;
-    padding: 0 70px 10px 20px;
+    padding: 0 70px 10px 12px;
   }
   .padding-Invest {
     padding: 80px 0 20px 0;
@@ -429,7 +560,7 @@ a.facebookmorelink{
     font-size: 45px;
   }
   .padding-btn {
-    padding: 20px 0 10px 0;
+    padding: 20px 0 40px 0;
   }
   .Learnmore-btn {
     color: white;
@@ -451,7 +582,104 @@ a.facebookmorelink{
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 568px) {
+  .img-carousel{
+    height: 250px;
+    overflow: hidden;
+  }
+  .carousel-indicators li {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+  .carousel-indicators {
+    bottom: -15px;
+  }
+  .padding-word {
+    padding: 50px 0 20px 45px;
+  }
+  .img-washing {
+    padding: 25px 0 0 0;
+    width: 100%;
+  }
+  .title {
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .text {
+    padding: 0px 0px 0px 20px;
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .padding-blog {
+    padding: 80px 0 50px 115px;
+  }
+  .padding-img-blogs {
+    padding: 0 0 0 0;
+  }
+  .view-btn {
+    padding: 0 25px 55px 0;
+    font-weight: 900;
+    font-size: 15px;
+  }
+  .img-blogs {
+    width: 490px;
+    height: 300px;
+    padding: 0 0 0 0;
+  }
+  .text-blogs {
+    font-size: 15px;
+    width: 100%;
+    padding: 0 70px 10px 0px;
+  }
+  .padding-Invest {
+    padding: 80px 0 20px 0;
+  }
+  .text-invest {
+    font-size: 20px;
+    padding: 30px 0 0 0;
+  }
+  .title-invest {
+    padding: 15px 0 0 0;
+    font-size: 30px;
+  }
+  .padding-btn {
+    padding: 20px 0 40px 0;
+  }
+  .Learnmore-btn {
+    color: white;
+    background: #6dcff6;
+    font-weight: 900;
+    font-size: 22px;
+    height: 55px;
+    width: 250px;
+    border-radius: 50px;
+  }
+  .padding-checkmark {
+    padding: 0 10px 0 0;
+  }
+  .checkmark {
+    width: 40px;
+  }
+  .Hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .img-carousel{
+    height: 180px;
+    overflow: hidden;
+  }
+  .carousel-indicators li {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+  }
+  .carousel-indicators {
+    bottom: -15px;
+  }
   .padding-word {
     padding: 10px 0 0 30px;
   }
@@ -461,16 +689,16 @@ a.facebookmorelink{
   }
   .title {
     font-weight: 900;
-    font-size: 29px;
+    font-size: 25px;
     line-height: 50px;
   }
   .text {
     padding: 0 0 0 10px;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 10px;
+    line-height: 16px;
   }
   .padding-blog {
-    padding: 40px 0 20px 85px;
+    padding: 40px 0 20px 70px;
   }
   .padding-img-blogs {
     padding: 0 0 0 0;
@@ -478,7 +706,92 @@ a.facebookmorelink{
   .view-btn {
     padding: 0 20px 30px 0;
     font-weight: 900;
+    font-size: 9px;
+  }
+  .img-blogs {
+    width: 370px;
+    height: 220px;
+    padding: 0 0 0 0;
+  }
+  .text-blogs {
     font-size: 12px;
+    width: 100%;
+    padding: 0 35px 0px 0px;
+  }
+  .padding-Invest {
+    padding: 15px 0 0 0;
+  }
+  .text-invest {
+    font-size: 13px;
+    padding: 20px 0 0 0;
+  }
+  .title-invest {
+    padding: 15px 0 0 0;
+    font-size: 25px;
+  }
+  .padding-btn {
+    padding: 20px 0 10px 0;
+  }
+  .Learnmore-btn {
+    color: white;
+    background: #6dcff6;
+    font-weight: 900;
+    font-size: 17px;
+    height: 45px;
+    width: 200px;
+    border-radius: 50px;
+  }
+  .padding-checkmark {
+    padding: 0 15px 0 0;
+  }
+  .checkmark {
+    width: 20px;
+  }
+  .Hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .img-carousel{
+    height: 180px;
+    overflow: hidden;
+  }
+  .carousel-indicators li {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+  }
+  .carousel-indicators {
+    bottom: -15px;
+  }
+  .padding-word {
+    padding: 10px 0 0 30px;
+  }
+  .img-washing {
+    padding: 25px 0 0 0;
+    width: 85%;
+  }
+  .title {
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 50px;
+  }
+  .text {
+    padding: 0 0 0 10px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .padding-blog {
+    padding: 40px 0 20px 70px;
+  }
+  .padding-img-blogs {
+    padding: 0 0 0 0;
+  }
+  .view-btn {
+    padding: 0 20px 30px 0;
+    font-weight: 900;
+    font-size: 9px;
   }
   .img-blogs {
     width: 335px;
@@ -525,8 +838,20 @@ a.facebookmorelink{
 }
 
 @media only screen and (max-width: 375px) {
+  .img-carousel{
+    height: 150px;
+    overflow: hidden;
+  }
+  .carousel-indicators li {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+  }
+  .carousel-indicators {
+    bottom: -20px;
+  }
   .padding-word {
-    padding: 10px 0 0 20px;
+    padding: 10px 0 0 30px;
   }
   .img-washing {
     padding: 25px 0 0 0;
@@ -534,12 +859,12 @@ a.facebookmorelink{
   }
   .title {
     font-weight: 900;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 50px;
   }
   .text {
     padding: 0 0 0 10px;
-    font-size: 10px;
+    font-size: 8px;
     line-height: 13px;
   }
   .padding-blog {
@@ -559,7 +884,7 @@ a.facebookmorelink{
     padding: 0 0 0 0;
   }
   .text-blogs {
-    font-size: 13px;
+    font-size: 11px;
     width: 100%;
     padding: 0 30px 0px 0px;
   }
@@ -575,7 +900,7 @@ a.facebookmorelink{
     font-size: 19px;
   }
   .padding-btn {
-    padding: 20px 0 10px 0;
+    padding: 20px 0 40px 0;
   }
   .Learnmore-btn {
     color: white;
@@ -598,6 +923,18 @@ a.facebookmorelink{
 }
 
 @media only screen and (max-width: 320px) {
+  .img-carousel{
+    height: 150px;
+    overflow: hidden;
+  }
+  .carousel-indicators li {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+  }
+  .carousel-indicators {
+    bottom: -20px;
+  }
   .padding-word {
     padding: 10px 0 0 20px;
   }

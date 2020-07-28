@@ -63,14 +63,14 @@ body {
 .address {
     font-weight: initial;        
     color: #333333;
-    font-size: 28px;
+    font-size: 27px;
     line-height: 40px;
 }
 
 
 .share {        
     font-weight: initial;        
-    font-size: 28px;
+    font-size: 27px;
     margin-left: 10px;
     margin-top: 3px;
     color: white;
@@ -214,7 +214,103 @@ body {
         font-size: 16px;
     }
     .margin-logo {
-        margin: -50px 0 0 -15px;
+        margin: -70px 0 0 -15px;
+        }
+}
+
+@media only screen and (max-width: 736px) {
+    .contact-icon {
+        font-size: 60px;
+    }
+    .machine {
+        max-width: 400px;
+        width: 55%;
+    }
+    
+    .address {
+        font-weight: initial;        
+        color: #333333;
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .tel-padding {
+        padding: 5px 0 0 0;
+    }
+    .topic {
+        color: #333333;
+        padding: 0 0 10px 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 58px;
+    }
+    .share {
+        font-size: 26px;
+        margin-left: 10px;
+        margin-top: 3px;
+        color: white;
+        line-height: 50px;
+    }
+    .office {
+        color: #333333;
+        font-size: 36px;
+    }
+    .input {
+        font-size: 16px;
+    }
+    .margin-logo {
+        margin:-20px -20px 0 -15px;
+        }
+}
+@media only screen and (max-width: 450px) {
+    .contact-icon {
+        font-size: 40px;
+    }
+    .machine {
+        max-width: 200px;
+        width: 70%;
+    }
+    .address {
+        color: #333333;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .tel-padding {
+        padding: 0 0 0 0;
+        margin: -8px 0 0 -3px;
+    }
+    .topic {
+        color: #333333;
+        padding: 0 0 10px 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 45px;
+    }
+    .share {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-top: 3px;
+        color: white;
+        line-height: 50px;
+    }
+    .office {
+        color: #333333;
+        font-size: 22px;
+    }
+    .input-padding {
+        padding: 10px 20px 0 20px;
+    }
+    .button1 {
+        font-weight: bold;
+        font-size: 16px;
+        background-color: #cc3941;
+        color: white;
+        border: 3px solid white;
+        border-radius: 5px;
+        width: 100%;
+        height: 70px;
+    }
+    .margin-logo {
+        margin: -30px -15px 0 -15px;
     }
 }
 
@@ -267,74 +363,13 @@ body {
         height: 70px;
     }
     .margin-logo {
-        margin: -10px 0 0 -15px;
+        margin: -30px -15px 0 -15px;
     }
 }
 
-
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 375px) {
     .contact-icon {
         font-size: 40px;
-    }
-    .machine {
-        max-width: 100px;
-        width: 90%;
-    }
-    .address {
-        color: #333333;
-        font-size: 20px;
-        line-height: 36px;
-    }
-    .tel-padding {
-        padding: 0 0 0 0;
-        margin: -6px 0 0 -3px;
-    }
-    .topic {
-        color: #333333;
-        padding: 0 0 10px 0;
-        text-align: center;
-        font-weight: bold;
-        font-size: 45px;
-    }
-    .share {
-        font-size: 18px;
-        margin-left: 10px;
-        margin-top: 3px;
-        color: white;
-        line-height: 30px;
-    }
-    .office {
-        color: #333333;
-        font-size: 22px;
-    }
-    .input-padding {
-        padding: 10px 20px 0 20px;
-    }
-    .button1 {
-        font-weight: bold;
-        font-size: 20px;
-        background-color: #cc3941;
-        color: white;
-        border: 3px solid white;
-        border-radius: 5px;
-        width: 100%;
-        height: 70px;
-    }
-    
-    .button1:hover {
-        background-color: #ca707586;
-    }
-    
-    .margin-logo {
-        margin: -60px 0 0 -15px;
-    }
-}
-
-
-@media only screen and (max-width: 320px) {
-    .contact-icon {
-        font-size: 40px;
-        padding: 10px 0 0 20px;
     }
     .machine {
         max-width: 500px;
@@ -343,11 +378,11 @@ body {
     .address {
         color: #333333;
         font-size: 20px;
-        line-height: 24px;
+        line-height: 40px;
     }
     .tel-padding {
         padding: 0 0 0 0;
-        margin: 9px 0 0 -3px;
+        margin: -8px 0 0 -3px;
     }
     .topic {
         color: #333333;
@@ -357,11 +392,11 @@ body {
         font-size: 45px;
     }
     .share {
-        font-size: 14px;
+        font-size: 16px;
         margin-left: 10px;
         margin-top: 3px;
         color: white;
-        line-height: 18px;
+        line-height: 50px;
     }
     .office {
         color: #333333;
@@ -381,6 +416,64 @@ body {
         height: 70px;
     }
     .margin-logo {
-        margin: -10px 0 0 -15px;
+        margin: -10px -10px 0 -15px;
     }
 }
+
+
+
+@media only screen and (max-width: 320px) {
+    .contact-icon {
+        font-size: 40px;
+        padding: 10px 0 0 20px;
+    }
+    .machine {
+        max-width: 500px;
+        width: 90%;
+    }
+    .address {
+        color: #333333;
+        font-size:18px;
+        line-height: 30px;
+        margin: 0px 0 -20px 0;
+    }
+    .tel-padding {
+        padding: 0 0 0 0;
+        margin: 9px 0 0 -3px;
+    }
+    .topic {
+        color: #333333;
+        padding: 0 0 10px 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 45px;
+    }
+    .share {
+        font-size: 13px;
+        margin-left: 10px;
+        margin-top: 3px;
+        color: white;
+        line-height: 18px;
+    }
+    .office {
+        color: #333333;
+        font-size: 22px;
+    }
+    .input-padding {
+        padding: 10px 20px 0 20px;
+    }
+    .button1 {
+        font-weight: bold;
+        font-size: 14px;
+        background-color: #cc3941;
+        color: white;
+        border: 3px solid white;
+        border-radius: 5px;
+        width: 100%;
+        height: 70px;
+    }
+    .margin-logo {
+        margin: -10px -20px 0 -15px;
+    }
+}
+
