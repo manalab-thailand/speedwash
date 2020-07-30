@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/stylesheets/sty.css">
 
     <style>
-        #box-shadow {
+        #boxShadow {
             border: 1px solid #C4C4C4;
             padding: 0px 30px 5px 30px;
             box-shadow: 0 0 5px 1px;
@@ -105,7 +105,7 @@
                 <b><%=title%><b>
             </div>
             <div id="map" style="height: 500px;"></div>
-            <div id="box-shadow" class="row table-responsive">
+            <div id="boxShadow" class="row table-responsive">
                 <table class="table table-hover justify-content-center">
                     <thead>
                         <tr>
@@ -261,7 +261,7 @@
                     marker = new google.maps.Marker({
                         position: new google.maps.LatLng(<%=post[6] %>, <%=post[7] %>),
                         map: maps,
-                        title: "<%=post[0]%>"
+                        title: `<%=post[0]%>`
                     });
                     info = new google.maps.InfoWindow();
                     google.maps.event.addListener(marker, 'click', (function (marker, i) {
