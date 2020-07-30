@@ -114,10 +114,9 @@
                             <th scope="col">Contact</th>
                         </tr>
                     </thead>
-
                     <tbody id="markers">
-                    </tbody>
 
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -227,65 +226,55 @@
         </script>
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdQCEwdWm7PB6InxPfQ-Xlf6P8Vjer2xk&callback=initMap">
         </script>
 
-    <script>
-        function initMap() {
-            var markers = new Array();
-
-            var mapOptions = {
-                center: {
-                    lat: 13.66194,
-                    lng: 100.6126
-                },
-                zoom: 10,
-            }
-            var maps = new google.maps.Map(document.getElementById("map"), mapOptions);
-            var marker, info;
-            var i = 0;
-            <%
-                posts.values.forEach(function (post, i) {
-                    if (post[6]) { %>
-
-                        $('#markers').append(
-                            `<tr>
-                                <th scope="row"> 
-                                    <a class="marker-link" data-markerid="${i++}" href="#">
-                                    <%=post[0] %>
-                                    </a>
-                                </th>
-                                <th>
-                                    <%=post[1] %>
-                                </th>
-                                <th>
-                                    <%=post[2] %>
-                                </th>
-                            </tr>`
-                        );
-
-                        marker = new google.maps.Marker({
-                            position: new google.maps.LatLng(<%=post[6] %>, <%=post[7] %>),
-                            map: maps,
-                            title: "<%=post[0]%>"
-                        });
-                        info = new google.maps.InfoWindow();
-                        google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                            return function () {
-                                info.setContent(`<div class="h5"><b><%=post[0]%><b></div>
-                                                <div class="h6"><%=post[4]%></div>
-                                                <div class="h6"><a href="<%=post[5]%>" target="_blank" rel="noopener noreferrer">view on Google Maps</a></div>
-                                                <div class="h6"><b>ติดต่อ <a href="tel:<%=post[2]%>" target="_blank" rel="noopener noreferrer"><%=post[2]%></a></b></div>`); info.open(maps, marker); } })(marker, i));
+<script>
+    function initMap() {
+        const markers = new Array();
+        let mapOptions = {
+            center: {
+                lat: 13.66194,
+                lng: 100.6126
+            },
+            zoom: 10,
+        }
+        let maps = new google.maps.Map(document.getElementById("map"), mapOptions);
+        let marker, info;
+        let i = 0;
+        <%
+            posts.values.forEach(function (post, i) {
+                if (post[6]) { %>
+                    $('#markers').append(
+                        `<tr class="marker-link" data-markerid="${i++}">
+                            <th scope="row"><%=post[0] %></th>
+                            <th>
+                                <%=post[1] %>
+                            </th>
+                            <th>
+                                <%=post[2] %>
+                            </th>
+                        </tr>`
+                    );
+                    marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(<%=post[6] %>, <%=post[7] %>),
+                        map: maps,
+                        title: "<%=post[0]%>"
+                    });
+                    info = new google.maps.InfoWindow();
+                    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                        return function () {
+                            info.setContent(`<div class="h5"><b><%=post[0]%><b></div>
+                                            <div class="h6"><%=post[4]%></div>
+                                            <div class="h6"><a href="<%=post[5]%>" target="_blank" rel="noopener noreferrer">view on Google Maps</a></div>
+                                            <div class="h6"><b>ติดต่อ <a href="tel:<%=post[2]%>" target="_blank" rel="noopener noreferrer"><%=post[2]%></a></b></div>`); info.open(maps, marker); } })(marker, i));
             <% }  %>
                 markers.push(marker);
                 <%  }); %>
-                    $('.marker-link').on('click', function () { google.maps.event.trigger(markers[$(this).data('markerid')], 'click'); }); }
-
-
+                    $('.marker-link').on('click', function (e) { google.maps.event.trigger(markers[$(this).data('markerid')], 'click');}); }
                     </script>
-
-
 </body>
 
 </html>
