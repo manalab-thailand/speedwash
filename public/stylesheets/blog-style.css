@@ -25,7 +25,7 @@ a.facebookmorelink {
     color: #4d82b4;
     border: 2px solid #4d82b4;
     border-radius: 5px;
-    height: 70%;
+    height: 40px;
 }
 
 .button1:hover {
@@ -176,9 +176,52 @@ a.facebookmorelink {
         font-size: 16px;
         line-height: 24px;
     }
+    .viewpost-btn {
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 11px;
+        background-color: white;
+        color: #4d82b4;
+        border: 2px solid #4d82b4;
+        border-radius: 5px;
+        height: 35px;
+    }
     .box-card {
         margin: auto;
         width: 90%;
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    .title-blog {
+        font-size: 58px;
+    }
+    .title-speedwash {
+        padding: 17px 0px 10px 0px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .padding-page {
+        padding: 0 50px 60px 50px;
+    }
+    .padding-between-box {
+        padding: 0 0 40px 0;
+    }
+    .post-text {
+        padding: 20px 20px 30px 20px;
+        font-size: 17px;
+    }
+    .viewpost-btn {
+        font-size: 20px;
+        height: 45px;
+    }
+    .box-card {
+        margin: auto;
+        width: 100%;
         background: #FFFFFF;
         border: 1px solid #C4C4C4;
         box-sizing: border-box;
@@ -190,6 +233,11 @@ a.facebookmorelink {
     .title-blog {
         font-size: 58px;
     }
+    .title-speedwash {
+        padding: 17px 0px 10px 0px;
+        font-size: 18px;
+        line-height: 24px;
+    }
     .padding-page {
         padding: 0 50px 60px 50px;
     }
@@ -198,7 +246,45 @@ a.facebookmorelink {
     }
     .post-text {
         padding: 20px 20px 30px 20px;
-        font-size: 16px;
+        font-size: 17px;
+    }
+    .viewpost-btn {
+        font-size: 20px;
+        height: 45px;
+    }
+    .box-card {
+        margin: auto;
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .title-blog {
+        font-size: 58px;
+    }
+    .title-speedwash {
+        padding: 17px 0px 10px 20px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .padding-page {
+        padding: 0 50px 60px 50px;
+    }
+    .padding-between-box {
+        padding: 0 0 40px 0;
+    }
+    .post-text {
+        padding: 20px 20px 30px 20px;
+        font-size: 17px;
+    }
+    .viewpost-btn {
+        font-size: 20px;
+        height: 45px;
+        margin-right: 10px;
     }
     .box-card {
         margin: auto;
@@ -236,6 +322,11 @@ a.facebookmorelink {
         padding: 20px 10px 30px 10px;
         font-size: 13px;
     }
+    .viewpost-btn {
+        font-size: 13px;
+        height: 40px;
+        margin-right: 10px;
+    }
     .box-card {
         margin: auto;
         width: 100%;
@@ -269,6 +360,10 @@ a.facebookmorelink {
         padding: 20px 10px 30px 10px;
         font-size: 13px;
     }
+    .viewpost-btn {
+        font-size: 12px;
+        height: 40px;
+    }
     .box-card {
         margin: auto;
         width: 100%;
@@ -301,6 +396,11 @@ a.facebookmorelink {
     .post-text {
         padding: 20px 10px 30px 10px;
         font-size: 11px;
+    }
+    .viewpost-btn {
+        font-size: 10px;
+        height: 40px;
+        margin-right: 10px;
     }
     .box-card {
         margin: auto;

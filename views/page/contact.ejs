@@ -1,103 +1,4 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <title>SpeedWash</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheets/contact-style.css">
-    <link rel="stylesheet" href="stylesheets/navbar-footer-style.css">
-</head>
-
-<body>
-
-    <!-- Navbar -->
-    <div class="d-md-none d-sm-block d-lg-none d-xl-none text-center nav-movlie-color">
-        <a class="navbar-brand font-nav-footer-color p-1 pt-1 margin-title" href="#">
-            <h3><b>SPEED</b>WASH</h3>
-        </a>
-        </i>
-        <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-                <a href="index">
-                    <li class="color-link">Home</li>
-                </a>
-                <a href="about">
-                    <li class="color-link">About</li>
-                </a>
-                <a href="blog">
-                    <li class="color-link">Blog</li>
-                </a>
-                <a href="branches">
-                    <li class="color-link">Branches</li>
-                </a>
-                <a href="#">
-                    <li class="color-link">Contact</li>
-                </a>
-                <a class="navbar-brand" href="tel:+66834435222">
-                    <i class="fas fa-phone-alt size-icon color-link"></i>
-                    <b class="color-link">&nbsp&nbsp083-443-5222</b>
-                </a>
-                <a class="navbar-brand ml-nav translate" id="en" href="#">
-                    <b class="color-link">EN &nbsp;|&nbsp; </b>
-                </a>
-                <a class="navbar-brand ml-nav translate" id="th" href="#">
-                    <b class="color-link">TH</b>
-                </a>
-            </ul>
-        </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark default-color nav-mobile nav-color">
-        <a class="navbar-brand p-0 pt-1" href="#">
-            <h2><b>SPEED</b>WASH</h2>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
-            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
-            <ul class="navbar-nav nav ml-auto mr-auto text-center font-menu">
-                <li class="nav-item link-menu">
-                    <a class="nav-link" href="index">Home
-                    </a>
-                </li>
-                <li class="nav-item link-menu">
-                    <a class="nav-link" href="about">About </a>
-                </li>
-                <li class="nav-item link-menu">
-                    <a class="nav-link" href="blog">Blog</a>
-                </li>
-                <li class="nav-item link-menu">
-                    <a class="nav-link" href="branches">Branches</a>
-                </li>
-                <li class="nav-item link-menu active">
-                    <a class="nav-link font-bold" href="#">Contact</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav nav text-center  ">
-                <li class="nav-item active font-menu nav-link ">
-                    <i class="fas fa-phone-alt size-icon color-link"></i>
-                    <span><a class="navbar-brand" href="tel:+66834435222">
-                            <b class="color-link">&nbsp&nbsp083-443-5222</b></a>
-                    </span>
-                </li>
-                <li class="nav-item active font-menu nav-link ">
-                    <a class="navbar-brand ml-nav" href="#"><b class="color-link">EN &nbsp;|&nbsp; </b></a>
-                    <a class="navbar-brand ml-nav" href="#"><b class="color-link">TH</b></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- End Navbar -->
+<%- include("../partials/header"); -%>
 
     <main class="col">
         <div class="row">
@@ -132,7 +33,7 @@
                     </div>
                     <!-- map -->
                 </div>
-                <div class="map-padding">
+                <div class="map-contact-padding">
                     <div class="contact-map" id="map"></div>
                 </div>
             </div>
@@ -189,22 +90,4 @@
         })((this.window = this.window || {}));
     </script>
 
-    <script src="https://kit.fontawesome.com/7fee7179b9.js" crossorigin="anonymous"></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="javascripts/index.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdQCEwdWm7PB6InxPfQ-Xlf6P8Vjer2xk&callback=initMap">
-        </script>
-</body>
-
-</html>
+<%- include("../partials/footer"); -%>
