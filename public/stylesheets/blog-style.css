@@ -185,6 +185,7 @@ a.facebookmorelink {
         border: 2px solid #4d82b4;
         border-radius: 5px;
         height: 35px;
+        margin-right: 5px;
     }
     .box-card {
         margin: auto;
