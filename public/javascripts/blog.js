@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
     let sChar;
-    if(window.matchMedia("(max-width: 1920px)").matches) {
+    if(window.matchMedia(`(max-width: 1920px)`).matches) {
         sChar = 300;
     }
 
-    let moretext = "...See More";
-    let lesstext = "...See Less";
+    let moretext = `...See More`;
+    let lesstext = `...See Less`;
 
     $(".blog-seemore").each(function () {
         let content = $(this).html();
@@ -28,12 +28,12 @@ $(document).ready(function(){
         }
     });
 
-    $(".facebookmorelink").click(function () {
-        if ($(this).hasClass("less")) {
-            $(this).removeClass("less");
+    $(`.facebookmorelink`).click(function () {
+        if ($(this).hasClass(`less`)) {
+            $(this).removeClass(`less`);
             $(this).html(moretext);
         } else {
-            $(this).addClass("less");
+            $(this).addClass(`less`);
             $(this).html(lesstext);
         }
 

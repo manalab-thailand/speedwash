@@ -23,7 +23,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/index', indexRouter);
+app.get('/', function(req, res) {
+  res.redirect('/home');
+});
+app.use('/home', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/blog', blogRouter);
 app.use('/contact', contactRouter);

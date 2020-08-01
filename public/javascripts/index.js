@@ -2,24 +2,24 @@ $(document).ready(function() {
 
     let sChar;
 
-    if (window.matchMedia("(max-width: 375px)").matches) {
+    if (window.matchMedia(`(max-width: 375px)`).matches) {
         sChar = 130;
-    } else if (window.matchMedia("(max-width: 414px)").matches) {
+    } else if (window.matchMedia(`(max-width: 414px)`).matches) {
         sChar = 165;
-    } else if (window.matchMedia("(max-width: 768px)").matches) {
+    } else if (window.matchMedia(`(max-width: 768px)`).matches) {
         sChar = 195;
-    } else if (window.matchMedia("(max-width: 1024px)").matches) {
+    } else if (window.matchMedia(`(max-width: 1024px)`).matches) {
         sChar = 250;
-    } else if (window.matchMedia("(max-width: 1366px)").matches) {
+    } else if (window.matchMedia(`(max-width: 1366px)`).matches) {
         sChar = 260;
-    } else if (window.matchMedia("(max-width: 1440px)").matches) {
+    } else if (window.matchMedia(`(max-width: 1440px)`).matches) {
         sChar = 260;
-    } else if (window.matchMedia("(max-width: 1920px)").matches) {
+    } else if (window.matchMedia(`(max-width: 1920px)`).matches) {
         sChar = 360;
     }
 
-        let moretext = "...See More";
-        let lesstext = "...See Less";
+        let moretext = `...See More`;
+        let lesstext = `...See Less`;
 
         $(".more").each(function() {
             let content = $(this).html();
@@ -30,23 +30,23 @@ $(document).ready(function() {
 
                 let html =
                     c +
-                    '<span class="moreellipses">' +
-                    '&nbsp;</span><span class="morecontent"><span>' +
+                    `<span class="moreellipses">` +
+                    `&nbsp;</span><span class="morecontent"><span>` +
                     h +
-                    '</span>&nbsp;&nbsp;<a href="" class="Seemore facebookmorelink">' +
+                    `</span>&nbsp;&nbsp;<a href="" class="Seemore facebookmorelink">` +
                     moretext +
-                    "</a></span>";
+                    `</a></span>`;
 
                 $(this).html(html);
             }
         });
 
-        $(".facebookmorelink").click(function() {
-            if ($(this).hasClass("less")) {
-                $(this).removeClass("less");
+        $(`.facebookmorelink`).click(function() {
+            if ($(this).hasClass(`less`)) {
+                $(this).removeClass(`less`);
                 $(this).html(moretext);
             } else {
-                $(this).addClass("less");
+                $(this).addClass(`less`);
                 $(this).html(lesstext);
             }
 
