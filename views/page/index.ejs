@@ -99,8 +99,6 @@
   </nav>
   <!-- End Navbar -->
 
-
-
   <!-- carousel -->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -152,13 +150,56 @@
       </div>
     </div>
   </div>
-  <div class="col-12">
-    <img src="images/Photo.png" width="100%">
-  </div>
-  <img src="images/map_index.png" width="100%">
   <!-- End WORDDD -->
 
-  <!-- post -->
+  <!-- 4 ICON -->
+  <div class="container-fluid">
+    <div class="row text-center padding-four-icon">
+      <div class="col-3">
+        <img src="images/icon-time.png" width="55%">
+        <div class="col-12 title-icon">
+          Wash at any time
+        </div>
+        <div class="col-12 text-icon">
+          Need to wash your laundry at odd hours? We've got your covered.
+        </div>
+      </div>
+      <div class="col-3">
+        <img src="images/icon-detergent.png" width="55%">
+        <div class="col-12 title-icon">
+          No need to detergent
+        </div>
+        <div class="col-12 text-icon">
+          Just bring your clothes and let us handle the rest.
+        </div>
+      </div>
+      <div class="col-3">
+        <img src="images/icon-30-minutes.png" width="55%">
+        <div class="col-12 title-icon">
+          Finish your wash way faster
+        </div>
+        <div class="col-12 text-icon">
+          30 minutes is all you need for a full load of laundry with Speedwash.
+        </div>
+      </div>
+      <div class="col-3">
+        <img src="images/icon-study.png" width="55%">
+        <div class="col-12 title-icon">
+          relex while washing
+        </div>
+        <div class="col-12 text-icon">
+          Wait for your laundry in comfort in our waiting areas.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End 4 ICON -->
+
+  <!-- Img Map -->
+  <img src="images/map_index.png" width="100%">
+  <!-- End Img Map -->
+
+  <!-- Post -->
   <div class="container-fluid">
     <div class="row">
       <class class="container-fluid">
@@ -179,11 +220,11 @@
         <img class="img-blogs " src="<%=post.data[1].attachments.data[0].media.image.src%>" alt="">
       </div>
       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-right Hide">
-        <div class="text-blogs"><%=post.data[1].message%></div>
+        <div class="text-blogs facebookseemore more"><%=post.data[1].message%></div>
       </div>
     </div>
   </div>
-  <!-- End post -->
+  <!-- End Post -->
 
   <!-- Invest -->
   <div class="container-fluid">

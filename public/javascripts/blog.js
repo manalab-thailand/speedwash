@@ -1,12 +1,8 @@
 $(document).ready(function () {
 
-    const max375 = window.matchMedia("(max-width: 375px)");
-    const max414 = window.matchMedia("(max-width: 414px)");
-    const max768 = window.matchMedia("(max-width: 768px)");
-    const max1024 = window.matchMedia("(max-width: 1024px)");
     const max1920 = window.matchMedia("(max-width: 1920px)");
 
-    if (max1920.matches) {
+    if(max1920.matches) {
 
         var sChar = 300;
         var moretext = "...See More";

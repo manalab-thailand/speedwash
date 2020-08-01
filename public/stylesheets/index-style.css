@@ -1,671 +1,1235 @@
 .Seemore {
-  font-weight: bold;
-  color: #4d82b4;
+    font-weight: bold;
+    color: #4d82b4;
 }
-.Seemore:visited{
-  font-weight: bold;
-  color: #4d82b4;
+
+.Seemore:visited {
+    font-weight: bold;
+    color: #4d82b4;
 }
-a.facebookmorelink{
-  text-decoration: none;
-  outline: none;
+
+a.facebookmorelink {
+    text-decoration: none;
+    outline: none;
 }
+
 .morecontent span {
-  display: none;
+    display: none;
 }
+
 .facebookseemore {
-  width: 400px;
-  margin: 10px;
+    width: 400px;
+    margin: 10px;
 }
 
 .view-all {
-  color: black;
-}
-.view-all:hover {
-  color: black;
+    color: black;
 }
 
-.img-carousel{
-    height: 700px; /* height of container */
+.view-all:hover {
+    color: black;
+}
+
+/* div{
+    border: dashed;
+} */
+
+.img-carousel {
+    height: 700px;
     overflow: hidden;
 }
 
 .carousel-indicators li {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
 }
-.carousel-padding{
-  padding: 20px;
+
+.carousel-padding {
+    padding: 20px;
 }
-.carousel-indicators .active{
-  background-color: #FF3D3B;
+
+.carousel-indicators .active {
+    background-color: #FF3D3B;
 }
-.padding-branches{
-  padding: 10px 0 10px 0;
+
+.padding-branches {
+    padding: 10px 0 10px 0;
 }
+
 .padding-word {
-  padding: 100px 0 35px 270px;
+    padding: 100px 0 35px 270px;
 }
+
 .title {
-  font-weight: 900;
-  font-size: 78px;
-  line-height: 100px;
+    font-weight: 900;
+    font-size: 82px;
+    line-height: 100px;
 }
+
 .text {
-  padding: 25px 0px 25px 120px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 44px;
-  line-height: 55px;
-  display: flex;
+    padding: 25px 0px 25px 120px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 60px;
+    display: flex;
 }
 .img-washing {
-  padding: 50px 0 0 0;
-  width: 85%;
+    padding: 50px 0 0 0;
+    width: 85%;
+}
+.padding-four-icon{
+    padding: 40px 0 100px 0;
+}
+.title-icon{
+    padding: 35px 0 0 0;
+    font-size: 25.5px;
+    font-weight: bold;
+}
+.text-icon{
+    padding: 20px 0 0 0;
+    font-size: 25.5px;
 }
 .padding-blog {
-  padding: 100px 0 60px 295px;
+    padding: 100px 0 60px 295px;
 }
 .view-btn {
-  padding: 0 130px 70px 0;
-  font-weight: 900;
-  font-size: 28px;
+    padding: 0 130px 70px 0;
+    font-weight: 900;
+    font-size: 28px;
 }
 .padding-img-blogs {
-  padding: 10px 0 50px 0;
+    padding: 10px 0 50px 0;
 }
 .img-blogs {
-  width: 750px;
-  height: 455px;
-  padding: 0 0 0 100px;
+    width: 750px;
+    height: 455px;
+    padding: 0 0 0 100px;
 }
 .text-blogs {
-  font-size: 23px;
-  width: 85%;
-  padding: 55px 0 80px 80px;
+    font-size: 23px;
+    width: 85%;
+    padding: 55px 0 80px 80px;
 }
 .padding-Invest {
-  padding: 60px 0 30px 0;
+    padding: 60px 0 30px 0;
 }
 .text-invest {
-  font-size: 52px;
-  padding: 40px 45px 0 0;
+    font-size: 52px;
+    padding: 40px 45px 0 0;
 }
 .title-invest {
-  padding-top: 37px;
-  font-size: 67px;
+    padding-top: 37px;
+    font-size: 67px;
 }
 .padding-btn {
-  padding: 75px 0 60px 0;
+    padding: 75px 0 60px 0;
 }
 .Learnmore-btn {
-  color: white;
-  background: #6dcff6;
-  font-weight: 900;
-  font-size: 36px;
-  height: 100px;
-  width: 450px;
-  border-radius: 50px;
+    color: white;
+    background: #6dcff6;
+    font-weight: 900;
+    font-size: 36px;
+    height: 100px;
+    width: 450px;
+    border-radius: 50px;
 }
 .padding-checkmark {
-  padding: 0 50px 0 0;
+    padding: 0 50px 0 0;
 }
 
-@media only screen and (max-width: 1600px) {
-  .img-blogs {
-    width: 550px;
-    height: 380px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 19px;
-    width: 100%;
-    padding: 70px 140px 38px 75px;
-  }
+@media only screen and (max-width: 1440px) {
+    .padding-word {
+        padding: 80px 0 30px 180px;
+    }
+    .img-washing {
+        padding: 25px 0 0 0;
+        width: 90%;
+    }
+    .title {
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 50px;
+    }
+    .text {
+        padding: 30px 0 0 70px;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .padding-four-icon{
+        padding: 40px 0 70px 0;
+    }
+    .title-icon{
+        padding: 25px 0 0 0;
+        font-size: 19px;
+        font-weight: bold;
+    }
+    .text-icon{
+        padding: 15px 0 0 0;
+        font-size: 19px;
+    }
+    .padding-blog {
+        padding: 120px 0 85px 250px;
+    }
+    .padding-img-blogs {
+        padding: 0 0 40px 0;
+    }
+    .view-btn {
+        padding: 0 100px 70px 0;
+        font-weight: 900;
+        font-size: 26px;
+    }
+    .img-blogs {
+        width: 500px;
+        height: 400px;
+        padding: 0 0 0 0;
+    }
+    .text-blogs {
+        font-size: 26px;
+        width: 100%;
+        padding: 10px 110px 25px 90px;
+    }
+    .text-invest {
+        font-size: 34px;
+        padding: 40px 45px 0 0;
+    }
+    .title-invest {
+        padding: 30px 0 0 0;
+        font-size: 45px;
+    }
+    .padding-Invest {
+        padding: 120px 0 50px 0;
+    }
 }
 
-@media only screen and (max-width: 1400px) {
-  .img-blogs {
-    width: 500px;
-    height: 380px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 18px;
-    width: 100%;
-    padding: 70px 120px 38px 75px;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  .padding-word {
-    padding: 80px 0 30px 180px;
-  }
-  .img-washing {
-    padding: 25px 0 0 0;
-    width: 100%;
-  }
-  .title {
-    font-weight: 900;
-    font-size: 80px;
-    line-height: 50px;
-  }
-  .text {
-    padding: 30px 0 0 70px;
-    font-size: 42px;
-    line-height: 46px;
-  }
-  .padding-blog {
-    padding: 100px 0 45px 220px;
-  }
-  .padding-img-blogs {
-    padding: 50px 0 5px 0;
-  }
-  .view-btn {
-    padding: 0 100px 30px 0;
-    font-weight: 900;
-    font-size: 23px;
-  }
-  .img-blogs {
-    width: 450px;
-    height: 350px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 18px;
-    width: 100%;
-    padding: 70px 50px 38.6px 50px;
-  }
-  .padding-Invest {
-    padding: 120px 0 50px 0;
-  }
-}
-
-@media only screen and (max-width: 1199px) {
-  .padding-word {
-    padding: 80px 0 30px 150px;
-  }
-  .img-washing {
-    padding: 25px 0 0 0;
-    width: 100%;
-  }
-  .title {
-    font-weight: 900;
-    font-size: 85px;
-    line-height: 50px;
-  }
-  .text {
-    padding: 30px 0 0 70px;
-    font-size: 35px;
-    line-height: 45px;
-  }
-  .padding-blog {
-    padding: 120px 0 65px 250px;
-  }
-  .padding-img-blogs {
-    padding: 0 0 0 0;
-  }
-  .view-btn {
-    padding: 0 100px 55px 0;
-    font-weight: 900;
-    font-size: 26px;
-  }
-  .img-blogs {
-    width: 900px;
-    height: 600px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 26px;
-    width: 100%;
-    padding: 10px 110px 25px 110px;
-  }
-  .padding-Invest {
-    padding: 120px 0 50px 0;
-  }
-  .Hide {
-    display: none;
-  }
+@media only screen and (max-width: 1366px) {
+    .padding-word {
+        padding: 80px 0 30px 150px;
+    }
+    .img-washing {
+        padding: 25px 0 0 0;
+        width: 90%;
+    }
+    .title {
+        font-weight: 900;
+        font-size: 68px;
+        line-height: 50px;
+    }
+    .text {
+        padding: 30px 0 0 70px;
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .padding-four-icon{
+        padding: 50px 0 70px 0;
+    }
+    .title-icon{
+        padding: 25px 0 0 0;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .text-icon{
+        padding: 15px 0 0 0;
+        font-size: 18px;
+    }
+    .padding-blog {
+        padding: 120px 0 85px 250px;
+    }
+    .padding-img-blogs {
+        padding: 0 0 40px 0;
+    }
+    .view-btn {
+        padding: 0 100px 70px 0;
+        font-weight: 900;
+        font-size: 26px;
+    }
+    .img-blogs {
+        width: 500px;
+        height: 400px;
+        padding: 0 0 0 0;
+    }
+    .text-blogs {
+        font-size: 26px;
+        width: 100%;
+        padding: 10px 110px 25px 90px;
+    }
+    .text-invest {
+        font-size: 34px;
+        padding: 40px 45px 0 0;
+    }
+    .title-invest {
+        padding: 30px 0 0 0;
+        font-size: 45px;
+    }
+    .padding-Invest {
+        padding: 120px 0 50px 0;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
-  .img-carousel{
-    height: 550px;
-  }
-  .padding-word {
-    padding: 80px 0 30px 80px;
-  }
-  .img-washing {
-    padding: 25px 0 0 0;
-    width: 100%;
-  }
-  .title {
-    font-weight: 900;
-    font-size: 75px;
-    line-height: 50px;
-  }
-  .text {
-    padding: 30px 0 0 55px;
-    font-size: 32px;
-    line-height: 37px;
-  }
-  .padding-blog {
-    padding: 100px 0 55px 200px;
-  }
-  .padding-img-blogs {
-    padding: 0 0 0 0;
-  }
-  .view-btn {
-    padding: 0 50px 40px 0;
-    font-weight: 900;
-    font-size: 25px;
-  }
-  .img-blogs {
-    width: 890px;
-    height: 600px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 26px;
-    width: 100%;
-    padding: 10px 25px 10px 25px;
-  }
-  .padding-Invest {
-    padding: 100px 0 20px 0;
-  }
-  .text-invest {
-    font-size: 32px;
-    padding: 30px 0 0 0;
-  }
-  .title-invest {
-    padding: 30px 0 0 0;
-    font-size: 45px;
-  }
-  .padding-btn {
-    padding: 35px 0 20px 0;
-  }
-  .Learnmore-btn {
-    color: white;
-    background: #6dcff6;
-    font-weight: 900;
-    font-size: 28px;
-    height: 75px;
-    width: 350px;
-    border-radius: 50px;
-  }
-  .padding-checkmark {
-    padding: 0 20px 0 0;
-  }
-  .checkmark {
-    width: 50px;
-  }
-  .Hide {
-    display: none;
-  }
+    .img-carousel {
+        height: 500px;
+        overflow: hidden;
+    }
+    .carousel-indicators li {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+    }
+    .carousel-indicators {
+        bottom: -15px;
+    }
+    .padding-word {
+        padding: 80px 0 30px 100px;
+    }
+    .img-washing {
+        padding: 25px 0 0 0;
+        width: 100%;
+    }
+    .title {
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 50px;
+    }
+    .text {
+        padding: 30px 0 0 55px;
+        font-size: 26px;
+        line-height: 37px;
+    }
+    .padding-four-icon{
+        padding: 50px 0 50px 0;
+    }
+    .title-icon{
+        padding: 15px 0 0 0;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .text-icon{
+        padding: 10px 0 0 0;
+        font-size: 13px;
+    }
+    .padding-blog {
+        padding: 100px 0 55px 200px;
+    }
+    .padding-img-blogs {
+        padding: 0 0 0 0;
+    }
+    .view-btn {
+        padding: 0 50px 40px 0;
+        font-weight: 900;
+        font-size: 25px;
+    }
+    .img-blogs {
+        width: 890px;
+        height: 600px;
+        padding: 0 0 0 0;
+    }
+    .text-blogs {
+        font-size: 26px;
+        width: 100%;
+        padding: 10px 25px 10px 25px;
+    }
+    .padding-Invest {
+        padding: 100px 0 20px 0;
+    }
+    .text-invest {
+        font-size: 32px;
+        padding: 30px 0 0 0;
+    }
+    .title-invest {
+        padding: 30px 0 0 0;
+        font-size: 45px;
+    }
+    .padding-btn {
+        padding: 35px 0 20px 0;
+    }
+    .Learnmore-btn {
+        color: white;
+        background: #6dcff6;
+        font-weight: 900;
+        font-size: 28px;
+        height: 75px;
+        width: 350px;
+        border-radius: 50px;
+    }
+    .padding-checkmark {
+        padding: 0 20px 0 0;
+    }
+    .checkmark {
+        width: 50px;
+    }
+    .Hide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    .img-carousel {
+        height: 350px;
+        overflow: hidden;
+    }
+    .carousel-indicators li {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    .carousel-indicators {
+        bottom: -15px;
+    }
+    .padding-word {
+        padding: 50px 0 20px 80px;
+    }
+    .img-washing {
+        padding: 25px 0 0 0;
+        width: 100%;
+    }
+    .title {
+        font-weight: 900;
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .text {
+        padding: 20px 0 0 30px;
+        font-size: 21px;
+        line-height: 28px;
+    }
+    .padding-four-icon{
+        padding: 15px 0 40px 0;
+    }
+    .title-icon{
+        padding: 15px 0 0 0;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .text-icon{
+        padding: 10px 0 0 0;
+        font-size: 10px;
+    }
+    .padding-blog {
+        padding: 80px 0 50px 180px;
+    }
+    .padding-img-blogs {
+        padding: 0 0 0 0;
+    }
+    .view-btn {
+        padding: 0 60px 45px 0;
+        font-weight: 900;
+        font-size: 20px;
+    }
+    .img-blogs {
+        width: 700px;
+        height: 480px;
+        padding: 0 0 0 0;
+    }
+    .text-blogs {
+        font-size: 23px;
+        width: 100%;
+        padding: 0 70px 10px 20px;
+    }
+    .padding-Invest {
+        padding: 80px 0 20px 0;
+    }
+    .text-invest {
+        font-size: 28px;
+        padding: 30px 0 0 0;
+    }
+    .title-invest {
+        padding: 15px 0 0 0;
+        font-size: 30px;
+    }
+    .padding-btn {
+        padding: 20px 0 40px 0;
+    }
+    .Learnmore-btn {
+        color: white;
+        background: #6dcff6;
+        font-weight: 900;
+        font-size: 22px;
+        height: 55px;
+        width: 250px;
+        border-radius: 50px;
+    }
+    .padding-checkmark {
+        padding: 0 10px 0 0;
+    }
+    .checkmark {
+        width: 40px;
+    }
+    .Hide {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-  .padding-word {
-    padding: 50px 0 20px 80px;
-  }
-  .img-washing {
-    padding: 25px 0 0 0;
-    width: 100%;
-  }
-  .title {
-    font-weight: 900;
-    font-size: 58px;
-    line-height: 50px;
-  }
-  .text {
-    padding: 20px 0 0 50px;
-    font-size: 25px;
-    line-height: 28px;
-  }
-  .padding-blog {
-    padding: 80px 0 50px 180px;
-  }
-  .padding-img-blogs {
-    padding: 0 0 0 0;
-  }
-  .view-btn {
-    padding: 0 60px 45px 0;
-    font-weight: 900;
-    font-size: 20px;
-  }
-  .img-blogs {
-    width: 650px;
-    height: 480px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 23px;
-    width: 100%;
-    padding: 0 70px 10px 20px;
-  }
-  .padding-Invest {
-    padding: 80px 0 20px 0;
-  }
-  .text-invest {
-    font-size: 24px;
-    padding: 30px 0 0 0;
-  }
-  .title-invest {
-    padding: 15px 0 0 0;
-    font-size: 45px;
-  }
-  .padding-btn {
-    padding: 20px 0 10px 0;
-  }
-  .Learnmore-btn {
-    color: white;
-    background: #6dcff6;
-    font-weight: 900;
-    font-size: 22px;
-    height: 55px;
-    width: 250px;
-    border-radius: 50px;
-  }
-  .padding-checkmark {
-    padding: 0 10px 0 0;
-  }
-  .checkmark {
-    width: 40px;
-  }
-  .Hide {
-    display: none;
-  }
+    .img-carousel {
+        height: 300px;
+        overflow: hidden;
+    }
+    .carousel-indicators li {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    .carousel-indicators {
+        bottom: -15px;
+    }
+    .padding-word {
+        padding: 50px 0 20px 60px;
+    }
+    .img-washing {
+        padding: 25px 0 0 0;
+        width: 100%;
+    }
+    .title {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .text {
+        padding: 20px 0 0 30px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .padding-four-icon{
+        padding: 15px 0 40px 0;
+    }
+    .title-icon{
+        padding: 15px 0 0 0;
+        font-size: 9.5px;
+        font-weight: bold;
+    }
+    .text-icon{
+        padding: 10px 0 0 0;
+        font-size: 9.5px;
+    }
+    .padding-blog {
+        padding: 80px 0 50px 180px;
+    }
+    .padding-img-blogs {
+        padding: 0 0 0 0;
+    }
+    .view-btn {
+        padding: 0 60px 45px 0;
+        font-weight: 900;
+        font-size: 20px;
+    }
+    .img-blogs {
+        width: 650px;
+        height: 480px;
+        padding: 0 0 0 0;
+    }
+    .text-blogs {
+        font-size: 19px;
+        width: 100%;
+        padding: 0 70px 10px 20px;
+    }
+    .padding-Invest {
+        padding: 80px 0 20px 0;
+    }
+    .text-invest {
+        font-size: 26px;
+        padding: 30px 0 0 0;
+    }
+    .title-invest {
+        padding: 15px 0 0 0;
+        font-size: 45px;
+    }
+    .padding-btn {
+        padding: 20px 0 40px 0;
+    }
+    .Learnmore-btn {
+        color: white;
+        background: #6dcff6;
+        font-weight: 900;
+        font-size: 22px;
+        height: 55px;
+        width: 250px;
+        border-radius: 50px;
+    }
+    .padding-checkmark {
+        padding: 0 10px 0 0;
+    }
+    .checkmark {
+        width: 40px;
+    }
+    .Hide {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 768px) {
-  .padding-word {
-    padding: 50px 0 20px 80px;
-  }
-  .img-washing {
-    padding: 25px 0 0 0;
-    width: 100%;
-  }
-  .title {
-    font-weight: 900;
-    font-size: 58px;
-    line-height: 50px;
-  }
-  .text {
-    padding: 20px 0 0 50px;
-    font-size: 25px;
-    line-height: 28px;
-  }
-  .padding-blog {
-    padding: 80px 0 50px 180px;
-  }
-  .padding-img-blogs {
-    padding: 0 0 0 0;
-  }
-  .view-btn {
-    padding: 0 60px 45px 0;
-    font-weight: 900;
-    font-size: 20px;
-  }
-  .img-blogs {
-    width: 650px;
-    height: 480px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 23px;
-    width: 100%;
-    padding: 0 70px 10px 20px;
-  }
-  .padding-Invest {
-    padding: 80px 0 20px 0;
-  }
-  .text-invest {
-    font-size: 24px;
-    padding: 30px 0 0 0;
-  }
-  .title-invest {
-    padding: 15px 0 0 0;
-    font-size: 45px;
-  }
-  .padding-btn {
-    padding: 20px 0 10px 0;
-  }
-  .Learnmore-btn {
-    color: white;
-    background: #6dcff6;
-    font-weight: 900;
-    font-size: 22px;
-    height: 55px;
-    width: 250px;
-    border-radius: 50px;
-  }
-  .padding-checkmark {
-    padding: 0 10px 0 0;
-  }
-  .checkmark {
-    width: 40px;
-  }
-  .Hide {
-    display: none;
-  }
+@media only screen and (max-width: 736px) {
+    .img-carousel {
+        height: 300px;
+        overflow: hidden;
+    }
+    .carousel-indicators li {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    .carousel-indicators {
+        bottom: -15px;
+    }
+    .padding-word {
+        padding: 50px 0 20px 80px;
+    }
+    .img-washing {
+        padding: 25px 0 0 0;
+        width: 100%;
+    }
+    .title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 50px;
+    }
+    .text {
+        padding: 0px 0 0 50px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .padding-four-icon{
+        padding: 15px 0 30px 0;
+    }
+    .title-icon{
+        padding: 15px 0 0 0;
+        font-size: 9px;
+        font-weight: bold;
+    }
+    .text-icon{
+        padding: 10px 0 0 0;
+        font-size: 9px;
+    }
+    .padding-blog {
+        padding: 80px 0 50px 145px;
+    }
+    .padding-img-blogs {
+        padding: 0 0 0 0;
+    }
+    .view-btn {
+        padding: 0 25px 45px 0;
+        font-weight: 900;
+        font-size: 20px;
+    }
+    .img-blogs {
+        width: 630px;
+        height: 400px;
+        padding: 0 0 0 0;
+    }
+    .text-blogs {
+        font-size: 17px;
+        width: 100%;
+        padding: 0 70px 10px 12px;
+    }
+    .padding-Invest {
+        padding: 80px 0 20px 0;
+    }
+    .text-invest {
+        font-size: 24px;
+        padding: 30px 0 0 0;
+    }
+    .title-invest {
+        padding: 15px 0 0 0;
+        font-size: 45px;
+    }
+    .padding-btn {
+        padding: 20px 0 10px 0;
+    }
+    .Learnmore-btn {
+        color: white;
+        background: #6dcff6;
+        font-weight: 900;
+        font-size: 22px;
+        height: 55px;
+        width: 250px;
+        border-radius: 50px;
+    }
+    .padding-checkmark {
+        padding: 0 10px 0 0;
+    }
+    .checkmark {
+        width: 40px;
+    }
+    .Hide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .img-carousel {
+        height: 300px;
+        overflow: hidden;
+    }
+    .carousel-indicators li {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+    .carousel-indicators {
+        bottom: -15px;
+    }
+    .padding-word {
+        padding: 50px 0 20px 60px;
+    }
+    .img-washing {
+        padding: 25px 0 0 0;
+        width: 100%;
+    }
+    .title {
+        font-weight: 900;
+        font-size: 37px;
+        line-height: 50px;
+    }
+    .text {
+        padding: 0px 0px 0px 20px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .padding-four-icon{
+        padding: 15px 0 30px 0;
+    }
+    .title-icon{
+        padding: 10px 0 0 0;
+        font-size: 8px;
+        font-weight: bold;
+    }
+    .text-icon{
+        padding: 5px 0 0 0;
+        font-size: 8px;
+    }
+    .padding-blog {
+        padding: 80px 0 50px 115px;
+    }
+    .padding-img-blogs {
+        padding: 0 0 0 0;
+    }
+    .view-btn {
+        padding: 0 25px 55px 0;
+        font-weight: 900;
+        font-size: 15px;
+    }
+    .img-blogs {
+        width: 565px;
+        height: 350px;
+        padding: 0 0 0 0;
+    }
+    .text-blogs {
+        font-size: 18px;
+        width: 100%;
+        padding: 0 70px 10px 12px;
+    }
+    .padding-Invest {
+        padding: 80px 0 20px 0;
+    }
+    .text-invest {
+        font-size: 24px;
+        padding: 30px 0 0 0;
+    }
+    .title-invest {
+        padding: 15px 0 0 0;
+        font-size: 45px;
+    }
+    .padding-btn {
+        padding: 20px 0 40px 0;
+    }
+    .Learnmore-btn {
+        color: white;
+        background: #6dcff6;
+        font-weight: 900;
+        font-size: 22px;
+        height: 55px;
+        width: 250px;
+        border-radius: 50px;
+    }
+    .padding-checkmark {
+        padding: 0 10px 0 0;
+    }
+    .checkmark {
+        width: 40px;
+    }
+    .Hide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .img-carousel {
+        height: 250px;
+        overflow: hidden;
+    }
+    .carousel-indicators li {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+    .carousel-indicators {
+        bottom: -15px;
+    }
+    .padding-word {
+        padding: 50px 0 20px 45px;
+    }
+    .img-washing {
+        padding: 25px 0 0 0;
+        width: 100%;
+    }
+    .title {
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .text {
+        padding: 0px 0px 0px 20px;
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .padding-four-icon{
+        padding: 10px 0 25px 0;
+    }
+    .title-icon{
+        padding: 10px 0 0 0;
+        font-size: 7px;
+        font-weight: bold;
+    }
+    .text-icon{
+        padding: 5px 0 0 0;
+        font-size: 7px;
+    }
+    .padding-blog {
+        padding: 80px 0 50px 115px;
+    }
+    .padding-img-blogs {
+        padding: 0 0 0 0;
+    }
+    .view-btn {
+        padding: 0 25px 55px 0;
+        font-weight: 900;
+        font-size: 15px;
+    }
+    .img-blogs {
+        width: 490px;
+        height: 300px;
+        padding: 0 0 0 0;
+    }
+    .text-blogs {
+        font-size: 15px;
+        width: 100%;
+        padding: 0 70px 10px 0px;
+    }
+    .padding-Invest {
+        padding: 80px 0 20px 0;
+    }
+    .text-invest {
+        font-size: 20px;
+        padding: 30px 0 0 0;
+    }
+    .title-invest {
+        padding: 15px 0 0 0;
+        font-size: 30px;
+    }
+    .padding-btn {
+        padding: 20px 0 40px 0;
+    }
+    .Learnmore-btn {
+        color: white;
+        background: #6dcff6;
+        font-weight: 900;
+        font-size: 22px;
+        height: 55px;
+        width: 250px;
+        border-radius: 50px;
+    }
+    .padding-checkmark {
+        padding: 0 10px 0 0;
+    }
+    .checkmark {
+        width: 40px;
+    }
+    .Hide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .img-carousel {
+        height: 180px;
+        overflow: hidden;
+    }
+    .carousel-indicators li {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+    }
+    .carousel-indicators {
+        bottom: -15px;
+    }
+    .padding-word {
+        padding: 10px 0 0 30px;
+    }
+    .img-washing {
+        padding: 25px 0 0 0;
+        width: 85%;
+    }
+    .title {
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .text {
+        padding: 0 0 0 10px;
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .padding-four-icon{
+        padding: 10px 0 20px 0;
+    }
+    .title-icon{
+        padding: 10px 0 0 0;
+        font-size: 5px;
+        font-weight: bold;
+    }
+    .text-icon{
+        padding: 5px 0 0 0;
+        font-size: 5px;
+    }
+    .padding-blog {
+        padding: 40px 0 20px 70px;
+    }
+    .padding-img-blogs {
+        padding: 0 0 0 0;
+    }
+    .view-btn {
+        padding: 0 20px 30px 0;
+        font-weight: 900;
+        font-size: 9px;
+    }
+    .img-blogs {
+        width: 370px;
+        height: 220px;
+        padding: 0 0 0 0;
+    }
+    .text-blogs {
+        font-size: 12px;
+        width: 100%;
+        padding: 0 35px 0px 0px;
+    }
+    .padding-Invest {
+        padding: 15px 0 0 0;
+    }
+    .text-invest {
+        font-size: 13px;
+        padding: 20px 0 0 0;
+    }
+    .title-invest {
+        padding: 15px 0 0 0;
+        font-size: 25px;
+    }
+    .padding-btn {
+        padding: 20px 0 10px 0;
+    }
+    .Learnmore-btn {
+        color: white;
+        background: #6dcff6;
+        font-weight: 900;
+        font-size: 17px;
+        height: 45px;
+        width: 200px;
+        border-radius: 50px;
+    }
+    .padding-checkmark {
+        padding: 0 15px 0 0;
+    }
+    .checkmark {
+        width: 20px;
+    }
+    .Hide {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 414px) {
-  .padding-word {
-    padding: 10px 0 0 30px;
-  }
-  .img-washing {
-    padding: 25px 0 0 0;
-    width: 85%;
-  }
-  .title {
-    font-weight: 900;
-    font-size: 29px;
-    line-height: 50px;
-  }
-  .text {
-    padding: 0 0 0 10px;
-    font-size: 12px;
-    line-height: 15px;
-  }
-  .padding-blog {
-    padding: 40px 0 20px 85px;
-  }
-  .padding-img-blogs {
-    padding: 0 0 0 0;
-  }
-  .view-btn {
-    padding: 0 20px 30px 0;
-    font-weight: 900;
-    font-size: 12px;
-  }
-  .img-blogs {
-    width: 335px;
-    height: 220px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 12px;
-    width: 100%;
-    padding: 0 35px 0px 0px;
-  }
-  .padding-Invest {
-    padding: 15px 0 0 0;
-  }
-  .text-invest {
-    font-size: 13px;
-    padding: 20px 0 0 0;
-  }
-  .title-invest {
-    padding: 15px 0 0 0;
-    font-size: 25px;
-  }
-  .padding-btn {
-    padding: 20px 0 10px 0;
-  }
-  .Learnmore-btn {
-    color: white;
-    background: #6dcff6;
-    font-weight: 900;
-    font-size: 17px;
-    height: 45px;
-    width: 200px;
-    border-radius: 50px;
-  }
-  .padding-checkmark {
-    padding: 0 15px 0 0;
-  }
-  .checkmark {
-    width: 20px;
-  }
-  .Hide {
-    display: none;
-  }
+    .img-carousel {
+        height: 180px;
+        overflow: hidden;
+    }
+    .carousel-indicators li {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+    }
+    .carousel-indicators {
+        bottom: -15px;
+    }
+    .padding-word {
+        padding: 10px 0 0 30px;
+    }
+    .img-washing {
+        padding: 25px 0 0 0;
+        width: 85%;
+    }
+    .title {
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .text {
+        padding: 0 0 0 10px;
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .padding-four-icon{
+        padding: 10px 0 15px 0;
+    }
+    .title-icon{
+        padding: 5px 0 0 0;
+        font-size: 4.5px;
+        font-weight: bold;
+    }
+    .text-icon{
+        padding: 5px 0 0 0;
+        font-size: 4.5px;
+    }
+    .padding-blog {
+        padding: 40px 0 20px 70px;
+    }
+    .padding-img-blogs {
+        padding: 0 0 0 0;
+    }
+    .view-btn {
+        padding: 0 20px 30px 0;
+        font-weight: 900;
+        font-size: 9px;
+    }
+    .img-blogs {
+        width: 335px;
+        height: 220px;
+        padding: 0 0 0 0;
+    }
+    .text-blogs {
+        font-size: 12px;
+        width: 100%;
+        padding: 0 35px 0px 0px;
+    }
+    .padding-Invest {
+        padding: 15px 0 0 0;
+    }
+    .text-invest {
+        font-size: 13px;
+        padding: 20px 0 0 0;
+    }
+    .title-invest {
+        padding: 15px 0 0 0;
+        font-size: 25px;
+    }
+    .padding-btn {
+        padding: 20px 0 10px 0;
+    }
+    .Learnmore-btn {
+        color: white;
+        background: #6dcff6;
+        font-weight: 900;
+        font-size: 17px;
+        height: 45px;
+        width: 200px;
+        border-radius: 50px;
+    }
+    .padding-checkmark {
+        padding: 0 15px 0 0;
+    }
+    .checkmark {
+        width: 20px;
+    }
+    .Hide {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 375px) {
-  .padding-word {
-    padding: 10px 0 0 20px;
-  }
-  .img-washing {
-    padding: 25px 0 0 0;
-    width: 85%;
-  }
-  .title {
-    font-weight: 900;
-    font-size: 25px;
-    line-height: 50px;
-  }
-  .text {
-    padding: 0 0 0 10px;
-    font-size: 10px;
-    line-height: 13px;
-  }
-  .padding-blog {
-    padding: 20px 0 10px 70px;
-  }
-  .padding-img-blogs {
-    padding: 0 0 0 0;
-  }
-  .view-btn {
-    padding: 0 20px 23px 0;
-    font-weight: 900;
-    font-size: 10px;
-  }
-  .img-blogs {
-    width: 300px;
-    height: 220px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 13px;
-    width: 100%;
-    padding: 0 30px 0px 0px;
-  }
-  .padding-Invest {
-    padding: 15px 0 0 0;
-  }
-  .text-invest {
-    font-size: 12px;
-    padding: 15px 0 0 0;
-  }
-  .title-invest {
-    padding: 15px 0 0 0;
-    font-size: 19px;
-  }
-  .padding-btn {
-    padding: 20px 0 10px 0;
-  }
-  .Learnmore-btn {
-    color: white;
-    background: #6dcff6;
-    font-weight: 900;
-    font-size: 15px;
-    height: 35px;
-    width: 180px;
-    border-radius: 50px;
-  }
-  .padding-checkmark {
-    padding: 0 10px 0 0;
-  }
-  .checkmark {
-    width: 15px;
-  }
-  .Hide {
-    display: none;
-  }
+    .img-carousel {
+        height: 150px;
+        overflow: hidden;
+    }
+    .carousel-indicators li {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+    }
+    .carousel-indicators {
+        bottom: -20px;
+    }
+    .padding-word {
+        padding: 10px 0 0 30px;
+    }
+    .img-washing {
+        padding: 25px 0 0 0;
+        width: 85%;
+    }
+    .title {
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .text {
+        padding: 0 0 0 10px;
+        font-size: 8px;
+        line-height: 13px;
+    }
+    .title-icon{
+        padding: 5px 0 0 0;
+        font-size: 4px;
+        font-weight: bold;
+    }
+    .text-icon{
+        padding: 5px 0 0 0;
+        font-size: 4px;
+    }
+    .padding-blog {
+        padding: 20px 0 10px 70px;
+    }
+    .padding-img-blogs {
+        padding: 0 0 0 0;
+    }
+    .view-btn {
+        padding: 0 20px 23px 0;
+        font-weight: 900;
+        font-size: 10px;
+    }
+    .img-blogs {
+        width: 300px;
+        height: 220px;
+        padding: 0 0 0 0;
+    }
+    .text-blogs {
+        font-size: 11px;
+        width: 100%;
+        padding: 0 30px 0px 0px;
+    }
+    .padding-Invest {
+        padding: 15px 0 0 0;
+    }
+    .text-invest {
+        font-size: 12px;
+        padding: 15px 0 0 0;
+    }
+    .title-invest {
+        padding: 15px 0 0 0;
+        font-size: 19px;
+    }
+    .padding-btn {
+        padding: 20px 0 40px 0;
+    }
+    .Learnmore-btn {
+        color: white;
+        background: #6dcff6;
+        font-weight: 900;
+        font-size: 15px;
+        height: 35px;
+        width: 180px;
+        border-radius: 50px;
+    }
+    .padding-checkmark {
+        padding: 0 10px 0 0;
+    }
+    .checkmark {
+        width: 15px;
+    }
+    .Hide {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 320px) {
-  .padding-word {
-    padding: 10px 0 0 20px;
-  }
-  .img-washing {
-    padding: 25px 0 0 0;
-    width: 100%;
-  }
-  .title {
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 45px;
-  }
-  .text {
-    padding: 0 0 0 5px;
-    font-size: 8px;
-    line-height: 13px;
-  }
-  .padding-blog {
-    padding: 20px 0 0 70px;
-  }
-  .padding-img-blogs {
-    padding: 0 0 0 0;
-  }
-  .view-btn {
-    padding: 0 20px 10px 0;
-    font-weight: 900;
-    font-size: 10px;
-  }
-  .img-blogs {
-    width: 240px;
-    height: 170px;
-    padding: 0 0 0 0;
-  }
-  .text-blogs {
-    font-size: 11px;
-    width: 100%;
-    padding: 0px 25px 0px 0px;
-  }
-  .padding-Invest {
-    padding: 15px 0 0 0;
-  }
-  .text-invest {
-    font-size: 10px;
-    padding: 15px 0 0 0;
-  }
-  .title-invest {
-    padding: 15px 0 0 0;
-    font-size: 15px;
-  }
-  .padding-btn {
-    padding: 20px 0 10px 0;
-  }
-  .Learnmore-btn {
-    color: white;
-    background: #6dcff6;
-    font-weight: 900;
-    font-size: 12px;
-    height: 35px;
-    width: 130px;
-    border-radius: 50px;
-  }
-  .padding-checkmark {
-    padding: 0 5px 0 0;
-  }
-  .checkmark {
-    width: 10px;
-  }
-  .Hide {
-    display: none;
-  }
+    .img-carousel {
+        height: 150px;
+        overflow: hidden;
+    }
+    .carousel-indicators li {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+    }
+    .carousel-indicators {
+        bottom: -20px;
+    }
+    .padding-word {
+        padding: 10px 0 0 20px;
+    }
+    .img-washing {
+        padding: 25px 0 0 0;
+        width: 100%;
+    }
+    .title {
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 45px;
+    }
+    .text {
+        padding: 0 0 0 5px;
+        font-size: 8px;
+        line-height: 13px;
+    }
+    .padding-four-icon{
+        padding: 15px 0 15px 0;
+    }
+    .title-icon{
+        padding: 5px 0 0 0;
+        font-size: 3px;
+        font-weight: bold;
+    }
+    .text-icon{
+        padding: 3px 0 0 0;
+        font-size: 3px;
+    }
+    .padding-blog {
+        padding: 20px 0 0 70px;
+    }
+    .padding-img-blogs {
+        padding: 0 0 0 0;
+    }
+    .view-btn {
+        padding: 0 20px 10px 0;
+        font-weight: 900;
+        font-size: 10px;
+    }
+    .img-blogs {
+        width: 240px;
+        height: 170px;
+        padding: 0 0 0 0;
+    }
+    .text-blogs {
+        font-size: 11px;
+        width: 100%;
+        padding: 0px 25px 0px 0px;
+    }
+    .padding-Invest {
+        padding: 15px 0 0 0;
+    }
+    .text-invest {
+        font-size: 10px;
+        padding: 15px 0 0 0;
+    }
+    .title-invest {
+        padding: 15px 0 0 0;
+        font-size: 15px;
+    }
+    .padding-btn {
+        padding: 20px 0 10px 0;
+    }
+    .Learnmore-btn {
+        color: white;
+        background: #6dcff6;
+        font-weight: 900;
+        font-size: 12px;
+        height: 35px;
+        width: 130px;
+        border-radius: 50px;
+    }
+    .padding-checkmark {
+        padding: 0 5px 0 0;
+    }
+    .checkmark {
+        width: 10px;
+    }
+    .Hide {
+        display: none;
+    }
 }
