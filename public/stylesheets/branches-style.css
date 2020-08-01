@@ -58,8 +58,6 @@ body {
     }
 }
 
-
-        
 @media only screen and (max-width: 768px) {
     .title-branches {
         font-size: 58px;
@@ -124,7 +122,6 @@ body {
     }
 }
 
-                
 @media only screen and (max-width: 375px) {
     .map-padding{
         padding: 0 0px 0px 0px;

@@ -1,65 +1,61 @@
-body {
-  font-family: "Montserrat",
-}
-
 .logo {
-  width: 25%;
-  height: auto;
+    width: 25%;
+    height: auto;
 }
 
 .btn-language {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 .navbar-p {
-  padding: 0rem 1rem;
+    padding: 0rem 1rem;
 }
 
 
 /* Style the active class (and buttons on mouse-over) */
 
 .color-link {
-  color: white;
-  padding: 0rem 0rem
+    color: white;
+    padding: 0rem 0rem
 }
 
 .ml-nav {
-  margin-right: 0rem
+    margin-right: 0rem
 }
 
 .view-map {
-  color: white;
+    color: white;
 }
 
 .footer-color {
-  background-color: #ff3d3b;
+    background-color: #ff3d3b;
 }
 
 .nav-color {
-  background-color: #ff3d3b;
+    background-color: #ff3d3b;
 }
 
 .size-icon {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .margin-title {
-  margin-right: 0rem;
+    margin-right: 0rem;
 }
 
 .font-nav-color {
-  color: rgb(255, 255, 255);
-  font-size: 23px;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
 }
 
 .font-footer-color {
-  color: rgb(255, 255, 255);
-  font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
 }
 
 .font-menu {
-  font-size: 20px;
-  color: rgb(255, 255, 255);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
 }
 
 .font-bold {

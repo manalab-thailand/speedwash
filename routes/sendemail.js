@@ -4,25 +4,25 @@ const nodemailer = require("nodemailer");
 
 router.post("/", function (req, res, next) {
 
-    const Name = req.body.Name;
-    const Email = req.body.Email;
-    const Text = req.body.Text;
+    const name = req.body.Name;
+    const email = req.body.Email;
+    const text = req.body.Text;
 
-    const html = `New Request from ${Name}<br />Email: ${Email}<br />Message: ${Text}`
+    const html = `New Request from ${name}<br/> Email: ${email} <br/> Message: ${text}`
 
     const transporter = nodemailer.createTransport({
-        host: "smtp.yandex.com",
+        host: `smtp.yandex.com`,
         port: 465,
         auth: {
-        user: "no-reply@phajidagroup.com",
-        pass: "qwerty1234",
+        user: `no-reply@phajidagroup.com`,
+        pass: `qwerty1234`,
         },
     });
 
     let mailOptions = {
-        from: "no-reply@phajidagroup.com",
-        to: "kanomcake1928@gmail.com",
-        subject: Name,
+        from: `no-reply@phajidagroup.com`,
+        to: `kanomcake1928@gmail.com`,
+        subject: name,
         html: html,
     };
 
@@ -33,7 +33,7 @@ router.post("/", function (req, res, next) {
         console.log(info);
         }
     });
-    res.redirect("/contact");
+    res.redirect(`/contact`);
     
 });
 

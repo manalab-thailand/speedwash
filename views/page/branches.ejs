@@ -18,7 +18,7 @@
                             <th scope="col">Contact</th>
                         </tr>
                     </thead>
-                    <% posts.values.forEach(function(post){ if(post[0] != undefined && post[1] != undefined && post[2] != undefined){ console.log(typeof post[2]); %>
+                    <% dataMap.values.forEach(function(post){ if(post[0] != undefined && post[1] != undefined && post[2] != undefined){ console.log(typeof post[2]); %>
                     <tbody>
                         <tr>
                             <th scope="row">
@@ -142,7 +142,7 @@
         let maps = new google.maps.Map(document.getElementById("map"), mapOptions);
         let marker, i, info;
             <%
-            posts.values.forEach(function (post, i) {
+            dataMap.values.forEach(function (post, i) {
                 if (post[6]) { %>
                     marker = new google.maps.Marker({
                         position: new google.maps.LatLng(<%=post[6] %>, <%=post[7] %>),

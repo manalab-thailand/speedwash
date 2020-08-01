@@ -221,7 +221,6 @@
     }
 }
 
-
 @media only screen and (max-width: 823px) {
     .contact-icon {
         font-size: 50px;
@@ -358,6 +357,7 @@
         margin:-20px -20px 0 -15px;
         }
 }
+
 @media only screen and (max-width: 450px) {
     .contact-icon {
         font-size: 40px;
@@ -516,8 +516,6 @@
         margin: -10px -10px 0 -15px;
     }
 }
-
-
 
 @media only screen and (max-width: 320px) {
     .contact-icon {
