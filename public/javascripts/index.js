@@ -6,6 +6,7 @@ $(document).ready(function() {
     const max1024 = window.matchMedia("(max-width: 1024px)");
     const max1366 = window.matchMedia("(max-width: 1366px)");
     const max1440 = window.matchMedia("(max-width: 1440px)");
+    const max1920 = window.matchMedia("(max-width: 1920px)");
 
     if (max375.matches) {
         var sChar = 130;
@@ -197,6 +198,43 @@ $(document).ready(function() {
         });
     } else if (max1440.matches) {
         var sChar = 260;
+        var moretext = "...See More";
+        var lesstext = "...See Less";
+
+        $(".more").each(function() {
+            var content = $(this).html();
+
+            if (content.length > sChar) {
+                var c = content.substr(0, sChar);
+                var h = content.substr(sChar, content.length - sChar);
+
+                var html =
+                    c +
+                    '<span class="moreellipses">' +
+                    '&nbsp;</span><span class="morecontent"><span>' +
+                    h +
+                    '</span>&nbsp;&nbsp;<a href="" class="Seemore facebookmorelink">' +
+                    moretext +
+                    "</a></span>";
+                $(this).html(html);
+            }
+        });
+
+        $(".facebookmorelink").click(function() {
+            if ($(this).hasClass("less")) {
+                $(this).removeClass("less");
+                $(this).html(moretext);
+            } else {
+                $(this).addClass("less");
+                $(this).html(lesstext);
+            }
+
+            $(this).prev().toggle();
+
+            return false;
+        });
+    }else if (max1920.matches) {
+        var sChar = 360;
         var moretext = "...See More";
         var lesstext = "...See Less";
 
