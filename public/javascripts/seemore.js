@@ -28,7 +28,7 @@ $(document).ready(function() {
         let moretext = `...See More`;
         let lesstext = `...See Less`;
 
-        $(".more").each(function() {
+        $(".more , .blog-seemore").each(function() {
             let content = $(this).html();
 
             if (content.length > sChar) {
@@ -45,26 +45,6 @@ $(document).ready(function() {
                     `</a></span>`;
 
                 $(this).html(html);
-            }
-        });
-
-        $(".blog-seemore").each(function () {
-            let content = $(this).html();
-    
-            if (content.length > sCharBlog) {
-            let c = content.substr(0, sCharBlog);
-            let h = content.substr(sCharBlog + 1, content.length - sCharBlog);
-    
-            let html =
-                c +
-                '<span class="moreellipses">' +
-                '&nbsp;</span><span class="morecontent"><span>' +
-                h +
-                '</span>&nbsp;&nbsp;<a href="" class="Seemore facebookmorelink">' +
-                moretext +
-                "</a></span>";
-            
-            $(this).html(html);
             }
         });
 

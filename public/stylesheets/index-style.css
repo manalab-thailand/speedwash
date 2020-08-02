@@ -63,7 +63,7 @@ a.facebookmorelink {
 
 .title {
     font-weight: 900;
-    font-size: 4vw;
+    font-size: 3.5vw;
     line-height: 70px;
 }
 
@@ -71,13 +71,13 @@ a.facebookmorelink {
     padding: 25px 0px 25px 120px;
     font-style: normal;
     font-weight: normal;
-    font-size: 2vw;
+    font-size: 1.7vw;
     line-height: 60px;
     display: flex;
 }
 .img-washing {
     padding: 50px 0 0 0;
-    width: 85%;
+    max-width: 1040px;
 }
 .padding-four-icon{
     padding: 40px 0 100px 0;
@@ -103,7 +103,7 @@ a.facebookmorelink {
     padding: 10px 0 50px 0;
 }
 .img-blogs {
-    width: 750px;
+    width: 85%;
     height: 455px;
     padding: 0 0 0 100px;
 }
@@ -116,12 +116,12 @@ a.facebookmorelink {
     padding: 60px 0 30px 0;
 }
 .text-invest {
-    font-size: 52px;
+    font-size: 2vw;
     padding: 40px 45px 0 0;
 }
 .title-invest {
     padding-top: 37px;
-    font-size: 60px;
+    font-size: 2.5vw;
 }
 .padding-btn {
     padding: 75px 0 60px 0;

@@ -26,6 +26,7 @@ a.facebookmorelink {
     border: 2px solid #4d82b4;
     border-radius: 5px;
     height: 40px;
+    margin-right: 1vw;
 }
 
 .button1:hover {
@@ -33,7 +34,7 @@ a.facebookmorelink {
 }
 
 .padding-page {
-    padding: 0 150px 30px 150px;
+    padding: 0 1vw 30px 1vw;
 }
 
 .title-blog {
@@ -90,7 +91,7 @@ a.facebookmorelink {
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {    
     .title-blog {
         font-size: 72px;
     }
@@ -108,9 +109,12 @@ a.facebookmorelink {
         font-size: 12px;
     }
     .title-speedwash {
-        padding: 15px 0px 10px 50px;
+        padding: 15px 0px 10px 25px;
         font-size: 16px;
         line-height: 24px;
+    }
+    .viewpost-btn {
+        font-size: 15px;
     }
     .box-card {
         margin: auto;
@@ -140,7 +144,7 @@ a.facebookmorelink {
         font-size: 12px;
     }
     .title-speedwash {
-        padding: 15px 0px 10px 50px;
+        padding: 15px 0px 10px 30px;
         font-size: 16px;
         line-height: 24px;
     }
