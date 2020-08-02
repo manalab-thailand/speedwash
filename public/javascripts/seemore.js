@@ -22,18 +22,38 @@ $(document).ready(function() {
         sCharBlog = 300;
     } else if (window.matchMedia(`(max-width: 1920px)`).matches) {
         sChar = 360;
-        sCharBlog = 300;
+        sCharBlog = 390;
     }
 
         let moretext = `...See More`;
         let lesstext = `...See Less`;
 
-        $(".more , .blog-seemore").each(function() {
+        $(".more").each(function() {
             let content = $(this).html();
 
             if (content.length > sChar) {
                 let c = content.substr(0, sChar);
                 let h = content.substr(sChar + 1, content.length - sChar);
+
+                let html =
+                    c +
+                    `<span class="moreellipses">` +
+                    `&nbsp;</span><span class="morecontent"><span>` +
+                    h +
+                    `</span>&nbsp;&nbsp;<a href="" class="Seemore facebookmorelink">` +
+                    moretext +
+                    `</a></span>`;
+
+                $(this).html(html);
+            }
+        });
+
+        $(".blog-seemore").each(function() {
+            let content = $(this).html();
+
+            if (content.length > sCharBlog) {
+                let c = content.substr(0, sCharBlog);
+                let h = content.substr(sCharBlog + 1, content.length - sCharBlog);
 
                 let html =
                     c +
