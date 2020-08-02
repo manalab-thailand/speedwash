@@ -34,7 +34,7 @@
                     <!-- map -->
                 </div>
                 <div class="map-contact-padding">
-                    <div class="contact-map" id="map"></div>
+                    <div class="contact-map" id="map-contact"></div>
                 </div>
             </div>
             <div class="col-xl-6 col-md-12 col-sm-12 bgred">
@@ -63,32 +63,5 @@
             </div>
         </div>
     </main>
-
-    <!-- google map -->
-    <script>
-        (function (exports) {
-            "use strict";
-            function initMap() {
-                var map = new google.maps.Map(document.getElementById("map"), {
-                    zoom: 10.5,
-                    center: new google.maps.LatLng(13.645418, 100.679751),
-                    mapTypeId: "terrain",
-                });
-            <% dataMap.values.forEach(function (post) {
-                    if (post[6]) {%>
-                        var latLng = new google.maps.LatLng(<%=post[6] %>, <%=post[7] %>);
-                        var marker = new google.maps.Marker({
-                            position: latLng,
-                            map: map,
-                        });
-                        marker.addListener("click", function () {
-                            infowindow.open(map, marker);
-                        });
-            <% }
-                });%>
-        }
-            exports.initMap = initMap;
-        })((this.window = this.window || {}));
-    </script>
 
 <%- include(`../partials/footer`); -%>
