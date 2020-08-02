@@ -1,167 +1,171 @@
 <%- include(`../partials/header`); -%>
 
-<main>
-    <div class="container-fluid">
-        <div class="title-branches text-center">
-            <%=title%>
+    <main>
+        <div class="container-fluid">
+            <div class="title-branches text-center">
+                <%=title%>
+            </div>
+            <div class="map-padding">
+                <div id="map" class="branches-map"></div>
+            </div>
+            <div class="padding-table">
+                <div id="box-shadow" class="row table-responsive">
+                    <table class="table table-hover justify-content-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Province</th>
+                                <th scope="col">Contact</th>
+                            </tr>
+                        </thead>
+                        <tbody id="markers">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
-        <div class="map-padding">
-            <div id="map" class="branches-map"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4 footer-color font-nav-footer-color font-bold">
+        <!-- Footer Links -->
+        <div class="container-fluid text-md-left">
+            <!-- Grid row -->
+            <div class="row font-footer-color">
+                <!-- Grid column -->
+                <div class="col-sm-2 col-xl-2  "></div>
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <!-- Content -->
+                    <div class="text-mobile-center">
+                        <img class="logo" src="images/SpeedWash.png" alt="">
+                    </div>
+                    <p class="mt-3">35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District Samut Prakan 10540</p>
+                    <a href="branches" class="view-map">
+                        <p>View Maps ></p>
+                    </a>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <!-- Grid column -->
+                <div class="col-md-1"></div>
+                <div class="col-md-5 mb-md-0 mb-3 margin-mobile">
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="row">
+                                <div class="icon">
+                                    <i style="font-size:36px;" class="fas fa-phone-volume"></i>
+                                </div>
+                                <div class="contact phone-number">
+                                    <div class="col-12"><a class="nav-link color-link size-font-contact" href="tel:+6623162430">02-316-2430</a></div>
+                                    <div class="col-12"><a class="nav-link color-link size-font-contact" href="tel:+66834435222">083-443-5222</a></div>
+                                    <div class="col-12"><a class="nav-link color-link size-font-contact" href="tel:+66945459456">094-545-9456</a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mt-4">
+                            <div class="row">
+                                <div class="">
+                                    <img src="https://img.icons8.com/fluent/40/000000/gmail.png" />
+                                </div>
+                                <div class="">
+                                    <div class=" contact">
+                                        <div class="col-12 size-font-contact">phajidathailand@gmail.com</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="">
+                                    <img src="https://img.icons8.com/color/40/000000/line-me.png" />
+                                </div>
+                                <div class="">
+                                    <div class="contact">
+                                        <div class="col-12 size-font-contact"> @PhajidaGroup</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="">
+                                    <img src="https://img.icons8.com/color/40/000000/facebook.png" />
+                                </div>
+                                <div class="">
+                                    <div class="contact">
+                                        <div class="col-12 size-font-contact">SpeedWashLaundryTH</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
         </div>
-        <div class="padding-table">
-            <div id="box-shadow" class="row table-responsive">
-                <table class="table table-hover justify-content-center">
-                    <thead>
-                        <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Province</th>
-                            <th scope="col">Contact</th>
-                        </tr>
-                    </thead>
-                    <% dataMap.values.forEach(function(post){ if(post[0] != undefined && post[1] != undefined && post[2] != undefined){ console.log(typeof post[2]); %>
-                    <tbody>
-                        <tr>
-                            <th scope="row">
-                                <%=post[0] %>
-                            </th>
+        <!-- Footer Links -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- google map -->
+    <script>
+        function initMap() {
+            const markers = new Array();
+            let scalezoom = 12;
+            if (window.matchMedia("(max-width: 768px)").matches) {
+                scalezoom = 10;
+            }
+            let mapOptions = {
+                center: {
+                    lat: 13.645418,
+                    lng: 100.679751
+                },
+                zoom: scalezoom,
+            }
+            let maps = new google.maps.Map(document.getElementById("map"), mapOptions);
+            let marker, info;
+            let i = 0;
+            <%
+            dataMap.values.forEach(function (post, i) {
+                if (post[6]) { %>
+            $('#markers').append(
+                `<tr class="marker-link" data-markerid="${i++}">
+                            <th scope="row"><%=post[0] %></th>
                             <th>
                                 <%=post[1] %>
                             </th>
                             <th>
                                 <%=post[2] %>
                             </th>
-                        </tr>
-                    </tbody>
-                    <% } });%>
-                </table>
-            </div>
-        </div>
+                        </tr>`
+            );
 
-    </div>
-</main>
-
-<!-- Footer -->
-<footer class="page-footer font-small pt-4 footer-color font-nav-footer-color font-bold">
-    <!-- Footer Links -->
-    <div class="container-fluid text-md-left">
-        <!-- Grid row -->
-        <div class="row font-footer-color">
-            <!-- Grid column -->
-            <div class="col-sm-2 col-xl-2  "></div>
-            <div class="col-md-4 mt-md-0 mt-3">
-                <!-- Content -->
-                <div class="text-mobile-center">
-                    <img class="logo" src="images/SpeedWash.png" alt="">
-                </div>
-                <p class="mt-3">35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District Samut Prakan 10540</p>
-                <a href="branches" class="view-map">
-                    <p>View Maps ></p>
-                </a>
-            </div>
-            <!-- Grid column -->
-            <hr class="clearfix w-100 d-md-none pb-3">
-            <!-- Grid column -->
-            <div class="col-md-1"></div>
-            <div class="col-md-5 mb-md-0 mb-3 margin-mobile">
-                <ul class="list-unstyled">
-                    <li>
-                        <div class="row">
-                            <div class="icon">
-                                <i style="font-size:36px;" class="fas fa-phone-volume"></i>
-                            </div>
-                            <div class="contact phone-number">
-                                <div class="col-12"><a class="nav-link color-link size-font-contact"
-                                        href="tel:+6623162430">02-316-2430</a></div>
-                                <div class="col-12"><a class="nav-link color-link size-font-contact"
-                                        href="tel:+66834435222">083-443-5222</a></div>
-                                <div class="col-12"><a class="nav-link color-link size-font-contact"
-                                        href="tel:+66945459456">094-545-9456</a></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="mt-4">
-                        <div class="row">
-                            <div class="">
-                                <img src="https://img.icons8.com/fluent/40/000000/gmail.png" />
-                            </div>
-                            <div class="">
-                                <div class=" contact">
-                                    <div class="col-12 size-font-contact">phajidathailand@gmail.com</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="">
-                                <img src="https://img.icons8.com/color/40/000000/line-me.png" />
-                            </div>
-                            <div class="">
-                                <div class="contact">
-                                    <div class="col-12 size-font-contact"> @PhajidaGroup</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="">
-                                <img src="https://img.icons8.com/color/40/000000/facebook.png" />
-                            </div>
-                            <div class="">
-                                <div class="contact">
-                                    <div class="col-12 size-font-contact">SpeedWashLaundryTH</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-    </div>
-    <!-- Footer Links -->
-</footer>
-<!-- Footer -->
-
-<!-- google map -->
-<script>
-    function initMap() {
-        let scalezoom = 12;
-        if (window.matchMedia("(max-width: 768px)").matches) {
-            scalezoom = 10;
-        }
-        let mapOptions = {
-            center: {
-                lat: 13.645418,
-                lng: 100.679751
-            },
-            zoom: scalezoom,
-        }
-        let maps = new google.maps.Map(document.getElementById("map"), mapOptions);
-        let marker, i, info;
-            <%
-            dataMap.values.forEach(function (post, i) {
-                if (post[6]) { %>
-                    marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(<%=post[6] %>, <%=post[7] %>),
-                        map: maps,
-                        title: "<%=post[0]%>"
-                    });
-                    info = new google.maps.InfoWindow();
-                    google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                        return function () {
-                            info.setContent(`<div class="h5"><b><%=post[0]%><b></div>
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(<%=post[6] %>, <%=post[7] %>),
+                map: maps,
+                title: "<%=post[0]%>"
+            });
+            info = new google.maps.InfoWindow();
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    info.setContent(`<div class="h5"><b><%=post[0]%><b></div>
                                             <div class="h6"><%=post[4]%></div>
                                             <div class="h6"><a class="link" href="<%=post[5]%>" target="_blank" rel="noopener noreferrer">view on Google Maps</a></div>
-                                            <div class="h6"><b>ติดต่อ <a class="link" href="tel:<%=post[2]%>" target="_blank" rel="noopener noreferrer"><%=post[2]%></a></b></div>`); info.open(maps, marker);
-                        }
-                    })(marker, i));
-        <% }
-            }); %>
+                                            <div class="h6"><b>ติดต่อ <a class="link" href="tel:<%=post[2]%>" target="_blank" rel="noopener noreferrer"><%=post[2]%></a></b></div>`);
+                    info.open(maps, marker);
+                }
+            })(marker, i));
+            <% }  %>
+            markers.push(marker);
+            <%  }); %>
+            $('.marker-link').on('click', function(e) {
+                google.maps.event.trigger(markers[$(this).data('markerid')], 'click');
+            });
         }
-</script>
-// End google map
+    </script>
+    // End google map
 
-<%- include(`../partials/footer`); -%>
+    <%- include(`../partials/footer`); -%>
