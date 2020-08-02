@@ -15,6 +15,13 @@
     color: rgb(192, 192, 192);
 }
 
+.font-normal {
+    font-weight: normal;
+}
+.logo {
+    width: 35%;
+    height: auto;
+}
 
 /* Style the active class (and buttons on mouse-over) */
 
