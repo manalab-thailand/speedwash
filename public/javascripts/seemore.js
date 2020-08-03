@@ -21,14 +21,14 @@ $(document).ready(function() {
         sChar = 260;
         sCharBlog = 300;
     } else if (window.matchMedia(`(max-width: 1920px)`).matches) {
-        sChar = 360;
+        sChar = 430;
         sCharBlog = 390;
     }
 
         let moretext = `...See More`;
         let lesstext = `...See Less`;
 
-        $(".more").each(function() {
+        $(".index-seemore").each(function() {
             let content = $(this).html();
 
             if (content.length > sChar) {

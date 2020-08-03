@@ -95,7 +95,13 @@
     <!-- End 4 ICON -->
 
     <!-- Img Map -->
-    <img src="images/map_index.png" width="100%">
+    <div class="mapOverlay">
+        <div class="color-overlay">
+            <div class="map-text">
+                One of our laundromat is here, and we will be coming to your neighbourhood soon.
+            </div>
+        </div>
+    </div>
     <!-- End Img Map -->
 
     <!-- post -->
@@ -108,9 +114,8 @@
                     <div class="mt-auto view-btn"><a href="blog" class="view-all">View All ></a></div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-right">
-                    <div class="text-blogs facebookseemore more">
+                    <div class="text-blogs facebookseemore index-seemore">
                         <%=post.data[0].message%>
-                            </span>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-left text-center padding-img-blogs">
@@ -124,7 +129,7 @@
                     <img class="img-blogs " src="<%=post.data[1].attachments.data[0].media.image.src%>" alt="">
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-right Hide">
-                    <div class="text-blogs facebookseemore more">
+                    <div class="text-blogs facebookseemore index-seemore">
                         <%=post.data[1].message%>
                     </div>
                 </div>
