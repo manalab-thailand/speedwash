@@ -15,12 +15,24 @@ $(document).ready(function() {
             'icon-time': `Need to wash your laundry at odd hours? We've got your covered.`,
             'icon-detergent': 'Just bring your clothes and let us handle the rest.',
             'icon-30-minutes': '30 minutes is all you need for a full load of laundry with Speedwash.',
-            'icon-study': 'Wait for your laundry in comfort in our waiting areas.'
+            'icon-study': 'Wait for your laundry in comfort in our waiting areas.',
+            'address': '35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District Samut Prakan 10540',
+            'viewAll': 'view all >',
+            'viewMap': 'view map >',
+            'learnMore': 'Learn more...',
+            'seeMore': '...See More',
+            'we-Here': `We're Here`,
+            'reachUs': 'Reach Us.',
+            'ourOffice': 'Our Office',
+            'ask': 'Share your experience or ask us questions',
+            'submit': 'Submit',
+            'provice': 'Provice',
+            'viewPost': 'View Post'
         },
         th: {
             'home': 'หน้าแรก',
             'about': 'เกี่ยวกับเรา',
-            'blog': 'บล็อก',
+            'blog': 'บทความ',
             'branches': 'สาขา',
             'contact': 'ติดต่อเรา',
             'speedwash': 'สปีดวอช',
@@ -31,8 +43,20 @@ $(document).ready(function() {
             'title-icon-study': 'รอรับได้เลย',
             'icon-time': `จะซักจะอบเวลาไหนได้ตามสะดวก ไร้ข้อจำกัดเรื่องเวลา`,
             'icon-detergent': 'มาแค่ตัวกับผ้า สะอาดพร้อมใส่ไม่ต้องเติมน้ำยาเอง',
-            'icon-30-minutes': 'ด้วยระยะเวลา 30 นาทีต่อรอบการซักผ้า/การอบผ้า',
-            'icon-study': 'เราจัดพื้นที่ให้ผู้ใช้บริการได้นั่งรอรับผ้าอย่างสะดวกสบาย'
+            'icon-30-minutes': 'ด้วยระยะเวลา 30 นาทีต่อรอบการซักผ้าและการอบผ้า',
+            'icon-study': 'เราจัดพื้นที่ให้ผู้ใช้บริการได้นั่งรอรับผ้าอย่างสะดวกสบาย',
+            'address': '35/35 หมู่ที่ 13 ตำบลบางพลีใหญ่ อำเภอบางพลี จังหวัดสมุทรปราการ 10540 ',
+            'viewAll': 'ดูทั้งหมด >',
+            'viewMap': 'ดูแผนที่ >',
+            'learnMore': 'ศึกษาเพิ่มเติม...',
+            'seeMore': '...อ่านเพิ่มเติม',
+            'we-Here': 'เราอยู่ตรงนี้',
+            'reachUs': 'ติดต่อเรา',
+            'ourOffice': 'สำนักงานใหญ่',
+            'ask': 'แลกเปลี่ยนประสบการณ์หรือสอบถามปัญหา',
+            'submit': 'ยืนยัน',
+            'provice': 'จังหวัด',
+            'viewPost': 'อ่านเพิ่มเติม'
         }
     };
 

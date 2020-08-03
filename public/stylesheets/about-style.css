@@ -62,7 +62,6 @@
     }
 }
 
-
 @media only screen and (max-width: 414px) {
     .font-topic {
         padding: 10px 0 0 0;
@@ -113,6 +112,7 @@
         color: #4d82b4;
     }
 }
+
 @media only screen and (max-width: 320px) {
     .font-text {
         padding: 0 0 0 0;

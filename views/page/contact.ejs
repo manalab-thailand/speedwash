@@ -4,15 +4,17 @@
         <div class="row">
             <div class="col-xl-6 col-md-12 col-sm-12">
                 <div class="container mt-4">
-                    <h1 class="topic"><b>We're Here</b></h1>
-                    <h3 class="office mt-3"><b>Our Office</b></h3>
-                    <div class="col-xl-8 col-md-12 col-sm-12">
-                        <h5 class="address"> 35/35 Moo. 12 Tambon Bang Phli Yai,
-                            Bang Phli District,Samut Prakan 10540 Thailand <img class="thai-icon" src="images/thai.png"
-                                alt="" class="thai">
+                    <h1 class="topic lang" key="we-Here"><b>We're Here</b></h1>
+                    <h3 class="office mt-3 lang" key="ourOffice"><b>Our Office</b></h3>
+
+                    <div class="col-xl-9 col-md-12 col-sm-12">
+                        <h5 class="address lang" key="address"> 35/35 Moo. 12 Tambon Bang Phli Yai, Bang Phli District,Samut Prakan 10540 Thailand
+                        <span><img class="thai-icon" src="images/thai.png"></span>
                         </h5>
+                        
                     </div>
-                    <div class="row mt-3"><a href="tel:+6683443522">
+                    <div class="row mt-3">
+                        <a href="tel:+6683443522">
                             <i class="fas fa-phone-square-alt contact-icon"></i></a>
                         <div class="col">
                             <h5 class="address tel-padding">083 443 5222</h5>
@@ -39,22 +41,18 @@
             </div>
             <div class="col-xl-6 col-md-12 col-sm-12 bgred">
                 <div class="container mt-4">
-                    <h1 class="topic"><b class="reach">Reach Us.</b></h1>
-                    <h3 class="share share-x ml-3">Share your experience or ask us questions</h3>
-                    <h5 class="share share-x ml-3"> phajidathailand@gmail.com <span
-                            style='font-size:32px;'>&#8594;</span>
+                    <h1 class="topic"><b class="reach lang" key="reachUs">Reach Us.</b></h1>
+                    <h3 class="share share-x ml-3 lang" key="ask">Share your experience or ask us questions</h3>
+                    <h5 class="share share-x ml-3"> phajidathailand@gmail.com <span style='font-size:32px;'>&#8594;</span>
                     </h5>
                     <div class="row input-padding">
                         <div class="container justify-center">
                             <form action="sendemail" method="POST">
-                                <input class="custom-control form-control-lg mt-3 input col" type="text" name="Name"
-                                    placeholder="Name"></input>
-                                <input class="custom-control form-control-lg mt-4 input col" type="email" name="Email"
-                                    placeholder="Email"></input>
-                                <textarea class="custom-control form-control-lg textarea mt-4 input col input-qeustion"
-                                    type="text" name="Text" placeholder="Question" rows="10"></textarea>
+                                <input class="custom-control form-control-lg mt-3 input col" type="text" name="Name" placeholder="Name"></input>
+                                <input class="custom-control form-control-lg mt-4 input col" type="email" name="Email" placeholder="Email"></input>
+                                <textarea class="custom-control form-control-lg textarea mt-4 input col input-qeustion" type="text" name="Text" placeholder="Question" rows="10"></textarea>
                                 <div class="text-center button mt-5 pb-3 hover">
-                                    <button class="button button1">Submit</button>
+                                    <button class="button button1 lang" key="submit">Submit</button>
                                 </div>
                             </form>
                         </div>
@@ -64,4 +62,4 @@
         </div>
     </main>
 
-<%- include(`../partials/footer`); -%>
+    <%- include(`../partials/footer`); -%>

@@ -5,7 +5,6 @@ $(document).ready(function() {
 
     const constant = constantKey();
     $.getJSON(constant.FACEBOOKAPI, function (facebookAPI) {
-        console.log(facebookAPI.data[0].id);
 
     if (window.matchMedia(`(max-width: 375px)`).matches) {
         sChar = 130;
