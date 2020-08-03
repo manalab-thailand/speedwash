@@ -29,7 +29,7 @@ body{
     .fontTopic{
         font-weight: 900;
         font-size: 72px;
-        padding: 0 0 0 0;
+        padding: 25px 0 25px 0;
         text-align: center;
     }
 }
@@ -37,7 +37,7 @@ body{
     .fontTopic{
         font-weight: 900;
         font-size: 72px;
-        padding: 0 0 0 0;
+        padding: 25px 0 25px 0;
         text-align: center;
     }
 }
@@ -45,7 +45,7 @@ body{
     .fontTopic{
         font-weight: 900;
         font-size: 72px;
-        padding: 0 0 0 0;
+        padding: 20px 0 20px 0;
         text-align: center;
     }
 }
@@ -61,7 +61,7 @@ body{
     .fontTopic{
         font-weight: 900;
         font-size: 60px;
-        padding: 0 0 0 0;
+        padding: 10px 0 10px 0;
         text-align: center;
     }
 }
@@ -79,7 +79,7 @@ body{
         font-weight: 900;
         font-size: 60px;
         line-height: 50px;
-        padding: 20px 0 10px 0;
+        padding: 25px 0 25px 0;
         text-align: center;
     }
 }
