@@ -121,7 +121,7 @@ a.facebookmorelink {
     padding: 100px 0 60px 295px;
 }
 .view-btn {
-    padding: 0 130px 50px 0;
+    padding: 0 130px 60px 0;
     font-weight: 900;
     font-size: 1.5vw;
 }
@@ -1257,7 +1257,7 @@ a.facebookmorelink {
         font-size: 3px;
     }
     .mapOverlay{
-        height: 150px;
+        height: 140px;
     }
     .map-text{
         line-height: 15px;

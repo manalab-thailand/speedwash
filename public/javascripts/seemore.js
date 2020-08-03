@@ -3,6 +3,10 @@ $(document).ready(function() {
     let sChar;
     let sCharBlog;
 
+    const constant = constantKey();
+    $.getJSON(constant.FACEBOOKAPI, function (facebookAPI) {
+        console.log(facebookAPI.data[0].id);
+
     if (window.matchMedia(`(max-width: 375px)`).matches) {
         sChar = 130;
         sCharBlog = 150;
@@ -17,18 +21,19 @@ $(document).ready(function() {
         sCharBlog = 250;
     } else if (window.matchMedia(`(max-width: 1366px)`).matches) {
         sChar = 260;
+        sCharBlog = 280;
     } else if (window.matchMedia(`(max-width: 1440px)`).matches) {
         sChar = 260;
         sCharBlog = 300;
     } else if (window.matchMedia(`(max-width: 1920px)`).matches) {
-        sChar = 430;
+        sChar = 450;
         sCharBlog = 390;
     }
 
         let moretext = `...See More`;
         let lesstext = `...See Less`;
 
-        $(".index-seemore").each(function() {
+        $(".Post1-seemore").each(function() {
             let content = $(this).html();
 
             if (content.length > sChar) {
@@ -41,8 +46,30 @@ $(document).ready(function() {
                     `&nbsp;</span><span class="morecontent"><span>` +
                     h +
                     `</span>&nbsp;&nbsp;<a href="" class="Seemore facebookmorelink">` +
+                    `<a href="https://www.facebook.com/${facebookAPI.data[0].id}" class="Seemore" target="_blank">` +
                     moretext +
-                    `</a></span>`;
+                    `</a></a></span>`;
+
+                $(this).html(html);
+            }
+        });
+
+        $(".Post2-seemore").each(function() {
+            let content = $(this).html();
+
+            if (content.length > sChar) {
+                let c = content.substr(0, sChar);
+                let h = content.substr(sChar + 1, content.length - sChar);
+
+                let html =
+                    c +
+                    `<span class="moreellipses">` +
+                    `&nbsp;</span><span class="morecontent"><span>` +
+                    h +
+                    `</span>&nbsp;&nbsp;<a href="" class="Seemore facebookmorelink">` +
+                    `<a href="https://www.facebook.com/${facebookAPI.data[1].id}" class="Seemore" target="_blank">` +
+                    moretext +
+                    `</a></a></span>`;
 
                 $(this).html(html);
             }
@@ -81,4 +108,5 @@ $(document).ready(function() {
 
             return false;
         });
+    });
 });
