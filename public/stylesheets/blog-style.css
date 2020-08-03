@@ -37,16 +37,6 @@ a.facebookmorelink {
     padding: 0 1vw 30px 1vw;
 }
 
-.title-blog {
-    font-weight: 900;
-    font-size: 65px;
-    line-height: 100px;
-}
-
-.title-blog-padding {
-    padding: 25px 0 25px 0;
-}
-
 .padding-img-machine {
     padding: 10px 0 10px 30px;
 }
@@ -92,12 +82,7 @@ a.facebookmorelink {
 }
 
 @media only screen and (max-width: 1440px) {    
-    .title-blog {
-        font-size: 72px;
-    }
-    .title-blog-padding {
-        padding: 20px 0 30px 0;
-    }
+
     .padding-page {
         padding: 0 0 60px 0;
     }
@@ -127,12 +112,6 @@ a.facebookmorelink {
 }
 
 @media only screen and (max-width: 1366px) {
-    .title-blog {
-        font-size: 72px;
-    }
-    .title-blog-padding {
-        padding: 20px 0 30px 0;
-    }
     .padding-page {
         padding: 0 0 60px 0;
     }
@@ -159,12 +138,6 @@ a.facebookmorelink {
 }
 
 @media only screen and (max-width: 1024px) {
-    .title-blog {
-        font-size: 72px;
-    }
-    .title-blog-padding {
-        padding: 20px 0 30px 0;
-    }
     .padding-page {
         padding: 0 0 60px 0;
     }
@@ -202,9 +175,6 @@ a.facebookmorelink {
 }
 
 @media only screen and (max-width: 812px) {
-    .title-blog {
-        font-size: 58px;
-    }
     .title-speedwash {
         padding: 17px 0px 10px 0px;
         font-size: 18px;
@@ -235,9 +205,6 @@ a.facebookmorelink {
 }
 
 @media only screen and (max-width: 768px) {
-    .title-blog {
-        font-size: 58px;
-    }
     .title-speedwash {
         padding: 17px 0px 10px 0px;
         font-size: 18px;
@@ -268,9 +235,6 @@ a.facebookmorelink {
 }
 
 @media only screen and (max-width: 568px) {
-    .title-blog {
-        font-size: 58px;
-    }
     .title-speedwash {
         padding: 17px 0px 10px 20px;
         font-size: 18px;
@@ -302,12 +266,6 @@ a.facebookmorelink {
 }
 
 @media only screen and (max-width: 414px) {
-    .title-blog {
-        font-size: 45px;
-    }
-    .title-blog-padding {
-        padding: 10px 0 10px 0;
-    }
     .title-blog {
         font-weight: 900;
         font-size: 60px;
@@ -343,14 +301,6 @@ a.facebookmorelink {
 }
 
 @media only screen and (max-width: 375px) {
-    .title-blog-padding {
-        padding: 10px 0 10px 0;
-    }
-    .title-blog {
-        font-weight: 900;
-        font-size: 60px;
-        line-height: 100px;
-    }
     .title-speedwash {
         padding: 15px 0px 10px 40px;
         font-size: 16px;
@@ -380,14 +330,6 @@ a.facebookmorelink {
 }
 
 @media only screen and (max-width: 320px) {
-    .title-blog-padding {
-        padding: 20px 0 10px 0;
-    }
-    .title-blog {
-        font-weight: 900;
-        font-size: 40px;
-        line-height: 50px;
-    }
     .title-speedwash {
         padding: 17px 0px 10px 45px;
         font-size: 15px;

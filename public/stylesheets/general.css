@@ -1,3 +1,85 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+.fontTopic{
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 100px;
+    padding: 25px 0 25px 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1440px) {    
+    .fontTopic{
+        font-weight: 900;
+        font-size: 72px;
+        padding: 20px 0 30px 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1366px) {    
+    .fontTopic{
+        font-weight: 900;
+        font-size: 72px;
+        padding: 20px 0 30px 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1024px) {    
+    .fontTopic{
+        font-weight: 900;
+        font-size: 72px;
+        padding: 0 0 0 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 812px) {    
+    .fontTopic{
+        font-weight: 900;
+        font-size: 72px;
+        padding: 0 0 0 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 768px) {    
+    .fontTopic{
+        font-weight: 900;
+        font-size: 72px;
+        padding: 0 0 0 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 568px) {    
+    .fontTopic{
+        font-weight: 900;
+        font-size: 58px;
+        padding: 0 0 0 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 414px) {    
+    .fontTopic{
+        font-weight: 900;
+        font-size: 60px;
+        padding: 0 0 0 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 375px) {    
+    .fontTopic{
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 100px;
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 320px) {    
+    .fontTopic{
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 50px;
+        padding: 20px 0 10px 0;
+        text-align: center;
+    }
+}

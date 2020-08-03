@@ -9,12 +9,6 @@
     font-size: 22px;
     line-height: 30px;
 }
-.font-topic {
-    padding: 30px 0 0 0;
-    font-size: 65px;
-    line-height: 59px;
-    font-weight: 900;
-}
 .img-border {
     border: 1px solid #c4c4c4;
 }
@@ -30,9 +24,6 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .font-topic {
-        font-size: 72px;
-    }
     .images-size {
         height: auto;
         width: 90%;
@@ -49,29 +40,13 @@
         color: #4d82b4;
     }
 }
-
-@media only screen and (max-width: 768px) {
-    .font-topic {
-        font-size: 58px;
-    }
-}
-
-
 @media only screen and (max-width: 414px) {
-    .font-topic {
-        font-size: 45px;
-    }
     #box-shadow {
         border: 1px solid #c4c4c4;
         padding: 0 0 0 10px;
         box-shadow: 0 0 5px 1px;
         color: gray;
         margin: 30px 0px;
-    }
-    .font-topic {
-        padding: 10px 0 0 0;
-        font-size: 45px;
-        font-weight: 900;
     }
     .font-text {
         padding: 0 0 0 0;
@@ -96,11 +71,6 @@
 }
 
 @media only screen and (max-width: 375px) {
-    .font-topic {
-        padding: 10px 0 0 0;
-        font-size: 45px;
-        font-weight: 900;
-    }
     .font-text {
         padding: 0 0 0 0;
         font-size: 15px;
