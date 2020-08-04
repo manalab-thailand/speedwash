@@ -19,8 +19,8 @@ $(document).ready(function() {
             'icon-30-minutes': '30 minutes is all you need for a full load of laundry with Speedwash.',
             'icon-study': 'Wait for your laundry in comfort in our waiting areas.',
             'address': `35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District Samut Prakan 10540 ` ,
-            'viewAll': 'view all >',
-            'viewMap': 'view map >',
+            'viewAll': 'View all >',
+            'viewMap': 'View map >',
             'learnMore': 'Learn more...',
             'seeMore': '...See More',
             'we-Here': `We're Here`,
@@ -29,7 +29,8 @@ $(document).ready(function() {
             'ask': 'Share your experience or ask us questions',
             'submit': 'Submit',
             'provice': 'Provice',
-            'viewPost': 'View Post'
+            'viewPost': 'View Post',
+            'textMap':'One of our laundromat is here, and we will be coming to your neighbourhood soon.'
         },
         th: {
             'home': 'หน้าแรก',
@@ -50,7 +51,7 @@ $(document).ready(function() {
             'address': '35/35 หมู่ที่ 13 ตำบลบางพลีใหญ่ อำเภอบางพลี จังหวัดสมุทรปราการ 10540 ',
             'viewAll': 'ดูทั้งหมด >',
             'viewMap': 'ดูแผนที่ >',
-            'learnMore': 'ศึกษาเพิ่มเติม...',
+            'learnMore': 'เรียนรู้เพิ่มเติม...',
             'seeMore': '...อ่านเพิ่มเติม',
             'we-Here': 'เราอยู่ตรงนี้',
             'reachUs': 'ติดต่อเรา',
@@ -58,7 +59,8 @@ $(document).ready(function() {
             'ask': 'แลกเปลี่ยนประสบการณ์หรือสอบถามปัญหา',
             'submit': 'ยืนยัน',
             'provice': 'จังหวัด',
-            'viewPost': 'อ่านเพิ่มเติม'
+            'viewPost': 'อ่านเพิ่มเติม',
+            'textMap':'ที่ตั้งร้านซักผ้าของเราอยู่ที่นี่และเราจะมาเปิดใกล้ ๆ บ้านคุณในอีกไม่ช้า'
         }
     };
 

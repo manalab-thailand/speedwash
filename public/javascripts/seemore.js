@@ -25,7 +25,7 @@ $(document).ready(function() {
         sChar = 260;
         sCharBlog = 300;
     } else if (window.matchMedia(`(max-width: 1920px)`).matches) {
-        sChar = 450;
+        sChar = 420;
         sCharBlog = 390;
     }
 

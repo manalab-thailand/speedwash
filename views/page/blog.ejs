@@ -1,38 +1,43 @@
 <%- include(`../partials/header`); -%>
 
-    <div class="container-fluid">
+    <div class="container-fluid max-screen">
         <div class="padding-page">
-                <div class="fontTopic">BLOG</div>
+            <div class="title-blog-padding">
+                <div class="fontTopic text-uppercase lang" key="blog">blog</div>
+            </div>
             <div class="row">
                 <% for(var i=0;i<6;i++) { %>
-                <div class="col-sm-12 col-md-12 col-lg-4 padding-between-box">
-                    <div class="box-card">
-                        <div class="row">
-                            <div class="col-2 padding-img-machine">
-                                <img src="images/logo3.png" class="rounded-circle img-border images-machine-small">
+                    <div class="col-sm-12 col-md-12 col-lg-4 padding-between-box">
+                        <div class="box-card">
+                            <div class="row">
+                                <div class="col-2 padding-img-machine">
+                                    <img src="images/logo3.png" class="rounded-circle img-border images-machine-small">
+                                </div>
+                                <div class="col-6 title-speedwash">
+                                    <a href="https://www.facebook.com/SpeedWashLaundryTH/" target="_blank">
+                                        <b class="color-speedwash">SPEEDWASH</b></a>
+                                    <div class="">
+                                        <%=Date[i]%>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-center button hover pt-4">
+                                    <a href="https://www.facebook.com/<%=post.data[i].id%>" target="_blank"><button class="viewpost-btn lang text-uppercase" key="viewPost">view Post</button></a>
+                                </div>
                             </div>
-                            <div class="col-6 title-speedwash">
-                                <a href="https://www.facebook.com/SpeedWashLaundryTH/" target="_blank">
-                                    <b class="color-speedwash">SPEEDWASH</b></a>
-                                <div class=""><%=Date[i]%></div>
+                            <div class="">
+                                <img src="<%=post.data[i].attachments.data[0].media.image.src%>" alt="" class="post-img">
                             </div>
-                            <div class="col-4 text-center button hover pt-4">
-                                <a href="https://www.facebook.com/<%=post.data[i].id%>" target="_blank"><button class="viewpost-btn">View Post</button></a>
+                            <div class="post-text blog-seemore">
+                                &emsp;&emsp;
+                                <%=post.data[i].message%>
                             </div>
-                        </div>
-                        <div class="">
-                            <img src="<%=post.data[i].attachments.data[0].media.image.src%>" alt="" class="post-img">
-                        </div>  
-                        <div class="post-text blog-seemore">
-                            &emsp;&emsp;<%=post.data[i].message%>
                         </div>
                     </div>
-                </div>
-            <% } %>
+                    <% } %>
             </div>
         </div>
     </div>
-    
+
     <!-- Footer -->
     <footer class="page-footer font-small pt-4 footer-color font-nav-footer-color font-bold">
         <!-- Footer Links -->
@@ -46,9 +51,9 @@
                     <div class="text-mobile-center">
                         <img class="logo" src="images/SpeedWash.png" alt="">
                     </div>
-                    <p class="mt-3 font-normal">35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District Samut Prakan 10540</p>
-                    <a href="branches" class="color-viewmap font-normal">
-                        <p>VIEW MAP ></p>
+                    <p class="mt-3 font-normal lang" key="address">35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District Samut Prakan 10540</p>
+                    <a href="branches" class="color-viewmap">
+                        <p class="text-uppercase lang" key="viewMap">view map ></p>
                     </a>
                 </div>
                 <!-- Grid column -->
@@ -75,7 +80,7 @@
                                     <img src="https://img.icons8.com/fluent/40/000000/gmail.png" />
                                 </div>
                                 <div class="">
-                                    <div class=" contact font-normal">
+                                    <div class="contact font-normal">
                                         <div class="col-12 size-font-contact">phajidathailand@gmail.com</div>
                                     </div>
                                 </div>
@@ -114,5 +119,5 @@
         <!-- Footer Links -->
     </footer>
     <!-- Footer -->
-    
+
 <%- include(`../partials/footer`); -%>

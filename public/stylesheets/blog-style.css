@@ -1,26 +1,7 @@
-.Seemore {
-    font-weight: bold;
-    color: #4d82b4;
-}
-
-.Seemore:visited {
-    font-weight: bold;
-    color: #4d82b4;
-}
-
-a.facebookmorelink {
-    text-decoration: none;
-    outline: none;
-}
-
-.morecontent span {
-    display: none;
-}
-
 .viewpost-btn {
     font-family: Montserrat;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 0.8vw;
     background-color: white;
     color: #4d82b4;
     border: 2px solid #4d82b4;

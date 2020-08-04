@@ -1,27 +1,3 @@
-.Seemore {
-    font-weight: bold;
-    color: #4d82b4;
-}
-
-.Seemore:visited {
-    font-weight: bold;
-    color: #4d82b4;
-}
-
-a.facebookmorelink {
-    text-decoration: none;
-    outline: none;
-}
-
-.morecontent span {
-    display: none;
-}
-
-.facebookseemore {
-    width: 400px;
-    margin: 10px;
-}
-
 .view-all {
     color: black;
 }
