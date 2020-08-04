@@ -1,9 +1,11 @@
-function initMap() {
+map = {
+    
+    initMap: function(){
 
     const constant = constantKey();
 
     const googlesheetData = `https://sheets.googleapis.com/v4/spreadsheets/15qVChEyQ7Gu4rNgZK39gZ_RX4grMWM2EW3F-yk83C_M/values/Outlets!A2:S20?key=${constant.GOOGLEKEY}`;
-
+    
     $.getJSON(googlesheetData, function (googleMap) {
 
         const markers = new Array();
@@ -109,6 +111,6 @@ function initMap() {
             google.maps.event.trigger(markers[$(this).data('markerid')], 'click');
         });
     });
+
+    }
 }
-
-
