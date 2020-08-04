@@ -155,9 +155,9 @@ a.facebookmorelink {
     color: white;
     background: #6dcff6;
     font-weight: 900;
-    font-size: 36px;
-    height: 100px;
-    width: 450px;
+    font-size: 1.7vw;
+    height: 5vw;
+    width: 22vw;
     border-radius: 50px;
 }
 .padding-checkmark {
