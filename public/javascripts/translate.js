@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+
     let arrlang = {
         en: {
             'home': 'Home',
@@ -16,7 +18,7 @@ $(document).ready(function() {
             'icon-detergent': 'Just bring your clothes and let us handle the rest.',
             'icon-30-minutes': '30 minutes is all you need for a full load of laundry with Speedwash.',
             'icon-study': 'Wait for your laundry in comfort in our waiting areas.',
-            'address': '35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District Samut Prakan 10540',
+            'address': `35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District Samut Prakan 10540 ` ,
             'viewAll': 'view all >',
             'viewMap': 'view map >',
             'learnMore': 'Learn more...',
