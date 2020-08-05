@@ -78,6 +78,13 @@ map = {
 
         googleMap.values.forEach(function(post, i) {
             if (post[6]) {
+                
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(post[6], post[7]),
+                    map: maps,
+                    title: `${post[0]}`
+                });
+
                 info = new google.maps.InfoWindow();
                 google.maps.event.addListener(marker, 'click', (function(marker, i) {
                     return function() {
