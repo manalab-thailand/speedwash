@@ -28,19 +28,19 @@ map = {
             if(post[6]){
                 $('#markers').append(
                     `<tr class="marker-link" data-markerid="${i++}">
-                        <th scope="row">${post[0]}</th>
-                        <th>
+                        <td scope="row" class="font-table">${post[0]}</td>
+                        <td>
                         ${post[1]}
-                        </th>
-                        <th>
+                        </td>
+                        <td>
                         ${post[2]}
-                        </th>
+                        </td>
                     </tr>`
                 );
                 marker = new google.maps.Marker({
                     position: new google.maps.LatLng(post[6], post[7]),
                     map: maps,
-                    title: "<%=post[0]%>"
+                    title: `${post[0]}`
                 });
                 info = new google.maps.InfoWindow();
                 google.maps.event.addListener(marker, 'click', (function(marker, i) {

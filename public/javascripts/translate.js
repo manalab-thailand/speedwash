@@ -9,11 +9,12 @@ $(document).ready(function() {
             'branches': 'Branches',
             'contact': 'Contact',
             'speedwash': 'SPEEDWASH',
-            'details-speedwash': 'here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.',
+            'subtitlespeedwash': 'First Self-service Coin Laundromat with Free laundry detergent and softener',
+            'details-speedwash': 'At	Speed	Wash,	we are	confident	in	keeping	your	clothes	clean	by	best commercial	laundry	machines	from	USA	and	ITALY.	Do	your	laundry	at	your	convenience	24	hours	a	day.	Easy	to	use,	fast	and	affordable	with	Free	laundry	detergent	and fabric	softener	are	what	we	provide	to	make	your	laundryroutine	easier!	Just	bring	your	clothes,	it will	be	ready	to	use	in	just	1	hour.',
             'title-icon-time': 'Wash at any time',
             'title-icon-detergent': 'No need to detergent',
             'title-icon-30-minutes': 'Finish your wash way faster',
-            'title-icon-study': 'relex while washing',
+            'title-icon-study': 'Relex while washing',
             'icon-time': `Need to wash your laundry at odd hours? We've got your covered.`,
             'icon-detergent': 'Just bring your clothes and let us handle the rest.',
             'icon-30-minutes': '30 minutes is all you need for a full load of laundry with Speedwash.',
@@ -30,7 +31,7 @@ $(document).ready(function() {
             'submit': 'Submit',
             'provice': 'Provice',
             'viewPost': 'View Post',
-            'textMap':'One of our laundromat is here, and we will be coming to your neighbourhood soon.'
+            'textMap':`Our Branches Sukhumvit 50 Lasalle Suvarnabhumi 2 Bang Chalong Hua Hin (Coming Soon).`
         },
         th: {
             'home': 'หน้าแรก',
@@ -38,7 +39,7 @@ $(document).ready(function() {
             'blog': 'บทความ',
             'branches': 'สาขา',
             'contact': 'ติดต่อเรา',
-            'speedwash': 'สปีดวอช',
+            'speedwash': 'Speed Wash สปีดวอช',
             'details-speedwash': 'ที่สปีดวอช เรามั่นใจในความสะอาดด้วยเครื่องซักผ้าและเครื่องอบผ้าอุตสาหกรรมชั้นนำจากอเมริกาและอิตาลี ใช้งานง่าย ไม่ยุ่งยาก สะอาด สะดวกและรวดเร็ว แถมฟรี! น้ำยาซักผ้าและน้ำยาปรับผ้านุ่ม ฟีดอัตโนมัติในตัวเครื่อง ไปแต่ตัวกับผ้า สะอาดพร้อมใส่ใน 1 ชั่วโมง',
             'title-icon-time': 'เปิดบริการตลอด 24 ชั่วโมง',
             'title-icon-detergent': 'ฟรีน้ำยาซักผ้าและน้ำยาปรับผ้านุ่ม',

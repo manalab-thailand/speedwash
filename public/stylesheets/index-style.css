@@ -34,7 +34,7 @@
 }
 
 .padding-word {
-    padding: 100px 0 35px 17vw;
+    padding: 100px 0 35px 15vw;
 }
 
 .title {
@@ -43,11 +43,17 @@
     line-height: 70px;
 }
 
+.subtitle{
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.8vw;
+}
+
 .text {
-    padding: 25px 30px 25px 120px;
+    padding: 25px 30px 25px 60px;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.5vw;
+    font-size: 1vw;
     line-height: 50px;
     display: flex;
 }
@@ -70,7 +76,7 @@
 }
 .mapOverlay{
     background-image: url("../images/img-map.png");
-    height: 44vw;
+    height: 40vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,7 +96,7 @@
     font-weight: 900;
     font-size: 2.2vw;
     line-height: 80px;
-    padding: 25% 5% 0 5%;
+    padding: 28% 5% 0 5%;
     color: white;
 }
 .padding-blog {

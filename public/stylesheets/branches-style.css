@@ -11,6 +11,9 @@
 .table{
     font-size: 18px;
 }
+.font-table{
+    font-weight: 0;
+}
 .branches-map {
     height: 600px;
     width: 100%;
