@@ -41,12 +41,19 @@ a.facebookmorelink {
         font-size: 72px;
         padding: 20px 0 30px 0;
     }
+    .max-screen {
+        max-width: 1366px;
+    }
 }
 @media only screen and (max-width: 1366px) {    
     .fontTopic{
         font-size: 72px;
         padding: 20px 0 30px 0;
     }
+    .max-screen {
+        max-width: 1240px;
+    }
+}
 }
 @media only screen and (max-width: 1024px) {    
     .fontTopic{

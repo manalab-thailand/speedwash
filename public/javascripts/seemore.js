@@ -7,25 +7,25 @@ $(document).ready(function() {
     $.getJSON(constant.FACEBOOKAPI, function (facebookAPI) {
 
     if (window.matchMedia(`(max-width: 375px)`).matches) {
-        sChar = 130;
+        sChar = 200;
         sCharBlog = 150;
     } else if (window.matchMedia(`(max-width: 414px)`).matches) {
-        sChar = 165;
+        sChar = 235;
         sCharBlog = 180;
     } else if (window.matchMedia(`(max-width: 768px)`).matches) {
-        sChar = 195;
+        sChar = 250;
         sCharBlog = 200;
     } else if (window.matchMedia(`(max-width: 1024px)`).matches) {
-        sChar = 250;
+        sChar = 300;
         sCharBlog = 250;
     } else if (window.matchMedia(`(max-width: 1366px)`).matches) {
-        sChar = 260;
+        sChar = 340;
         sCharBlog = 280;
     } else if (window.matchMedia(`(max-width: 1440px)`).matches) {
-        sChar = 260;
+        sChar = 380;
         sCharBlog = 300;
     } else if (window.matchMedia(`(max-width: 1920px)`).matches) {
-        sChar = 420;
+        sChar = 400;
         sCharBlog = 390;
     }
 

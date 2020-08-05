@@ -6,10 +6,6 @@
     color: black;
 }
 
-/* div{
-    border: dashed;
-} */
-
 .img-carousel {
     height: 38vw;
     overflow: hidden;
@@ -34,23 +30,24 @@
 }
 
 .padding-word {
-    padding: 100px 0 35px 15vw;
+    padding: 10% 0 1% 0;
 }
 
 .title {
+    text-align: center;
     font-weight: 900;
-    font-size: 3.2vw;
+    font-size: 2.3vw;
     line-height: 70px;
 }
 
 .subtitle{
     text-align: center;
     font-weight: 900;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
 }
 
 .text {
-    padding: 25px 30px 25px 60px;
+    padding: 25px 40px 25px 60px;
     font-style: normal;
     font-weight: normal;
     font-size: 1vw;
@@ -58,7 +55,7 @@
     display: flex;
 }
 .img-washing {
-    width: 70%;
+    width: 85%;
     padding: 50px 0 0 0;
     max-width: 1040px;
 }
@@ -67,12 +64,12 @@
 }
 .title-icon{
     padding: 35px 0 0 0;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     font-weight: bold;
 }
 .text-icon{
     padding: 20px 0 0 0;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
 }
 .mapOverlay{
     background-image: url("../images/img-map.png");
@@ -92,11 +89,16 @@
 }
 .map-text{
     font-weight: bold;
-    float: right;
-    font-weight: 900;
     font-size: 2.2vw;
     line-height: 80px;
-    padding: 28% 5% 0 5%;
+    padding: 18% 5% 0 5%;
+    color: white;
+}
+.map-subtext{
+    font-weight: bold;
+    font-size: 2.2vw;
+    line-height: 80px;
+    padding: 0 5% 0 5%;
     color: white;
 }
 .padding-blog {
@@ -105,30 +107,54 @@
 .view-btn {
     padding: 0 130px 60px 0;
     font-weight: 900;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 .padding-img-blogs {
     padding: 10px 0 50px 0;
 }
 .img-blogs {
-    max-width: 730px;
+    max-width: 600px;
     padding: 0 0 0 100px;
 }
 .text-blogs {
-    font-size: 1.3vw;
-    width: 85%;
-    padding: 55px 0 80px 80px;
+    font-size: 1.15vw;
+    width: 98%;
+    padding: 5% 2% 0 12%;
 }
+.padding-service{
+    padding: 40px 0 20px 0;
+}
+.text-service{
+    padding: 10px 10% 0px 10%;
+    text-align: center;
+    font-size: 1.3vw;
+    line-height: 45px;
+}
+.carousel-service{
+    width: 55vw;
+    height: auto;
+}
+.carousel-control-prev-icon {
+    width: 5vw;
+    height: 5vw;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%4d82b4' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    width: 5vw;
+    height: 5vw;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%4d82b4' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
 .padding-Invest {
-    padding: 60px 0 30px 0;
+    padding: 100px 0 30px 0;
 }
 .text-invest {
-    font-size: 1.7vw;
-    padding: 40px 45px 0 0;
+    font-size: 1.2vw;
+    padding: 30px 45px 0 0;
 }
 .title-invest {
     padding-top: 60px;
-    font-size: 2.25vw;
+    font-size: 1.5vw;
 }
 .padding-btn {
     padding: 50px 0 60px 0;
@@ -143,149 +169,126 @@
     border-radius: 50px;
 }
 .padding-checkmark {
-    padding: 0 50px 0 0;
+    padding: 0 1% 0 0;
 }
 .checkmark {
     width: 40px;
 }
 
 @media only screen and (max-width: 1440px) {
-    .padding-word {
-        padding: 7vw 0 30px 15vw;
-    }
     .img-washing {
         padding: 25px 0 0 0;
         width: 80%;
     }
-    .title {
-        font-weight: 900;
-        font-size: 55px;
-        line-height: 50px;
+    .subtitle{
+        line-height: 45px;
     }
     .text {
-        padding: 30px 0 0 70px;
-        font-size: 22px;
-        line-height: 55px;
+        padding-top: 10px;
+        line-height: 35px;
     }
     .padding-four-icon{
         padding: 40px 0 70px 0;
     }
     .title-icon{
         padding: 25px 0 0 0;
-        font-size: 19px;
         font-weight: bold;
     }
     .text-icon{
         padding: 15px 0 0 0;
-        font-size: 19px;
     }
     .mapOverlay{
-        height: 650px;
+        height: 580px;
     }
     .map-text{
-        padding: 25% 5% 0 5%;
+        line-height: 60px;
+        padding: 18% 5% 0 5%;
+    }
+    .map-subtext{
+        line-height: 60px;
     }
     .padding-blog {
-        padding: 120px 0 85px 250px;
+        padding: 80px 0 50px 220px;
     }
     .padding-img-blogs {
         padding: 0 0 40px 0;
     }
     .view-btn {
-        padding: 0 100px 70px 0;
-        font-weight: 900;
-        font-size: 26px;
+        padding: 0 100px 65px 0;
     }
     .img-blogs {
-        max-width: 680px;
         height: auto;
-        padding: 0 0 0 0;
+        max-width: 500px;
+        padding: 0 3% 0 0;
     }
     .text-blogs {
-        font-size: 26px;
-        width: 100%;
-        padding: 10px 110px 25px 90px;
-    }
-    .text-invest {
-        font-size: 25px;
-        padding: 40px 45px 0 0;
-    }
-    .title-invest {
-        padding: 50px 0 0 0;
-        font-size: 35px;
+        padding: 4% 10% 0 8%;
+        font-size: 1.2vw;
     }
     .padding-Invest {
-        padding: 120px 0 50px 0;
+        padding: 80px 0 0 0;
+    }
+    .title-invest {
+        padding: 40px 0 0 0;
+        font-size: 25px;
     }
 }
 
 @media only screen and (max-width: 1366px) {
-    .padding-word {
-        padding: 80px 0 30px 15vw;
-    }
-    .img-washing {
-        padding: 25px 0 0 0;
-        width: 90%;
-    }
     .title {
-        font-weight: 900;
-        font-size: 55px;
         line-height: 50px;
     }
     .text {
-        padding: 30px 0 0 70px;
-        font-size: 21px;
-        line-height: 50px;
+        line-height: 30px;
     }
     .padding-four-icon{
         padding: 50px 0 70px 0;
     }
     .title-icon{
         padding: 25px 0 0 0;
-        font-size: 18px;
         font-weight: bold;
     }
     .text-icon{
         padding: 15px 0 0 0;
-        font-size: 18px;
     }
     .mapOverlay{
-        height: 600px;
+        height: 550px;
     }
     .map-text{
-        padding: 25% 5% 0 5%;
+        line-height: 60px;
+        padding: 16% 5% 0 5%;
+    }
+    .map-subtext{
+        line-height: 60px;
     }
     .padding-blog {
-        padding: 120px 0 85px 250px;
+        padding: 80px 0 35px 200px;
     }
     .padding-img-blogs {
         padding: 0 0 40px 0;
     }
     .view-btn {
-        padding: 0 100px 70px 0;
-        font-weight: 900;
-        font-size: 26px;
+        padding: 0 100px 45px 0;
     }
     .img-blogs {
-        width: 500px;
-        height: 400px;
+        max-width: 400px;
         padding: 0 0 0 0;
     }
     .text-blogs {
-        font-size: 26px;
-        width: 100%;
-        padding: 10px 110px 25px 90px;
-    }
-    .text-invest {
-        font-size: 25px;
-        padding: 40px 45px 0 0;
-    }
-    .title-invest {
-        padding: 50px 0 0 0;
-        font-size: 35px;
+        font-size: 18px;
+        padding: 10px 0 0 70px;
     }
     .padding-Invest {
-        padding: 120px 0 50px 0;
+        padding: 80px 0 0 0;
+    }
+    .text-invest {
+        padding: 30px 0 0 0;
+    }
+    .title-invest {
+        padding: 35px 0 0 0;
+    }
+    .checkmark {
+        width: 30px;
     }
 }
 
@@ -302,34 +305,24 @@
     .carousel-indicators {
         bottom: -15px;
     }
-    .padding-word {
-        padding: 80px 0 10px 140px;
-    }
     .img-washing {
         padding: 25px 0 0 0;
         width: 80%;
     }
-    .title {
-        font-weight: 900;
-        font-size: 45px;
-        line-height: 50px;
+    .subtitle {
+        line-height: 30px;
     }
     .text {
-        padding: 30px 0 0 55px;
-        font-size: 18px;
-        line-height: 37px;
+        line-height: 30px;
     }
     .padding-four-icon{
         padding: 50px 0 50px 0;
     }
     .title-icon{
         padding: 15px 0 0 0;
-        font-size: 13px;
-        font-weight: bold;
     }
     .text-icon{
         padding: 10px 0 0 0;
-        font-size: 13px;
     }
     .mapOverlay{
         height: 450px;
@@ -339,54 +332,48 @@
         padding: 25% 5% 0 5%;
     }
     .padding-blog {
-        padding: 100px 0 55px 200px;
+        padding: 60px 0 30px 120px;
     }
     .padding-img-blogs {
         padding: 0 0 0 0;
     }
     .view-btn {
-        padding: 0 50px 50px 0;
+        padding: 0 50px 40px 0;
         font-weight: 900;
-        font-size: 25px;
     }
     .img-blogs {
-        width: 890px;
+        max-width: 800px;
         height: auto;
         padding: 0 0 0 0;
     }
     .text-blogs {
-        font-size: 26px;
-        width: 100%;
         padding: 10px 25px 10px 25px;
     }
+    .padding-service{
+        padding: 40px 0 10px 0;
+    }
+    .text-service{
+        padding: 0 10% 0px 10%;
+        line-height: 25px;
+    }
     .padding-Invest {
-        padding: 100px 0 20px 0;
+        padding: 80px 0 0 0;
     }
     .text-invest {
-        font-size: 25px;
         padding: 30px 0 0 0;
     }
     .title-invest {
+        font-size: 18px;
         padding: 30px 0 0 0;
-        font-size: 35px;
     }
     .padding-btn {
         padding: 35px 0 20px 0;
-    }
-    .Learnmore-btn {
-        color: white;
-        background: #6dcff6;
-        font-weight: 900;
-        font-size: 28px;
-        height: 75px;
-        width: 350px;
-        border-radius: 50px;
     }
     .padding-checkmark {
         padding: 0 20px 0 0;
     }
     .checkmark {
-        width: 50px;
+        width: 30px;
     }
     .Hide {
         display: none;
@@ -406,91 +393,80 @@
     .carousel-indicators {
         bottom: -15px;
     }
-    .padding-word {
-        padding: 50px 0 20px 80px;
-    }
     .img-washing {
         padding: 25px 0 0 0;
-        width: 100%;
+        width: 90%;
     }
     .title {
-        font-weight: 900;
-        font-size: 42px;
-        line-height: 50px;
+        line-height: 30px;
     }
     .text {
-        padding: 20px 0 0 30px;
-        font-size: 21px;
-        line-height: 28px;
+        padding-left: 45px;
+        line-height: 22px;
     }
     .padding-four-icon{
         padding: 15px 0 40px 0;
     }
     .title-icon{
         padding: 15px 0 0 0;
-        font-size: 10px;
-        font-weight: bold;
     }
     .text-icon{
         padding: 10px 0 0 0;
-        font-size: 10px;
     }
     .mapOverlay{
         height: 370px;
     }
     .map-text{
-        line-height: 50px;
+        line-height: 30px;
         padding: 25% 5% 0 5%;
     }
+    .map-subtext{
+        line-height: 30px;
+        padding: 0 5% 0 5%;
+        color: white;
+    }
     .padding-blog {
-        padding: 80px 0 50px 180px;
+        padding: 50px 0 20px 120px;
     }
     .padding-img-blogs {
         padding: 0 0 0 0;
     }
     .view-btn {
-        padding: 0 60px 45px 0;
-        font-weight: 900;
-        font-size: 20px;
+        padding: 0 60px 35px 0;
     }
     .img-blogs {
-        width: 700px;
-        height: 480px;
+        max-width: 600px;
         padding: 0 0 0 0;
     }
     .text-blogs {
-        font-size: 23px;
-        width: 100%;
+        font-size: 11px;   
         padding: 0 70px 10px 20px;
     }
+    .padding-service{
+        padding: 40px 0 10px 0;
+    }
+    .text-service{
+        padding: 0 10% 0px 10%;
+        line-height: 25px;
+    }
     .padding-Invest {
-        padding: 80px 0 20px 0;
+        padding: 50px 0 0 0;
     }
     .text-invest {
-        font-size: 28px;
-        padding: 30px 0 0 0;
+        padding: 20px 0 0 0;
     }
     .title-invest {
+        font-size: 15px;
         padding: 15px 0 0 0;
-        font-size: 30px;
     }
     .padding-btn {
-        padding: 20px 0 40px 0;
-    }
-    .Learnmore-btn {
-        color: white;
-        background: #6dcff6;
-        font-weight: 900;
-        font-size: 22px;
-        height: 55px;
-        width: 250px;
-        border-radius: 50px;
+        padding: 20px 0 20px 0;
     }
     .padding-checkmark {
         padding: 0 10px 0 0;
     }
     .checkmark {
-        width: 40px;
+        width: 20px;
     }
     .Hide {
         display: none;
@@ -510,45 +486,49 @@
     .carousel-indicators {
         bottom: -15px;
     }
-    .padding-word {
-        padding: 50px 0 10px 80px;
-    }
     .img-washing {
         padding: 25px 0 0 0;
-        width: 100%;
+        width: 90%;
     }
     .title {
-        font-weight: 900;
-        font-size: 40px;
         line-height: 50px;
     }
+    .subtitle {
+        line-height: 25px;
+    }
     .text {
-        padding: 20px 0 0 30px;
-        font-size: 15px;
-        line-height: 28px;
+        line-height: 20px;
     }
     .padding-four-icon{
         padding: 15px 0 40px 0;
     }
     .title-icon{
         padding: 15px 0 0 0;
-        font-size: 9.5px;
         font-weight: bold;
     }
     .text-icon{
         padding: 10px 0 0 0;
-        font-size: 9.5px;
     }
     .padding-blog {
-        padding: 80px 0 50px 180px;
+        padding: 40px 0 20px 180px;
     }
     .padding-img-blogs {
         padding: 0 0 0 0;
     }
     .view-btn {
-        padding: 0 60px 55px 0;
-        font-weight: 900;
-        font-size: 18px;
+        padding: 0 60px 35px 0;
+    }
+    .mapOverlay{
+        height: 310px;
+    }
+    .map-text{
+        line-height: 30px;
+        padding: 20% 5% 0 5%;
+    }
+    .map-subtext{
+        line-height: 30px;
+        padding: 0 5% 0 5%;
+        color: white;
     }
     .img-blogs {
         width: 650px;
@@ -556,38 +536,28 @@
         padding: 0 0 0 0;
     }
     .text-blogs {
-        font-size: 19px;
-        width: 100%;
-        padding: 0 70px 10px 20px;
+        font-size: 14px;
+        padding: 0 0 10px 20px;
     }
     .padding-Invest {
-        padding: 80px 0 20px 0;
+        padding: 40px 0 0 0;
     }
     .text-invest {
-        font-size: 20px;
-        padding: 30px 0 0 0;
+        font-size: 1.4vw;
+        padding: 20px 0 0 0;
     }
     .title-invest {
-        padding: 15px 0 0 0;
-        font-size: 30px;
+        font-size: 1.8vw;
+        padding: 25px 0 0 0;
     }
     .padding-btn {
-        padding: 20px 0 40px 0;
-    }
-    .Learnmore-btn {
-        color: white;
-        background: #6dcff6;
-        font-weight: 900;
-        font-size: 22px;
-        height: 55px;
-        width: 250px;
-        border-radius: 50px;
+        padding: 20px 0 20px 0;
     }
     .padding-checkmark {
         padding: 0 10px 0 0;
     }
     .checkmark {
-        width: 35px;
+        width: 20px;
     }
     .Hide {
         display: none;
@@ -607,84 +577,69 @@
     .carousel-indicators {
         bottom: -15px;
     }
-    .padding-word {
-        padding: 50px 0 20px 80px;
-    }
     .img-washing {
         padding: 25px 0 0 0;
         width: 80%;
     }
     .title {
-        font-weight: 900;
-        font-size: 37px;
-        line-height: 50px;
+        line-height: 20px;
     }
     .text {
-        padding: 0px 0 0 50px;
-        font-size: 12px;
-        line-height: 27px;
+        line-height: 18px;
     }
     .padding-four-icon{
         padding: 15px 0 30px 0;
     }
     .title-icon{
         padding: 15px 0 0 0;
-        font-size: 9px;
-        font-weight: bold;
     }
     .text-icon{
         padding: 10px 0 0 0;
-        font-size: 9px;
+    }
+    .mapOverlay{
+        height: 300px;
+    }
+    .map-text{
+        line-height: 30px;
+        padding: 20% 5% 0 5%;
+    }
+    .map-subtext{
+        line-height: 30px;
+        padding: 0 5% 0 5%;
+        color: white;
     }
     .padding-blog {
-        padding: 80px 0 50px 145px;
+        padding: 40px 0 20px 75px;
     }
     .padding-img-blogs {
         padding: 0 0 0 0;
     }
     .view-btn {
-        padding: 0 25px 55px 0;
-        font-weight: 900;
-        font-size: 18px;
+        padding: 0 25px 35px 0;
     }
     .img-blogs {
-        width: 630px;
+        max-width: 500px;
         height: auto;
         padding: 0 0 0 0;
     }
     .text-blogs {
-        font-size: 17px;
-        width: 100%;
         padding: 0 70px 10px 12px;
     }
     .padding-Invest {
-        padding: 80px 0 20px 0;
+        padding: 40px 0 0 0;
     }
     .text-invest {
-        font-size: 18px;
-        padding: 30px 0 0 0;
+        font-size: 11px;
+        padding: 20px 0 0 0;
     }
     .title-invest {
-        padding: 15px 0 0 0;
-        font-size: 27px;
+        padding: 25px 0 0 0;
     }
     .padding-btn {
         padding: 20px 0 20px 0;
     }
-    .Learnmore-btn {
-        color: white;
-        background: #6dcff6;
-        font-weight: 900;
-        font-size: 22px;
-        height: 55px;
-        width: 250px;
-        border-radius: 50px;
-    }
-    .padding-checkmark {
-        padding: 0 10px 0 0;
-    }
     .checkmark {
-        width: 40px;
+        width: 25px;
     }
     .Hide {
         display: none;
@@ -704,91 +659,70 @@
     .carousel-indicators {
         bottom: -15px;
     }
-    .padding-word {
-        padding: 50px 0 20px 60px;
-    }
     .img-washing {
         padding: 25px 0 0 0;
-        width: 100%;
+        width: 90%;
     }
     .title {
-        font-weight: 900;
-        font-size: 32px;
-        line-height: 50px;
+        line-height: 30px;
+    }
+    .subtitle {
+        line-height: 20px;
     }
     .text {
         padding: 0px 0px 0px 20px;
-        font-size: 12px;
-        line-height: 25px;
+        line-height: 15px;
     }
     .padding-four-icon{
         padding: 15px 0 30px 0;
     }
     .title-icon{
         padding: 10px 0 0 0;
-        font-size: 8px;
-        font-weight: bold;
     }
     .text-icon{
         padding: 5px 0 0 0;
-        font-size: 8px;
     }
     .mapOverlay{
-        height: 300px;
+        height: 280px;
     }
     .map-text{
         line-height: 30px;
-        padding: 30% 5% 0 5%;
+        padding: 25% 5% 0 5%;
     }
     .padding-blog {
-        padding: 80px 0 20px 115px;
+        padding: 40px 0 20px 115px;
     }
     .padding-img-blogs {
         padding: 0 0 0 0;
     }
     .view-btn {
-        padding: 0 25px 30px 0;
-        font-weight: 900;
-        font-size: 15px;
+        padding: 0 70px 30px 0;
     }
     .img-blogs {
-        width: 565px;
+        max-width: 400px;
         height: auto;
         padding: 0 0 0 0;
     }
     .text-blogs {
-        font-size: 18px;
-        width: 100%;
-        padding: 0 70px 10px 12px;
+        padding: 0 0px 10px 12px;
     }
     .padding-Invest {
-        padding: 80px 0 20px 0;
+        padding: 40px 0 10px 0;
     }
     .text-invest {
-        font-size: 18px;
-        padding: 30px 0 0 0;
+        padding: 15px 0 0 0;
     }
     .title-invest {
-        padding: 15px 0 0 0;
-        font-size: 25px;
+        padding: 20px 0 0 0;
     }
     .padding-btn {
-        padding: 20px 0 40px 0;
-    }
-    .Learnmore-btn {
-        color: white;
-        background: #6dcff6;
-        font-weight: 900;
-        font-size: 22px;
-        height: 55px;
-        width: 250px;
-        border-radius: 50px;
+        padding: 20px 0 20px 0;
     }
     .padding-checkmark {
         padding: 0 10px 0 0;
     }
     .checkmark {
-        width: 40px;
+        width: 20px;
     }
     .Hide {
         display: none;
@@ -808,90 +742,76 @@
     .carousel-indicators {
         bottom: -15px;
     }
-    .padding-word {
-        padding: 50px 0 10px 45px;
-    }
     .img-washing {
         padding: 25px 0 0 0;
-        width: 100%;
+        width: 90%;
     }
     .title {
-        font-weight: 900;
-        font-size: 30px;
-        line-height: 50px;
+        line-height: 20px;
+    }
+    .subtitle {
+        line-height: 15px;
     }
     .text {
-        padding: 0px 0px 0px 20px;
-        font-size: 10px;
-        line-height: 23px;
+        line-height: 15px;
     }
     .padding-four-icon{
         padding: 10px 0 25px 0;
     }
     .title-icon{
         padding: 10px 0 0 0;
-        font-size: 7px;
-        font-weight: bold;
     }
     .text-icon{
         padding: 5px 0 0 0;
-        font-size: 7px;
     }
     .mapOverlay{
-        height: 280px;
+        height: 240px;
     }
     .map-text{
         line-height: 30px;
-        padding: 30% 5% 0 5%;
+        padding: 15% 5% 0 5%;
+    }
+    .map-subtext{
+        line-height: 30px;
+        padding: 0 5% 0 5%;
+        color: white;
     }
     .padding-blog {
-        padding: 80px 0 30px 115px;
+        padding: 40px 0 20px 115px;
     }
     .padding-img-blogs {
         padding: 0 0 0 0;
     }
     .view-btn {
-        padding: 0 25px 40px 0;
-        font-weight: 900;
-        font-size: 15px;
+        padding: 0 75px 20px 0;
     }
     .img-blogs {
         width: 90%;
         height: auto;
     }
     .text-blogs {
-        font-size: 15px;
         width: 100%;
         padding: 0 70px 10px 0px;
     }
     .padding-Invest {
-        padding: 80px 0 0px 0;
+        padding: 40px 0 0 0;
     }
     .text-invest {
-        font-size: 15px;
-        padding: 30px 0 0 0;
+        font-size: 8px;
+        padding: 15px 0 0 0;
     }
     .title-invest {
-        padding: 15px 0 0 0;
-        font-size: 25px;
+        font-size: 12px;
+        padding: 20px 0 0 0;
     }
     .padding-btn {
-        padding: 20px 0 40px 0;
-    }
-    .Learnmore-btn {
-        color: white;
-        background: #6dcff6;
-        font-weight: 900;
-        font-size: 22px;
-        height: 55px;
-        width: 250px;
-        border-radius: 50px;
+        padding: 20px 0 20px 0;
     }
     .padding-checkmark {
         padding: 0 10px 0 0;
     }
     .checkmark {
-        width: 30px;
+        width: 20px;
     }
     .Hide {
         display: none;
@@ -911,84 +831,76 @@
     .carousel-indicators {
         bottom: -15px;
     }
-    .padding-word {
-        padding: 10px 0 0 30px;
-    }
     .img-washing {
         padding: 25px 0 0 0;
-        width: 85%;
+        width: 90%;
     }
     .title {
-        font-weight: 900;
-        font-size: 25px;
-        line-height: 50px;
+        padding-top: 40px;
+        line-height: 20px;
+    }
+    .subtitle {
+        line-height: 10px;
     }
     .text {
-        padding: 0 0 0 10px;
-        font-size: 10px;
-        line-height: 16px;
+        line-height: 10px;
     }
     .padding-four-icon{
         padding: 10px 0 20px 0;
     }
     .title-icon{
         padding: 10px 0 0 0;
-        font-size: 5px;
-        font-weight: bold;
     }
     .text-icon{
         padding: 5px 0 0 0;
-        font-size: 5px;
+    }
+    .mapOverlay{
+        height: 190px;
+    }
+    .map-text{
+        line-height: 25px;
+        padding: 15% 5% 0 5%;
+    }
+    .map-subtext{
+        line-height: 25px;
+        padding: 0 5% 0 5%;
+        color: white;
     }
     .padding-blog {
-        padding: 40px 0 20px 70px;
+        padding: 20px 0 10px 70px;
     }
     .padding-img-blogs {
         padding: 0 0 0 0;
     }
     .view-btn {
-        padding: 0 20px 30px 0;
-        font-weight: 900;
-        font-size: 9px;
+        padding: 0 37px 13px 0;
     }
     .img-blogs {
-        width: 370px;
-        height: 220px;
-        padding: 0 0 0 0;
+        max-width: 80%;
+        height: auto;
     }
     .text-blogs {
-        font-size: 12px;
-        width: 100%;
+        font-size: 9px;
         padding: 0 35px 0px 0px;
     }
-    .padding-Invest {
-        padding: 15px 0 0 0;
+    .text-service{
+        line-height: 10px;
     }
-    .text-invest {
-        font-size: 13px;
+    .padding-Invest {
         padding: 20px 0 0 0;
     }
-    .title-invest {
+    .text-invest {
         padding: 15px 0 0 0;
-        font-size: 25px;
+    }
+    .title-invest {
+        font-size: 10px;
+        padding: 20px 0 0 0;
     }
     .padding-btn {
-        padding: 20px 0 10px 0;
-    }
-    .Learnmore-btn {
-        color: white;
-        background: #6dcff6;
-        font-weight: 900;
-        font-size: 17px;
-        height: 45px;
-        width: 200px;
-        border-radius: 50px;
-    }
-    .padding-checkmark {
-        padding: 0 15px 0 0;
+        padding: 20px 0 20px 0;
     }
     .checkmark {
-        width: 20px;
+        width: 15px;
     }
     .Hide {
         display: none;
@@ -1008,91 +920,73 @@
     .carousel-indicators {
         bottom: -15px;
     }
-    .padding-word {
-        padding: 10px 0 0 40px;
-    }
     .img-washing {
         padding: 25px 0 0 0;
-        width: 85%;
+        width: 90%;
     }
     .title {
-        font-weight: 900;
-        font-size: 19px;
-        line-height: 50px;
+        padding-top: 30px;
+        line-height: 15px;
     }
     .text {
-        padding: 0 0 0 10px;
-        font-size: 7px;
-        line-height: 16px;
+        padding-left: 10px;
+        padding-top: 5px;
+        line-height: 10px;
     }
     .padding-four-icon{
         padding: 10px 0 15px 0;
     }
     .title-icon{
         padding: 5px 0 0 0;
-        font-size: 4.5px;
-        font-weight: bold;
     }
     .text-icon{
         padding: 5px 0 0 0;
-        font-size: 4.5px;
     }
     .mapOverlay{
         height: 170px;
     }
     .map-text{
         line-height: 20px;
-        padding: 25% 5% 0 5%;
+        padding: 16% 5% 0 5%;
+    }
+    .map-subtext{
+        line-height: 20px;
+        padding: 0 5% 0 5%;
+        color: white;
     }
     .padding-blog {
-        padding: 30px 0 10px 70px;
+        padding: 20px 0 10px 70px;
     }
     .padding-img-blogs {
         padding: 0 0 0 0;
     }
     .view-btn {
-        padding: 0 20px 25px 0;
-        font-weight: 900;
-        font-size: 9px;
+        padding: 0 40px 15px 0;
     }
     .img-blogs {
-        width: 335px;
+        max-width: 305px;
         height: auto;
         padding: 0 0 0 0;
     }
     .text-blogs {
-        font-size: 12px;
-        width: 100%;
-        padding: 0 35px 0px 0px;
+        padding: 0 25px 0px 0px;
     }
     .padding-Invest {
-        padding: 15px 0 0 0;
-    }
-    .text-invest {
-        font-size: 10px;
         padding: 20px 0 0 0;
     }
+    .text-invest {
+        font-size: 7px;
+        padding: 10px 0 0 0;
+    }
     .title-invest {
-        padding: 15px 0 0 0;
-        font-size: 15px;
+        padding: 10px 0 0 0;
+        font-size: 8px;
     }
     .padding-btn {
-        padding: 20px 0 10px 0;
-    }
-    .Learnmore-btn {
-        color: white;
-        background: #6dcff6;
-        font-weight: 900;
-        font-size: 17px;
-        height: 45px;
-        width: 200px;
-        border-radius: 50px;
-    }
-    .padding-checkmark {
-        padding: 0 15px 0 0;
+        padding: 10px 0 10px 0;
     }
     .checkmark {
-        width: 20px;
+        width: 15px;
     }
     .Hide {
         display: none;
@@ -1112,38 +1006,37 @@
     .carousel-indicators {
         bottom: -20px;
     }
-    .padding-word {
-        padding: 10px 0 0 30px;
-    }
     .img-washing {
         padding: 25px 0 0 0;
-        width: 85%;
+        width: 90%;
     }
     .title {
-        font-weight: 900;
-        font-size: 17px;
-        line-height: 50px;
+        line-height: 15px;
+    }
+    .subtitle {
+        line-height: 12px;
     }
     .text {
-        padding: 0 0 0 10px;
-        font-size: 7px;
-        line-height: 13px;
+        line-height: 8px;
     }
     .title-icon{
         padding: 5px 0 0 0;
-        font-size: 4px;
-        font-weight: bold;
     }
     .text-icon{
-        padding: 5px 0 0 0;
-        font-size: 4px;
+        font-size: 3px;
+        padding: 0 0 0 0;
     }
     .mapOverlay{
-        height: 180px;
+        height: 160px;
     }
     .map-text{
         line-height: 20px;
-        padding: 30% 5% 0 5%;
+        padding: 15% 5% 0 5%;
+    }
+    .map-subtext{
+        line-height: 20px;
+        padding: 0 5% 0 5%;
+        color: white;
     }
     .padding-blog {
         padding: 20px 0 10px 70px;
@@ -1152,45 +1045,29 @@
         padding: 0 0 0 0;
     }
     .view-btn {
-        padding: 0 20px 23px 0;
-        font-weight: 900;
-        font-size: 10px;
+        padding: 0 45px 10px 0;
     }
     .img-blogs {
-        width: 300px;
+        max-width: 90%;
         height: auto;
         padding: 0 0 0 0;
     }
     .text-blogs {
-        font-size: 11px;
-        width: 100%;
-        padding: 0 30px 0px 0px;
+        padding: 0 20px 0px 0px;
     }
     .padding-Invest {
-        padding: 15px 0 0 0;
+        padding: 20px 0 0 0;
     }
     .text-invest {
-        font-size: 9px;
-        padding: 15px 0 0 0;
+        font-size: 6px;
+        padding: 10px 0 0 0;
     }
     .title-invest {
-        padding: 15px 0 0 0;
-        font-size: 13   px;
+        font-size: 7px;
+        padding: 10px 0 0 0;
     }
     .padding-btn {
-        padding: 20px 0 40px 0;
-    }
-    .Learnmore-btn {
-        color: white;
-        background: #6dcff6;
-        font-weight: 900;
-        font-size: 15px;
-        height: 35px;
-        width: 180px;
-        border-radius: 50px;
-    }
-    .padding-checkmark {
-        padding: 0 10px 0 0;
+        padding: 10px 0 10px 0;
     }
     .checkmark {
         width: 15px;
@@ -1213,85 +1090,67 @@
     .carousel-indicators {
         bottom: -20px;
     }
-    .padding-word {
-        padding: 10px 0 0 20px;
-    }
     .img-washing {
         padding: 25px 0 0 0;
-        width: 100%;
+        width: 90%;
     }
     .title {
-        font-weight: 900;
-        font-size: 20px;
-        line-height: 45px;
+        line-height: 10px;
     }
     .text {
-        padding: 0 0 0 5px;
-        font-size: 6px;
-        line-height: 13px;
+        line-height: 8px;
     }
     .padding-four-icon{
         padding: 15px 0 15px 0;
     }
     .title-icon{
         padding: 5px 0 0 0;
-        font-size: 3px;
-        font-weight: bold;
     }
     .text-icon{
         padding: 3px 0 0 0;
-        font-size: 3px;
     }
     .mapOverlay{
         height: 140px;
     }
     .map-text{
         line-height: 15px;
-        padding: 25% 5% 0 5%;
+        padding: 19% 5% 0 5%;
+    }
+    .map-subtext{
+        line-height: 15px;
+        padding: 0 5% 0 5%;
+        color: white;
     }
     .padding-blog {
-        padding: 20px 0 0 70px;
+        padding: 20px 0 10px 45px;
     }
     .padding-img-blogs {
         padding: 0 0 0 0;
     }
     .view-btn {
         padding: 0 20px 12px 0;
-        font-weight: 900;
-        font-size: 10px;
     }
     .img-blogs {
-        width: 240px;
+        max-width: 90%;
         height: auto;
         padding: 0 0 0 0;
     }
     .text-blogs {
-        font-size: 11px;
-        width: 100%;
         padding: 0px 25px 0px 0px;
     }
     .padding-Invest {
-        padding: 15px 0 0 0;
+        padding: 20px 0 0 0;
     }
     .text-invest {
-        font-size: 8px;
-        padding: 15px 0 0 0;
+        font-size: 6px;
+        padding: 10px 0 0 0;
     }
     .title-invest {
-        padding: 15px 0 0 0;
-        font-size: 15px;
+        padding: 10px 0 0 0;
+        font-size: 7px;
     }
     .padding-btn {
-        padding: 20px 0 10px 0;
-    }
-    .Learnmore-btn {
-        color: white;
-        background: #6dcff6;
-        font-weight: 900;
-        font-size: 12px;
-        height: 35px;
-        width: 130px;
-        border-radius: 50px;
+        padding: 10px 0 10px 0;
     }
     .padding-checkmark {
         padding: 0 5px 0 0;

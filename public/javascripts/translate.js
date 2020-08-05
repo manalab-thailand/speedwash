@@ -31,7 +31,11 @@ $(document).ready(function() {
             'submit': 'Submit',
             'provice': 'Provice',
             'viewPost': 'View Post',
-            'textMap':`Our Branches Sukhumvit 50 Lasalle Suvarnabhumi 2 Bang Chalong Hua Hin (Coming Soon).`
+            'textMap':`Our Branches`,
+            'sukhumvit':'Sukhumvit 50',
+            'lasalle':'Lasalle',
+            'suvarnabhumi':'Suvarnabhumi 2',
+            'bangchalong':'Bang Chalong'
         },
         th: {
             'home': 'หน้าแรก',
