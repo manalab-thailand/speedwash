@@ -37,7 +37,7 @@
 <div class="container-fluid max-screen">
     <div class="row">
         <div class="col-7">
-            <div class="col-12 padding-word title" key="speedwash">
+            <div class="col-12 padding-word title">
                 <img class="title-image" src="images/logo-detail.png">
             </div>
             <div class="col-12 subtitle lang" key="subtitlespeedwash">
@@ -106,6 +106,7 @@
             <div class="map-subtext lang" key="lasalle"></div>
             <div class="map-subtext lang" key="suvarnabhumi"></div>
             <div class="map-subtext lang" key="bangchalong"></div>
+            <div class="map-subtext lang" key="huahin"></div>
         </div>
     </div>
 </a>
@@ -113,27 +114,27 @@
 
 <!-- post -->
 <div class="container-fluid max-screen">
-    <div class="row">
-        <div class="container-fluid">
-            <div class="d-flex justify-content-between">
-                <div class=""></div>
-                <div class="title padding-blog lang text-uppercase" key="blog">blog</div>
-                <div class="mt-auto view-btn"><a href="blog" class="view-all lang" key="viewAll">View All ></a></div>
+    <div class="d-flex justify-content-between">
+        <div class=""></div>
+        <div class="title padding-blog lang text-uppercase" key="blog"></div>
+        <div class="mt-auto view-btn"><a href="blog" class="view-all lang" key="viewAll">View All ></a></div>
+    </div>
+    <div class="row padding-between-box">
+        <div class="container-fluid d-flex align-items-center" id="firstPost">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-left text-right padding-img-blogs">
+                <img class="img-blogs" src="<%=post.data[0].attachments.data[0].media.image.src%>" alt="">
             </div>
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-right">
-                <div class="text-blogs facebookseemore Post1-seemore">
+                <div class="text-blogs facebookseemore Post2-seemore">
                     <%=post.data[0].message%>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-left text-center padding-img-blogs">
-                <img class="img-blogs " src="<%=post.data[0].attachments.data[0].media.image.src%>" alt="">
-            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="container-fluid">
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-left text-center padding-img-blogs Hide">
-                <img class="img-blogs " src="<%=post.data[1].attachments.data[0].media.image.src%>" alt="">
+    <div class="row padding-between-box">
+        <div class="container-fluid d-flex align-items-center" id="secondPost">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-left text-right padding-img-blogs Hide">
+                <img class="img-blogs" src="<%=post.data[1].attachments.data[0].media.image.src%>" alt="">
             </div>
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-right Hide">
                 <div class="text-blogs facebookseemore Post2-seemore">
@@ -147,12 +148,12 @@
 
 <!-- OUR SERVICE -->
 <div class="container-fluid max-screen">
-    <div class="col-12 title padding-service">
+    <div class="col-12 title padding-service lang" key="our-service">
         Our Service Prices
     </div>
-    <div class="col-12 text-service">
-        Wash and Dry prices start from 50 THB with Free laundry detergent and fabric softener
-        Just bring your clothes, Speed Wash will handle the rest.
+    <div class="col-12 text-service lang" key="service-detail">
+        Wash and Dry prices start from 50 THB with Free laundry detergent and fabric softener Just bring your clothes,
+        Speed Wash will handle the rest.
     </div>
     <div class="text-center">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -185,24 +186,26 @@
 
 <!-- Invest -->
 <div class="container-fluid max-screen">
-    <div class="col-12 padding-Invest title text-center">
+    <div class="col-12 padding-Invest title text-center lang" key="startBis">
         Start a laundry business, Open your own SpeedWash
     </div>
-    <div class="row text-center">
-        <div class="col-12 text-invest">
-            <img src="https://img.icons8.com/cute-clipart/64/000000/checkmark.png" class="checkmark">
-            <span class="padding-checkmark"></span> No franchise fee
-        </div>
-        <div class="col-12 text-invest">
-            <img src="https://img.icons8.com/cute-clipart/64/000000/checkmark.png" class="checkmark">
-            <span class="padding-checkmark"></span> No annual contact
-        </div>
-        <div class="col-12 text-invest">
-            <img src="https://img.icons8.com/cute-clipart/64/000000/checkmark.png" class="checkmark">
-            <span class="padding-checkmark"></span> Truly own and design your business
+    <div class="text-center">
+        <div class="d-inline-block text-left">
+            <div class="text-invest">
+                <img src="https://img.icons8.com/cute-clipart/64/000000/checkmark.png" class="checkmark">
+                <span class="padding-checkmark lang" key="no-franchise"></span></br>
+            </div>
+            <div class="text-invest">
+                <img src="https://img.icons8.com/cute-clipart/64/000000/checkmark.png" class="checkmark">
+                <span class="padding-checkmark lang" key="no-annual"></span></br>
+            </div>
+            <div class="text-invest">
+                <img src="https://img.icons8.com/cute-clipart/64/000000/checkmark.png" class="checkmark">
+                <span class="padding-checkmark lang" key="truly-own"></span></br>
+            </div>
         </div>
     </div>
-    <div class="col-12 text-center title-invest">
+    <div class="col-12 text-center title-invest lang" key="our-commercial">
         Our Commercial Washer and Dryer Catalogue
     </div>
     <div class="col-12 text-center padding-btn">
@@ -226,8 +229,8 @@
                 <div class="text-mobile-center">
                     <img class="logo" src="images/SpeedWash.png" alt="">
                 </div>
-                <p class="mt-3 font-normal lang" key="address">35/35 Mu 13 Bang Phli Yai Sub-district Bang Phli District
-                    Samut Prakan 10540</p>
+                <p class="mt-3 font-normal lang" key="address">35/35 Moo 13 Bang Phli Yai Sub-district Bang Phli
+                    District Samut Prakan 10540</p>
                 <a href="branches" class="color-viewmap">
                     <p class="text-uppercase lang" key="viewMap">view map ></p>
                 </a>

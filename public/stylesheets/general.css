@@ -13,7 +13,6 @@ body{
     font-weight: bold;
     color: #4d82b4;
 }
-
 .Seemore:visited {
     font-weight: bold;
     color: #4d82b4;
@@ -26,11 +25,6 @@ a.facebookmorelink {
 
 .morecontent span {
     display: none;
-}
-
-.facebookseemore {
-    width: 400px;
-    margin: 10px;
 }
 .max-screen {
     max-width: 1680px;
@@ -54,7 +48,7 @@ a.facebookmorelink {
         max-width: 1240px;
     }
 }
-}
+
 @media only screen and (max-width: 1024px) {    
     .fontTopic{
         font-size: 72px;
