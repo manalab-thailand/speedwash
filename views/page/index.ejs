@@ -119,27 +119,27 @@
         <div class="title padding-blog lang text-uppercase" key="blog"></div>
         <div class="mt-auto view-btn"><a href="blog" class="view-all lang" key="viewAll">View All ></a></div>
     </div>
-    <div class="row padding-between-box">
-        <div class="container-fluid d-flex align-items-center" id="firstPost">
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-left text-right padding-img-blogs">
-                <img class="img-blogs" src="<%=post.data[0].attachments.data[0].media.image.src%>" alt="">
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-right">
+    <div class="row padding-img-blogs">
+        <div class="container-fluid" id="firstPost">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 float-right text-middle">
                 <div class="text-blogs facebookseemore Post2-seemore">
                     <%=post.data[0].message%>
                 </div>
             </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 float-left img-middle">
+                <img class="img-blogs" src="<%=post.data[0].attachments.data[0].media.image.src%>" alt="">
+            </div>
         </div>
     </div>
-    <div class="row padding-between-box">
-        <div class="container-fluid d-flex align-items-center" id="secondPost">
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-left text-right padding-img-blogs Hide">
-                <img class="img-blogs" src="<%=post.data[1].attachments.data[0].media.image.src%>" alt="">
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 float-right Hide">
+    <div class="row padding-img-blogs Hide">
+        <div class="container-fluid" id="firstPost">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 text-left float-right text-middle">
                 <div class="text-blogs facebookseemore Post2-seemore">
                     <%=post.data[1].message%>
                 </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 text-right float-left">
+                <img class="img-blogs" src="<%=post.data[1].attachments.data[0].media.image.src%>" alt="">
             </div>
         </div>
     </div>

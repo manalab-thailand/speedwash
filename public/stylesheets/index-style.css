@@ -116,16 +116,25 @@
     font-size: 1.2vw;
 }
 .padding-img-blogs {
-    padding: 0 0 0 0;
+    padding: 0 0 40px 0;
 }
 .img-blogs {
-    position:relative;
+    margin-left: auto;
     max-width: 400px;
-    padding: 0 0 0 0;
+    padding: 0 30px 0 0;
 }
 .text-blogs {
-    width: 400px;
+    max-width: 400px;
+    padding: 0 0 0 30px;
     font-size: 0.8vw;;
+}
+.img-middle{
+    text-align: right;
+}
+.text-middle{
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 .padding-service{
     padding: 40px 0 20px 0;
@@ -217,7 +226,7 @@
         line-height: 60px;
     }
     .padding-blog {
-        padding: 80px 0 50px 220px;
+        padding: 80px 0 50px 195px;
     }
     .padding-img-blogs {
         padding: 0 0 40px 0;
@@ -226,13 +235,14 @@
         padding: 0 100px 65px 0;
     }
     .img-blogs {
-        height: auto;
-        max-width: 500px;
-        padding: 0 3% 0 0;
+        margin-left: auto;
+        max-width: 300px;
+        padding: 0 30px 0 0;
     }
     .text-blogs {
-        padding: 4% 10% 0 8%;
-        font-size: 1.2vw;
+        max-width: 300px;
+        padding: 0 0 0 30px;
+        font-size: 0.8vw;
     }
     .padding-Invest {
         padding: 80px 0 0 0;
@@ -282,7 +292,7 @@
         line-height: 60px;
     }
     .padding-blog {
-        padding: 80px 0 35px 200px;
+        padding: 80px 0 35px 190px;
     }
     .padding-img-blogs {
         padding: 0 0 40px 0;
@@ -291,12 +301,14 @@
         padding: 0 100px 45px 0;
     }
     .img-blogs {
-        max-width: 400px;
-        padding: 0 0 0 0;
+        margin-left: auto;
+        max-width: 300px;
+        padding: 0 25px 0 0;
     }
     .text-blogs {
-        font-size: 18px;
-        padding: 10px 0 0 70px;
+        max-width: 300px;
+        padding: 0 0 0 25px;
+        font-size: 0.8vw;
     }
     .padding-Invest {
         padding: 80px 0 20px 0;
@@ -362,19 +374,27 @@
         padding: 60px 0 30px 120px;
     }
     .padding-img-blogs {
-        padding: 0 0 0 0;
+        padding: 0 0 20px 0;
     }
     .view-btn {
         padding: 0 50px 40px 0;
         font-weight: 900;
     }
     .img-blogs {
-        max-width: 800px;
-        height: auto;
-        padding: 0 0 0 0;
+        margin-left: auto;
+        max-width: 250px;
+        padding: 0 20px 0 0;
     }
     .text-blogs {
-        padding: 10px 25px 10px 25px;
+        max-width: 250px;
+        padding: 0 0 0 20px;
+        font-size: 0.9vw;
+    }
+    .img-middle{
+        text-align: right;
+    }
+    .text-middle{
+        height: 100%;
     }
     .padding-service{
         padding: 40px 0 10px 0;
@@ -401,9 +421,6 @@
     }
     .checkmark {
         width: 20px;
-    }
-    .Hide {
-        display: none;
     }
 }
 
@@ -470,8 +487,16 @@
         padding: 0 0 0 0;
     }
     .text-blogs {
+        max-width: 500px;
         font-size: 11px;   
-        padding: 0 70px 10px 20px;
+        padding: 0 0 10px 0;
+    }
+    .img-middle{
+        text-align: center;
+    }
+    .text-middle{
+        justify-content: center;
+        height: auto;
     }
     .padding-service{
         padding: 40px 0 10px 0;
@@ -566,11 +591,12 @@
         color: white;
     }
     .img-blogs {
-        max-width: 550px;
+        max-width: 400px;
         height: auto;
         padding: 0 0 0 0;
     }
     .text-blogs {
+        max-width: 450px;
         font-size: 14px;
         padding: 0 0 10px 20px;
     }
@@ -657,15 +683,16 @@
         padding: 0 0 0 0;
     }
     .view-btn {
-        padding: 0 25px 35px 0;
+        padding: 0 25px 20px 0;
     }
     .img-blogs {
-        max-width: 500px;
+        max-width: 400px;
         height: auto;
         padding: 0 0 0 0;
     }
     .text-blogs {
-        padding: 0 20px 10px 12px;
+        max-width: 490px;
+        padding: 0 0 10px 0;
     }
     .text-service{
         padding: 0 10% 0px 10%;
@@ -846,12 +873,12 @@
         padding: 0 75px 20px 0;
     }
     .img-blogs {
-        width: 90%;
+        width: 350px;
         height: auto;
     }
     .text-blogs {
-        width: 100%;
-        padding: 0 70px 10px 0px;
+        max-width: 400px;
+        padding: 0 0 10px 0;
     }
     .padding-Invest {
         padding: 40px 0 15px 0;
@@ -936,12 +963,13 @@
         padding: 0 37px 13px 0;
     }
     .img-blogs {
-        max-width: 80%;
+        max-width: 270px;
         height: auto;
     }
     .text-blogs {
+        max-width: 320px;
         font-size: 9px;
-        padding: 0 35px 0px 0px;
+        padding: 0 0px 10px 0px;
     }
     .text-service{
         line-height: 10px;
@@ -1026,15 +1054,16 @@
         padding: 0 0 0 0;
     }
     .view-btn {
-        padding: 0 40px 15px 0;
+        padding: 0 40px 1px 0;
     }
     .img-blogs {
-        max-width: 305px;
-        height: auto;
+        max-width: 200px;
         padding: 0 0 0 0;
     }
     .text-blogs {
-        padding: 0 20px 0px 0px;
+        max-width: 280px;
+        font-size: 8px;   
+        padding: 0 0 10px 0;
     }
     .text-service{
         padding: 0 10% 0px 10%;
@@ -1121,15 +1150,16 @@
         padding: 0 0 0 0;
     }
     .view-btn {
-        padding: 0 45px 10px 0;
+        padding: 0 45px 12px 0;
     }
     .img-blogs {
-        max-width: 90%;
-        height: auto;
+        max-width: 250px;
         padding: 0 0 0 0;
     }
     .text-blogs {
-        padding: 0 20px 0px 0px;
+        max-width: 280px;
+        font-size: 9px;   
+        padding: 0 0 10px 0;
     }
     .padding-Invest {
         padding: 20px 0 5px 0;
@@ -1211,12 +1241,12 @@
         padding: 0 20px 12px 0;
     }
     .img-blogs {
-        max-width: 90%;
-        height: auto;
+        max-width: 200px;
         padding: 0 0 0 0;
     }
     .text-blogs {
-        padding: 0px 25px 0px 0px;
+        max-width: 250px;
+        padding: 0px 0px 10px 0px;
     }
     .padding-Invest {
         padding: 20px 0 5px 0;
